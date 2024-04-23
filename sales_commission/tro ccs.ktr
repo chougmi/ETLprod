@@ -1,0 +1,1306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>tro ccs</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2021/02/09 19:31:54.738</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2021/02/09 19:31:54.738</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+    <notepad>
+      <note>Calculer  TRO par agence</note>
+      <xloc>305</xloc>
+      <yloc>-77</yloc>
+      <width>144</width>
+      <heigth>26</heigth>
+      <fontname>Segoe UI</fontname>
+      <fontsize>9</fontsize>
+      <fontbold>N</fontbold>
+      <fontitalic>N</fontitalic>
+      <fontcolorred>0</fontcolorred>
+      <fontcolorgreen>0</fontcolorgreen>
+      <fontcolorblue>0</fontcolorblue>
+      <backgroundcolorred>255</backgroundcolorred>
+      <backgroundcolorgreen>205</backgroundcolorgreen>
+      <backgroundcolorblue>112</backgroundcolorblue>
+      <bordercolorred>100</bordercolorred>
+      <bordercolorgreen>100</bordercolorgreen>
+      <bordercolorblue>100</bordercolorblue>
+      <drawshadow>Y</drawshadow>
+    </notepad>
+  </notepads>
+  <connection>
+    <name>bi</name>
+    <server>51.38.62.93</server>
+    <type>MSSQLNATIVE</type>
+    <access>Native</access>
+    <database>bi</database>
+    <port>14332</port>
+    <username>bi</username>
+    <password>Encrypted 2f5c9d9ae53dda6a1ff00af5dd8abf6f4</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQLUseIntegratedSecurity</code>
+        <attribute>false</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>14332</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>ccs 2</from>
+      <to>tro_eligibilite_ccs</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Superviseurs 3</from>
+      <to>tro_eligibilite_Superviseurs</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>regional</from>
+      <to>tro_eligibilite_regional</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Superviseurs 3 2 2</from>
+      <to>tro general 2</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Superviseurs 3</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>bi</connection>
+    <sql>select realisation.cin ,realisation.annee,realisation.mois as Mois ,realisation.sup as sup ,realisation.type_product as Type_product ,realisation.valeur_calcule as Realisation , budget.nbr as Objectif
+ , realisation.valeur_calcule/ NULLIF(budget.nbr,0)as Tro from (
+
+
+select cin,year(dinsertion)as annee, month(dinsertion) as mois , 3 as 'producttype_id','International'type_product  , nom as 'sup'  ,sum(nbr)as valeur_calcule  from shopkeeper_realisations 
+left join (select cin, code ,agence,status , id_agent,agent,nom ,max(date_affectation) date_affectation from sales_affectation
+where id_agent = 2
+group by cin, code ,agence,status , id_agent,agent,nom) sales
+on sales.code = shopkeeper_realisations.sShopId
+where producttype_id   in(3,23,58) 
+and month(dinsertion) = MONTH(getdate())-1
+group by cin, nom, month(dinsertion) ,year(dinsertion)
+union 
+
+select cin,year(dinsertion)as annee,month(dinsertion) as mois , 1 as 'producttype_id', 'national' as type_product  , nom as 'sup'  ,sum(nbr)as valeur_calcule  from shopkeeper_realisations 
+left join (select cin, code ,agence,status , id_agent,agent,nom ,max(date_affectation) date_affectation from sales_affectation
+where id_agent = 2
+group by  cin,code ,agence,status , id_agent,agent,nom) sales
+on sales.code = shopkeeper_realisations.sShopId
+where producttype_id   in( 1,2) 
+and month(dinsertion) = MONTH(getdate())-1
+group by cin, nom, month(dinsertion) ,year(dinsertion)
+
+union 
+select cin,year(dinsertion)as annee,month(dinsertion) as mois , 22 as 'producttype_id','Facturiers' as type_product  , nom as 'sup'  ,sum(nbr)as valeur_calcule  from shopkeeper_realisations 
+left join (select cin, code ,agence,status , id_agent,agent,nom ,max(date_affectation) date_affectation from sales_affectation
+where id_agent = 2
+group by cin, code ,agence,status , id_agent,agent,nom) sales
+on sales.code = shopkeeper_realisations.sShopId
+where producttype_id   in( 22,12)  
+and month(dinsertion) = MONTH(getdate())-1
+group by cin, nom, month(dinsertion),year(dinsertion))  realisation
+
+left join 
+(select cin, annee, mois ,3 as 'product_id' , nom as 'sup'  ,sum(objectif_nbr) as nbr from objectif_sales obj
+left join (select cin, code ,agence,status , id_agent,agent,nom ,max(date_affectation) date_affectation from sales_affectation
+where id_agent = 2
+group by cin, code ,agence,status , id_agent,agent,nom) sales
+on sales.code = code_agence
+where product_id in (3,23) and  mois  = MONTH(getdate())-1
+group by cin, nom ,mois ,annee
+
+union 
+
+select cin, annee, mois ,product_id , nom as 'sup'  ,sum(objectif_nbr) as nbr from objectif_sales obj
+left join (select cin,code ,agence,status , id_agent,agent,nom ,max(date_affectation) date_affectation from sales_affectation
+where id_agent = 2
+group by cin, code ,agence,status , id_agent,agent,nom) sales
+on sales.code = code_agence
+where product_id in (1,2)  and  mois  = MONTH(getdate())-1
+group by cin, nom ,mois ,product_id,annee
+
+union
+
+select cin, annee,mois ,product_id , nom as 'sup'  ,sum(objectif_nbr) as nbr from objectif_sales obj
+left join (select cin,code ,agence,status , id_agent,agent,nom ,max(date_affectation) date_affectation from sales_affectation
+where id_agent = 2
+group by cin, code ,agence,status , id_agent,agent,nom) sales
+on sales.code = code_agence
+where product_id in (22,12) and  mois  = MONTH(getdate())-1
+group by  cin,nom ,mois ,product_id,annee
+
+) budget
+ on realisation.mois = budget.mois and realisation.producttype_id = budget.product_id  and realisation.sup = budget.sup
+
+
+and realisation.annee = budget.annee
+
+
+
+</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>240</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Superviseurs 3 2 2</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>bi</connection>
+    <sql>select sup as  nom_agent,id as id_agent  , mois,  cin as agent,'  ' as type_product  ,0 as  'realisation' ,0 as 'objectif' , tro,commission_unitaire 
+,0as ShopKeeper_id ,0 as sshopid
+
+
+
+from (
+
+select cin,rrr.id , mois, sup , tro,commission_unitaire from (
+
+select 3 as id, cin,mois ,sup ,  AVG(pl_tro) tro from (
+
+select  cin,mois ,sup, type_product , realisation ,objectif ,tro , 
+case
+    when  tro > 1.2 then 1.2
+	else tro
+end as pl_tro  from tro_eligibilite_Superviseurs t)as q
+
+group by  cin, mois ,sup ) rrr
+
+left join ((select * from sales_agent_condition sa
+            join (select  id_agent as id, agent as ag ,max(debut_application) as agdebut_application from sales_agent_condition group by  id_agent,agent)ss
+             on ss.id = sa.id_agent and ss.agdebut_application = sa.debut_application)) sa
+          on rrr.id = sa.id_agent    and   tro  BETWEEN sa.condition_min and sa.condition_max
+		  )as s 
+
+
+union
+
+
+	select ccs as  nom_agent,  id_agent, mois ,cin as agent, type_product , realisation ,objectif ,tro ,commission_unitaire ,0as ShopKeeper_id ,0 as sshopid
+from(
+select cin, rrr.id_agent, mois ,ccs, type_product , realisation ,objectif ,tro ,commission_unitaire
+ from tro_eligibilite_ccs rrr
+ left join  (select * from sales_agent_condition sa
+              join (select  id_agent as idd, agent as ag ,max(debut_application) as agdebut_application from sales_agent_condition group by  id_agent,agent)ss
+               on ss.idd = sa.id_agent and ss.agdebut_application = sa.debut_application) saa
+  
+  on rrr.id_agent =saa.id_agent   and   tro  > saa.condition_min )  v  
+
+union 
+
+
+select  ccs as cin, id_agent, mois ,cin as agent, type_product , realisation ,objectif ,tro ,commission_unitaire ,0as ShopKeeper_id ,0 as sshopid
+from(
+select cin, rrr.id_agent, mois ,ccs, type_product , realisation ,objectif ,tro ,commission_unitaire
+ from tro_eligibilite_ccs rrr
+ left join  (select * from sales_agent_condition sa
+              join (select  id_agent as idd, agent as ag ,max(debut_application) as agdebut_application from sales_agent_condition group by  id_agent,agent)ss
+               on ss.idd = sa.id_agent and ss.agdebut_application = sa.debut_application) saa
+  
+  on rrr.id_agent =saa.id_agent   and   tro  > saa.condition_min )  v  
+
+
+
+
+
+
+union
+
+
+ select cin as nom_agent, rrr.id as id_agent  , mois, regional as agent,'  ' as type_product  ,0 as  'realisation' ,0 as 'objectif' , tro,commission_unitaire
+
+
+,0as ShopKeeper_id ,0 as sshopid  from (
+select cin,q.id, mois ,regional ,avg(tro) as tro
+
+from (select 4 as id , cin, mois ,regional, type_product , realisation ,objectif ,tro 
+      from tro_eligibilite_regional where  tro is not null and objectif is not null   )as q
+       
+	    group by  cin,id,mois  ,regional ) as rrr
+
+left  join ((select * from sales_agent_condition sa
+            join (select  id_agent as id, agent as ag ,max(debut_application) as agdebut_application from sales_agent_condition group by  id_agent,agent)ss
+             on ss.id = sa.id_agent and ss.agdebut_application = sa.debut_application)) sa
+          on rrr.id = sa.id_agent    and   tro  BETWEEN sa.condition_min and sa.condition_max
+
+
+
+
+
+
+
+
+union
+
+
+
+select ''as  nom_agent,7as id_agent ,MONTH(dinsertion)as mois ,ShopKeeper_name as agent,type_product,0 as realisation,0 as objectif,0 as tro ,sum(commission) as commission_untaire 
+ 
+, ShopKeeper_id ,sshopid from commission_shopkepper 
+where ShopKeeper_name is not null and MONTH(dinsertion)  =  MONTH(getdate()) and year(dinsertion)= 2022
+group by MONTH(dinsertion),ShopKeeper_name,type_product,ShopKeeper_id,sshopid
+</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>336</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>ccs 2</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>bi</connection>
+    <sql>
+
+
+select realisation.cin,realisation.annee,realisation.mois as Mois ,realisation.ccs as ccs ,realisation.type_product as Type_product ,realisation.valeur_calcule as Realisation , budget.nbr as Objectif
+ , realisation.valeur_calcule/ NULLIF(budget.nbr,0)as Tro from (
+
+
+select cin, year(dinsertion) as annee,month(dinsertion) as mois , 3 as 'producttype_id','International'type_product  , nom as 'ccs' ,sum(nbr)as valeur_calcule  from shopkeeper_realisations 
+left join (select cin,code ,agence,status , id_agent,agent,nom ,max(date_affectation) date_affectation from sales_affectation
+where id_agent = 3
+group by cin, code ,agence,status , id_agent,agent,nom) sales
+on sales.code = shopkeeper_realisations.sShopId
+where producttype_id   in(3,23,58) 
+and month(dinsertion) = MONTH(getdate())-1
+group by cin, nom, month(dinsertion) ,year(dinsertion)
+union 
+
+select cin, year(dinsertion) as annee,month(dinsertion) as mois , 1 as 'producttype_id', 'national' as type_product  ,  nom as 'ccs' ,sum(nbr)as valeur_calcule  from shopkeeper_realisations 
+left join (select cin,code ,agence,status , id_agent,agent,nom ,max(date_affectation) date_affectation from sales_affectation
+where id_agent = 3
+group by cin, code ,agence,status , id_agent,agent,nom) sales
+on sales.code = shopkeeper_realisations.sShopId
+where producttype_id   in( 1,2) 
+and month(dinsertion) = MONTH(getdate())-1
+group by cin, nom, month(dinsertion) ,year(dinsertion)
+
+union
+ 
+select cin, year(dinsertion) as annee,month(dinsertion) as mois ,producttype_id,'change' as type_product  , nom as 'ccs' ,sum(volume)as valeur_calcule  from shopkeeper_realisations 
+left join (select cin,code ,agence,status , id_agent,agent,nom ,max(date_affectation) date_affectation from sales_affectation
+where id_agent = 3
+group by  cin,code ,agence,status , id_agent,agent,nom) sales
+on sales.code = shopkeeper_realisations.sShopId
+where producttype_id   in(89)  
+and month(dinsertion) = MONTH(getdate())-1
+group by cin,  nom, month(dinsertion),year(dinsertion),producttype_id
+
+union 
+select cin,year(dinsertion) as annee,month(dinsertion) as mois , 22 as 'producttype_id','Facturiers' as type_product  , nom as 'ccs' ,sum(nbr)as valeur_calcule  from shopkeeper_realisations 
+left join (select cin,code ,agence,status , id_agent,agent,nom ,max(date_affectation) date_affectation from sales_affectation
+where id_agent = 3
+group by  cin,code ,agence,status , id_agent,agent,nom) sales
+on sales.code = shopkeeper_realisations.sShopId
+where producttype_id   in( 22,12)  
+and month(dinsertion) = MONTH(getdate())-1
+group by cin, nom, month(dinsertion),year(dinsertion))  realisation
+
+left join 
+(select cin, annee,mois ,3 as 'product_id' , nom as 'ccs' ,sum(objectif_nbr) as nbr from objectif_sales obj
+left join (select cin,code ,agence,status , id_agent,agent,nom ,max(date_affectation) date_affectation from sales_affectation
+where id_agent = 3
+group by  cin,code ,agence,status , id_agent,agent,nom) sales
+on sales.code = code_agence
+where product_id in (3,23) and  mois  = MONTH(getdate())-1
+group by cin,annee, nom ,mois 
+
+union 
+
+select cin, annee,mois ,product_id , nom as 'ccs' ,sum(objectif_nbr) as nbr from objectif_sales obj
+left join (select cin,code ,agence,status , id_agent,agent,nom ,max(date_affectation) date_affectation from sales_affectation
+where id_agent = 3
+group by cin, code ,agence,status , id_agent,agent,nom) sales
+on sales.code = code_agence
+where product_id in (1,2) and  mois  = MONTH(getdate())-1
+group by cin, annee,nom ,mois ,product_id
+
+union
+select cin, annee, mois ,product_id , nom as 'ccs' ,sum(objectif_nbr) as nbr from objectif_sales obj
+left join (select cin,code ,agence,status , id_agent,agent,nom ,max(date_affectation) date_affectation from sales_affectation
+where id_agent = 3
+group by cin, code ,agence,status , id_agent,agent,nom) sales
+on sales.code = code_agence
+where product_id in (89) and  mois  = MONTH(getdate())-1
+group by cin,annee, nom ,mois ,product_id
+
+
+union
+
+select cin, annee, mois ,product_id , nom as 'ccs' ,sum(objectif_nbr) as nbr from objectif_sales obj
+left join (select cin,code ,agence,status , id_agent,agent,nom ,max(date_affectation) date_affectation from sales_affectation
+where id_agent = 3
+group by  cin,code ,agence,status , id_agent,agent,nom) sales
+on sales.code = code_agence
+where product_id in (22,12) and  mois  = MONTH(getdate())-1
+group by cin,annee, nom ,mois ,product_id
+
+) budget
+ on realisation.mois = budget.mois and realisation.producttype_id = budget.product_id  and realisation.ccs = budget.ccs
+
+
+and realisation.annee = budget.annee
+
+
+
+</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>226</xloc>
+      <yloc>143</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>regional</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>bi</connection>
+    <sql>select realisation.cin,realisation.annee,realisation.mois as Mois ,realisation.regional as regional ,realisation.type_product as Type_product ,realisation.valeur_calcule as Realisation , budget.nbr as Objectif
+ , realisation.valeur_calcule/ NULLIF(budget.nbr,0)as Tro from (
+
+
+select cin,year(dinsertion)as annee,month(dinsertion) as mois , 3 as 'producttype_id','International'type_product  , nom as 'regional' ,sum(nbr)as valeur_calcule  from shopkeeper_realisations 
+left join (select cin, code ,agence,status , id_agent,agent,nom ,max(date_affectation) date_affectation from sales_affectation
+where id_agent = 4
+group by cin, code ,agence,status , id_agent,agent,nom) sales
+on sales.code = shopkeeper_realisations.sShopId
+where producttype_id   in(3,23,58) and  month(dinsertion) = MONTH(getdate())-1
+
+group by cin, nom, month(dinsertion),year(dinsertion)
+union 
+
+select cin,year(dinsertion)as annee, month(dinsertion) as mois , 1 as 'producttype_id', 'national' as type_product  , nom as 'regional' ,sum(nbr)as valeur_calcule  from shopkeeper_realisations 
+left join (select cin,code ,agence,status , id_agent,agent,nom ,max(date_affectation) date_affectation from sales_affectation
+where id_agent = 4
+group by  cin,code ,agence,status , id_agent,agent,nom) sales
+on sales.code = shopkeeper_realisations.sShopId
+where producttype_id   in( 1,2) and month(dinsertion) = MONTH(getdate())-1
+
+group by  cin,nom, month(dinsertion) ,year(dinsertion)
+
+union 
+select cin,year(dinsertion)as annee, month(dinsertion) as mois , 22 as 'producttype_id','Facturiers' as type_product  , nom as 'regional' ,sum(nbr)as valeur_calcule  from shopkeeper_realisations 
+left join (select cin,code ,agence,status , id_agent,agent,nom ,max(date_affectation) date_affectation from sales_affectation
+where id_agent = 4
+group by  cin,code ,agence,status , id_agent,agent,nom) sales
+on sales.code = shopkeeper_realisations.sShopId
+where producttype_id   in( 22,12)  and month(dinsertion) = MONTH(getdate())-1
+
+group by  cin,nom, month(dinsertion),year(dinsertion))  realisation
+
+left join 
+(select cin,annee, mois ,3 as 'product_id' , nom as 'regional' ,sum(objectif_nbr) as nbr from objectif_sales obj
+left join (select cin,code ,agence,status , id_agent,agent,nom ,max(date_affectation) date_affectation from sales_affectation
+where id_agent = 4
+group by cin,code ,agence,status , id_agent,agent,nom) sales
+on sales.code = code_agence
+where product_id in (3,23)  and mois  = MONTH(getdate())-1
+group by  cin,nom ,mois ,annee
+
+union 
+
+select cin,annee,mois ,product_id , nom as 'regional' ,sum(objectif_nbr) as nbr from objectif_sales obj
+left join (select cin, code ,agence,status , id_agent,agent,nom ,max(date_affectation) date_affectation from sales_affectation
+where id_agent = 4
+group by  cin,code ,agence,status , id_agent,agent,nom) sales
+on sales.code = code_agence
+where product_id in (1,2)and mois  = MONTH(getdate())-1
+group by  cin,nom ,mois ,product_id,annee
+
+union
+
+select cin,annee,mois ,product_id ,  nom as 'regional' ,sum(objectif_nbr) as nbr from objectif_sales obj
+left join (select cin,code ,agence,status , id_agent,agent,nom ,max(date_affectation) date_affectation from sales_affectation
+where id_agent = 4
+group by  cin,code ,agence,status , id_agent,agent,nom) sales
+on sales.code = code_agence
+where product_id in (22,12) and mois  = MONTH(getdate())-1
+group by  cin,nom ,mois ,product_id,annee
+
+) budget
+ on realisation.mois = budget.mois and realisation.producttype_id = budget.product_id  and realisation.regional = budget.regional
+
+ and  realisation.annee = budget.annee
+
+
+
+</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>208</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>tro general 2</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>bi</connection>
+    <schema />
+    <table>commission_sales</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>nom_agent</column_name>
+        <stream_name>nom_agent</stream_name>
+      </field>
+      <field>
+        <column_name>id_agent</column_name>
+        <stream_name>id_agent</stream_name>
+      </field>
+      <field>
+        <column_name>mois</column_name>
+        <stream_name>mois</stream_name>
+      </field>
+      <field>
+        <column_name>agent</column_name>
+        <stream_name>agent</stream_name>
+      </field>
+      <field>
+        <column_name>type_product</column_name>
+        <stream_name>type_product</stream_name>
+      </field>
+      <field>
+        <column_name>realisation</column_name>
+        <stream_name>realisation</stream_name>
+      </field>
+      <field>
+        <column_name>objectif</column_name>
+        <stream_name>objectif</stream_name>
+      </field>
+      <field>
+        <column_name>tro</column_name>
+        <stream_name>tro</stream_name>
+      </field>
+      <field>
+        <column_name>commission_unitaire</column_name>
+        <stream_name>commission_unitaire</stream_name>
+      </field>
+      <field>
+        <column_name>ShopKeeper_id</column_name>
+        <stream_name>ShopKeeper_id</stream_name>
+      </field>
+      <field>
+        <column_name>sshopid</column_name>
+        <stream_name>sshopid</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>672</xloc>
+      <yloc>448</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>tro_eligibilite_Superviseurs</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>bi</connection>
+    <schema />
+    <table>tro_eligibilite_Superviseurs</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>cin</column_name>
+        <stream_name>cin</stream_name>
+      </field>
+      <field>
+        <column_name>annee</column_name>
+        <stream_name>annee</stream_name>
+      </field>
+      <field>
+        <column_name>Mois</column_name>
+        <stream_name>Mois</stream_name>
+      </field>
+      <field>
+        <column_name>sup</column_name>
+        <stream_name>sup</stream_name>
+      </field>
+      <field>
+        <column_name>Type_product</column_name>
+        <stream_name>Type_product</stream_name>
+      </field>
+      <field>
+        <column_name>Realisation</column_name>
+        <stream_name>Realisation</stream_name>
+      </field>
+      <field>
+        <column_name>Objectif</column_name>
+        <stream_name>Objectif</stream_name>
+      </field>
+      <field>
+        <column_name>Tro</column_name>
+        <stream_name>Tro</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>640</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>tro_eligibilite_ccs</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>bi</connection>
+    <schema />
+    <table>tro_eligibilite_ccs</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>cin</column_name>
+        <stream_name>cin</stream_name>
+      </field>
+      <field>
+        <column_name>annee</column_name>
+        <stream_name>annee</stream_name>
+      </field>
+      <field>
+        <column_name>Mois</column_name>
+        <stream_name>Mois</stream_name>
+      </field>
+      <field>
+        <column_name>ccs</column_name>
+        <stream_name>ccs</stream_name>
+      </field>
+      <field>
+        <column_name>Type_product</column_name>
+        <stream_name>Type_product</stream_name>
+      </field>
+      <field>
+        <column_name>Realisation</column_name>
+        <stream_name>Realisation</stream_name>
+      </field>
+      <field>
+        <column_name>Objectif</column_name>
+        <stream_name>Objectif</stream_name>
+      </field>
+      <field>
+        <column_name>Tro</column_name>
+        <stream_name>Tro</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>578</xloc>
+      <yloc>143</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>tro_eligibilite_regional</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>bi</connection>
+    <schema />
+    <table>tro_eligibilite_regional</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>cin</column_name>
+        <stream_name>cin</stream_name>
+      </field>
+      <field>
+        <column_name>annee</column_name>
+        <stream_name>annee</stream_name>
+      </field>
+      <field>
+        <column_name>Mois</column_name>
+        <stream_name>Mois</stream_name>
+      </field>
+      <field>
+        <column_name>regional</column_name>
+        <stream_name>regional</stream_name>
+      </field>
+      <field>
+        <column_name>Type_product</column_name>
+        <stream_name>Type_product</stream_name>
+      </field>
+      <field>
+        <column_name>Realisation</column_name>
+        <stream_name>Realisation</stream_name>
+      </field>
+      <field>
+        <column_name>Objectif</column_name>
+        <stream_name>Objectif</stream_name>
+      </field>
+      <field>
+        <column_name>Tro</column_name>
+        <stream_name>Tro</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>560</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>

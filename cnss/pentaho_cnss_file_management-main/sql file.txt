@@ -1,0 +1,45 @@
+SQL file 
+=================================
+
+CREATE TABLE amo (
+    id       INTEGER PRIMARY KEY,
+    filename TEXT,
+    nbr_rows INTEGER,
+    datetime TEXT,
+    status   TEXT
+);
+
+
+===============================
+
+CREATE TABLE data (
+    [Cod_ E_ Riad]     INTEGER,
+    partner_id         INTEGER,
+    Service            INTEGER,
+    Id_Type_de_service INTEGER,
+    Id_Produit         INTEGER,
+    code_trx           INTEGER,
+    ID_trx             TEXT,
+    date_time          TEXT,
+    date               TEXT,
+    Montant            NUMERIC,
+    Chiffre_affaire    NUMERIC,
+    [Part M2T]         NUMERIC,
+    QP_CashPlus        NUMERIC,
+    Etat               TEXT,
+    sshopid            NUMERIC,
+    nshopid            NUMERIC,
+    CONSTRAINT unique_code_per_date UNIQUE (
+        code_trx,
+        date
+    )
+);
+
+
+=============================================
+
+CREATE TABLE logs (
+    id       INTEGER PRIMARY KEY,
+    datetime TEXT,
+    msg      TEXT
+);
