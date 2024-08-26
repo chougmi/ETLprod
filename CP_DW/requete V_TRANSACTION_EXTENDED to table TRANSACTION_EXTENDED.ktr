@@ -1,0 +1,1030 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>requete V_TRANSACTION_EXTENDED to table TRANSACTION_EXTENDED</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2019/10/10 16:16:28.550</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2019/10/10 16:16:28.550</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>ovh</name>
+    <server>51.38.62.93</server>
+    <type>MSSQLNATIVE</type>
+    <access>Native</access>
+    <database>bi</database>
+    <port>14332</port>
+    <username>bi</username>
+    <password>Encrypted 2f5c9d9ae53dda6a1ff00af5dd8abf6f4</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQLUseIntegratedSecurity</code>
+        <attribute>false</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>14332</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>ok</from>
+      <to>Insertion dans table</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Extraction depuis table 2</from>
+      <to>Insertion dans table</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Extraction depuis table 3</from>
+      <to>Insertion dans table</to>
+      <enabled>N</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>ok</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>ovh</connection>
+    <sql>SELECT 
+_Transactions.nId AS transactionsnId,
+TAIHUB.sNeiCode AS sNenCode,            
+Product.sName AS product,
+ISNULL(Product.nId, 0) AS productId,
+ProductType.sName AS productType,
+ProductType.nid as productTypeId,
+_Transactions.dInsertion AS dinsertion,
+CASE WHEN receiver.sFirstname is null THEN receiver2.sReceiverFirstname + ' ' + receiver2.sReceiverLastName ELSE receiver.sFirstname + ' ' + receiver.sLastName END AS receivername,
+receiver.nid as idReceiver,
+receiver.sCin AS receiverID,
+receiver.sIdType AS receiverIdType,
+receiver.sFirstname as receiverFirstname,
+receiver.sLastname as receiverLastname,
+TRY_CONVERT(date, receiver.dBirthday, 103) as receiverBirthDay,
+'receiver.sGSM' as receiverPhone,
+TRY_CONVERT(date, receiver.dEndValidity, 103) as receiverIdEndValidity,
+sender.nid as idSender,
+sender.sCin AS senderID,
+sender.sIdType AS senderIdType,
+sender.sFirstname as senderFirstname,
+sender.sLastname as senderLastname,
+TRY_CONVERT(date, sender.dEndValidity, 103) as senderBirthDay,
+'sender.sGSM' as senderPhone,
+TRY_CONVERT(date, sender.dEndValidity, 103) as senderIdEndValidity,
+TransactionType.sName AS transactionType,
+TransactionStatus.sName AS transactionStatussName ,
+ISNULL(TransactionStatus.nId, 0) AS transactionStatus,
+Company.sName AS companysName,
+ISNULL(Company.nId, 0) AS companyId,
+Shop.sName AS shopName,
+Shop.sShopId AS sShopId,
+Shop.nId AS nShopId,
+ShopKeeper.sFirstname + ' ' + ShopKeeper.sLastName AS shopkeepersname,
+shopkeeper.nid as shopkeeperId,
+Shopkeeper.smatricule as shopkeeperMatricule,
+ISNULL(_Transactions.nAmount, 0) AS nAmount,
+ISNULL(_Transactions.nOperationFee, 0) AS nOperationFee,
+ISNULL(_Transactions.nServiceFee, 0) AS nServiceFee
+FROM _Transactions with (nolock)
+LEFT JOIN TransactionType
+ON TransactionType.nId = _Transactions.nTransactionTypeId
+LEFT JOIN TransactionStatus
+ON TransactionStatus.nId = _Transactions.nTransactionStatusId
+LEFT JOIN Shop  with (nolock)
+ON Shop.nId = _Transactions.nShopId
+LEFT JOIN Company  with (nolock)
+ON Company.nId = Shop.nCompanyId    
+LEFT JOIN Customer as sender  with (nolock)  
+ON sender.nId = _Transactions.nSenderId    
+LEFT JOIN Customer as receiver  with (nolock)  
+ON receiver.nId = _Transactions.nReceiverId    
+LEFT JOIN TANHUB as receiver2 with (nolock)
+ON receiver2.nTransactionCashInId = _Transactions.nId    
+LEFT JOIN TANHUB as cashout with (nolock)
+ON cashout.nTransactionCashOutId = _Transactions.nId      
+LEFT JOIN TAIHUB   with (nolock)
+ON TAIHUB.nTransactionsId = _Transactions.nId        
+LEFT JOIN ShopKeeper with (nolock)
+ON ShopKeeper.nAccessId = _Transactions.nAccessId
+LEFT JOIN Product
+ON Product.nId = _Transactions.nProductId
+LEFT JOIN ProductType
+ON ProductType.nId = Product.nProductTypeId
+
+
+
+
+where _Transactions.nId > (select max(transactionsnId) from Daily_transactions_extended)
+
+
+
+order by _Transactions.nId asc
+
+
+</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>144</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Extraction depuis table 2</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>ovh</connection>
+    <sql>SELECT distinct
+_Transactions.nId AS transactionsnId,
+TAIHUB.sNeiCode AS sNenCode,            
+Product.sName AS product,
+ISNULL(Product.nId, 0) AS productId,
+ProductType.sName AS productType,
+ProductType.nid as productTypeId,
+_Transactions.dInsertion AS dinsertion,
+CASE WHEN receiver.sFirstname is null THEN receiver2.sReceiverFirstname + ' ' + receiver2.sReceiverLastName ELSE receiver.sFirstname + ' ' + receiver.sLastName END AS receivername,
+
+receiver.nid as idReceiver,
+receiver.sCin AS receiverID,
+receiver.sIdType AS receiverIdType,
+receiver.sFirstname as receiverFirstname,
+receiver.sLastname as receiverLastname,
+receiver.dBirthday as receiverBirthDay,
+'receiver.sGSM' as receiverPhone,
+receiver.dEndValidity as receiverIdEndValidity,
+
+sender.nid as idSender,
+sender.sCin AS senderID,
+sender.sIdType AS senderIdType,
+sender.sFirstname as senderFirstname,
+sender.sLastname as senderLastname,
+sender.dBirthday as senderBirthDay,
+'sender.sGSM' as senderPhone,
+sender.dEndValidity as senderIdEndValidity,
+
+
+TransactionType.sName AS transactionType,
+TransactionStatus.sName AS transactionStatussName ,
+ISNULL(TransactionStatus.nId, 0) AS transactionStatus,
+Company.sName AS companysName,
+ISNULL(Company.nId, 0) AS companyId,
+Shop.sName AS shopName,
+Shop.sShopId AS sShopId,
+Shop.nId AS nShopId,
+ShopKeeper.sFirstname + ' ' + ShopKeeper.sLastName AS shopkeepersname,
+shopkeeper.nid as shopkeeperId,
+Shopkeeper.smatricule as shopkeeperMatricule,
+ISNULL(_Transactions.nAmount, 0) AS nAmount,
+ISNULL(_Transactions.nOperationFee, 0) AS nOperationFee,
+ISNULL(_Transactions.nServiceFee, 0) AS nServiceFee
+FROM _Transactions with (nolock)
+LEFT JOIN TransactionType
+ON TransactionType.nId = _Transactions.nTransactionTypeId
+LEFT JOIN TransactionStatus
+ON TransactionStatus.nId = _Transactions.nTransactionStatusId
+LEFT JOIN Shop  with (nolock)
+ON Shop.nId = _Transactions.nShopId
+LEFT JOIN Company  with (nolock)
+ON Company.nId = Shop.nCompanyId    
+LEFT JOIN Customer as sender  with (nolock)  
+ON sender.nId = _Transactions.nSenderId    
+LEFT JOIN Customer as receiver  with (nolock)  
+ON receiver.nId = _Transactions.nReceiverId    
+LEFT JOIN TANHUB as receiver2 with (nolock)
+ON receiver2.nTransactionCashInId = _Transactions.nId    
+LEFT JOIN TANHUB as cashout with (nolock)
+ON cashout.nTransactionCashOutId = _Transactions.nId      
+LEFT JOIN TAIHUB   with (nolock)
+ON TAIHUB.nTransactionsId = _Transactions.nId        
+LEFT JOIN ShopKeeper with (nolock)
+ON ShopKeeper.nAccessId = _Transactions.nAccessId
+LEFT JOIN Product
+ON Product.nId = _Transactions.nProductId
+LEFT JOIN ProductType
+ON ProductType.nId = Product.nProductTypeId
+
+where _Transactions.nId > 33593643
+
+
+</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>144</xloc>
+      <yloc>256</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insertion dans table</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>ovh</connection>
+    <schema />
+    <table>Daily_transactions_extended</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>transactionsnId</column_name>
+        <stream_name>transactionsnId</stream_name>
+      </field>
+      <field>
+        <column_name>sNenCode</column_name>
+        <stream_name>sNenCode</stream_name>
+      </field>
+      <field>
+        <column_name>product</column_name>
+        <stream_name>product</stream_name>
+      </field>
+      <field>
+        <column_name>productId</column_name>
+        <stream_name>productId</stream_name>
+      </field>
+      <field>
+        <column_name>productType</column_name>
+        <stream_name>productType</stream_name>
+      </field>
+      <field>
+        <column_name>productTypeId</column_name>
+        <stream_name>productTypeId</stream_name>
+      </field>
+      <field>
+        <column_name>dinsertion</column_name>
+        <stream_name>dinsertion</stream_name>
+      </field>
+      <field>
+        <column_name>receivername</column_name>
+        <stream_name>receivername</stream_name>
+      </field>
+      <field>
+        <column_name>idReceiver</column_name>
+        <stream_name>idReceiver</stream_name>
+      </field>
+      <field>
+        <column_name>receiverID</column_name>
+        <stream_name>receiverID</stream_name>
+      </field>
+      <field>
+        <column_name>receiverIdType</column_name>
+        <stream_name>receiverIdType</stream_name>
+      </field>
+      <field>
+        <column_name>receiverFirstname</column_name>
+        <stream_name>receiverFirstname</stream_name>
+      </field>
+      <field>
+        <column_name>receiverLastname</column_name>
+        <stream_name>receiverLastname</stream_name>
+      </field>
+      <field>
+        <column_name>receiverBirthDay</column_name>
+        <stream_name>receiverBirthDay</stream_name>
+      </field>
+      <field>
+        <column_name>receiverPhone</column_name>
+        <stream_name>receiverPhone</stream_name>
+      </field>
+      <field>
+        <column_name>receiverIdEndValidity</column_name>
+        <stream_name>receiverIdEndValidity</stream_name>
+      </field>
+      <field>
+        <column_name>idSender</column_name>
+        <stream_name>idSender</stream_name>
+      </field>
+      <field>
+        <column_name>senderID</column_name>
+        <stream_name>senderID</stream_name>
+      </field>
+      <field>
+        <column_name>senderIdType</column_name>
+        <stream_name>senderIdType</stream_name>
+      </field>
+      <field>
+        <column_name>senderFirstname</column_name>
+        <stream_name>senderFirstname</stream_name>
+      </field>
+      <field>
+        <column_name>senderLastname</column_name>
+        <stream_name>senderLastname</stream_name>
+      </field>
+      <field>
+        <column_name>senderBirthDay</column_name>
+        <stream_name>senderBirthDay</stream_name>
+      </field>
+      <field>
+        <column_name>senderPhone</column_name>
+        <stream_name>senderPhone</stream_name>
+      </field>
+      <field>
+        <column_name>senderIdEndValidity</column_name>
+        <stream_name>senderIdEndValidity</stream_name>
+      </field>
+      <field>
+        <column_name>transactionType</column_name>
+        <stream_name>transactionType</stream_name>
+      </field>
+      <field>
+        <column_name>transactionStatussName</column_name>
+        <stream_name>transactionStatussName</stream_name>
+      </field>
+      <field>
+        <column_name>transactionStatus</column_name>
+        <stream_name>transactionStatus</stream_name>
+      </field>
+      <field>
+        <column_name>companysName</column_name>
+        <stream_name>companysName</stream_name>
+      </field>
+      <field>
+        <column_name>companyId</column_name>
+        <stream_name>companyId</stream_name>
+      </field>
+      <field>
+        <column_name>shopName</column_name>
+        <stream_name>shopName</stream_name>
+      </field>
+      <field>
+        <column_name>sShopId</column_name>
+        <stream_name>sShopId</stream_name>
+      </field>
+      <field>
+        <column_name>nShopId</column_name>
+        <stream_name>nShopId</stream_name>
+      </field>
+      <field>
+        <column_name>shopkeepersname</column_name>
+        <stream_name>shopkeepersname</stream_name>
+      </field>
+      <field>
+        <column_name>shopkeeperId</column_name>
+        <stream_name>shopkeeperId</stream_name>
+      </field>
+      <field>
+        <column_name>shopkeeperMatricule</column_name>
+        <stream_name>shopkeeperMatricule</stream_name>
+      </field>
+      <field>
+        <column_name>nAmount</column_name>
+        <stream_name>nAmount</stream_name>
+      </field>
+      <field>
+        <column_name>nOperationFee</column_name>
+        <stream_name>nOperationFee</stream_name>
+      </field>
+      <field>
+        <column_name>nServiceFee</column_name>
+        <stream_name>nServiceFee</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>496</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Extraction depuis table 3</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>ovh</connection>
+    <sql>SELECT 
+_Transactions.nId AS transactionsnId,
+TAIHUB.sNeiCode AS sNenCode,            
+Product.sName AS product,
+ISNULL(Product.nId, 0) AS productId,
+ProductType.sName AS productType,
+ProductType.nid as productTypeId,
+_Transactions.dInsertion AS dinsertion,
+CASE WHEN receiver.sFirstname is null THEN receiver2.sReceiverFirstname + ' ' + receiver2.sReceiverLastName ELSE receiver.sFirstname + ' ' + receiver.sLastName END AS receivername,
+
+receiver.nid as idReceiver,
+receiver.sCin AS receiverID,
+receiver.sIdType AS receiverIdType,
+receiver.sFirstname as receiverFirstname,
+receiver.sLastname as receiverLastname,
+cast(receiver.dBirthday as varchar) as receiverBirthDay,
+'receiver.sGSM' as receiverPhone,
+cast(receiver.dEndValidity as date ) as receiverIdEndValidity,
+
+sender.nid as idSender,
+sender.sCin AS senderID,
+sender.sIdType AS senderIdType,
+sender.sFirstname as senderFirstname,
+sender.sLastname as senderLastname,
+cast(sender.dBirthday  as date)as senderBirthDay,
+'sender.sGSM' as senderPhone,
+cast(sender.dEndValidity as date) as senderIdEndValidity,
+
+
+TransactionType.sName AS transactionType,
+TransactionStatus.sName AS transactionStatussName ,
+ISNULL(TransactionStatus.nId, 0) AS transactionStatus,
+Company.sName AS companysName,
+ISNULL(Company.nId, 0) AS companyId,
+Shop.sName AS shopName,
+Shop.sShopId AS sShopId,
+Shop.nId AS nShopId,
+ShopKeeper.sFirstname + ' ' + ShopKeeper.sLastName AS shopkeepersname,
+shopkeeper.nid as shopkeeperId,
+Shopkeeper.smatricule as shopkeeperMatricule,
+ISNULL(_Transactions.nAmount, 0) AS nAmount,
+ISNULL(_Transactions.nOperationFee, 0) AS nOperationFee,
+ISNULL(_Transactions.nServiceFee, 0) AS nServiceFee
+FROM _Transactions with (nolock)
+LEFT JOIN TransactionType
+ON TransactionType.nId = _Transactions.nTransactionTypeId
+LEFT JOIN TransactionStatus
+ON TransactionStatus.nId = _Transactions.nTransactionStatusId
+LEFT JOIN Shop  with (nolock)
+ON Shop.nId = _Transactions.nShopId
+LEFT JOIN Company  with (nolock)
+ON Company.nId = Shop.nCompanyId    
+LEFT JOIN Customer as sender  with (nolock)  
+ON sender.nId = _Transactions.nSenderId    
+LEFT JOIN Customer as receiver  with (nolock)  
+ON receiver.nId = _Transactions.nReceiverId    
+LEFT JOIN TANHUB as receiver2 with (nolock)
+ON receiver2.nTransactionCashInId = _Transactions.nId    
+LEFT JOIN TANHUB as cashout with (nolock)
+ON cashout.nTransactionCashOutId = _Transactions.nId      
+LEFT JOIN TAIHUB   with (nolock)
+ON TAIHUB.nTransactionsId = _Transactions.nId        
+LEFT JOIN ShopKeeper with (nolock)
+ON ShopKeeper.nAccessId = _Transactions.nAccessId
+LEFT JOIN Product
+ON Product.nId = _Transactions.nProductId
+LEFT JOIN ProductType
+ON ProductType.nId = Product.nProductTypeId
+
+where _Transactions.nId = 161063380
+
+order by _Transactions.nId asc
+
+
+
+
+</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>203</xloc>
+      <yloc>41</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>

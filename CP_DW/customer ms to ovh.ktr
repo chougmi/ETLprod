@@ -1,0 +1,2208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>customer ms to ovh</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2019/10/10 11:50:00.219</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2019/10/10 11:50:00.219</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>cashplusmaster</name>
+    <server>52.30.112.96</server>
+    <type>MSSQLNATIVE</type>
+    <access>Native</access>
+    <database>cash_plus</database>
+    <port>1433</port>
+    <username>biuser</username>
+    <password>Encrypted 2dbb2ea981795dfd68011e53f9adf91fe</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQLUseIntegratedSecurity</code>
+        <attribute>false</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1433</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>ms</name>
+    <server>cashplusslave1.cpkuecwscz72.eu-central-1.rds.amazonaws.com</server>
+    <type>MSSQLNATIVE</type>
+    <access>Native</access>
+    <database>cash_plus</database>
+    <port>1433</port>
+    <username>biuser</username>
+    <password>Encrypted 2dbb2ea981795dfd68011e53f9adf91fe</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQLUseIntegratedSecurity</code>
+        <attribute>false</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1433</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>ovh</name>
+    <server>51.38.62.93</server>
+    <type>MSSQLNATIVE</type>
+    <access>Native</access>
+    <database>bi</database>
+    <port>14332</port>
+    <username>bi</username>
+    <password>Encrypted 2f5c9d9ae53dda6a1ff00af5dd8abf6f4</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQLUseIntegratedSecurity</code>
+        <attribute>false</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>14332</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>ok</from>
+      <to>Insertion dans table</to>
+      <enabled>Y</enabled>
+    </hop>
+    <hop>
+      <from>Extraction depuis table 2</from>
+      <to>Insertion dans table 2</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Extraction depuis table 2 2</from>
+      <to>Insertion dans table 2 2</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Extraction depuis table 2 2 2</from>
+      <to>Insertion dans table 2 2 2</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Extraction depuis table 3</from>
+      <to>Insertion dans table 3</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Extraction depuis table 4</from>
+      <to>Insertion dans table 4</to>
+      <enabled>N</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Extraction depuis table 2</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>cashplusmaster</connection>
+    <sql>
+
+
+SELECT
+  nId
+, dInsertion
+, nMentorAccessId
+, sIdType
+, sCIN
+, sCINFile
+, sLastName
+, sFirstName
+, dBirthday
+, sAddress
+, sFidelity
+, sPostCode
+, sSex
+, sOccupation
+, nCustomerStatusId
+, nCorrect
+, bNational
+, nCountryId
+, nCitiesId
+, sScandocToken
+
+FROM dbo.Customer
+where nid in (
+22222391
+,22233369
+,22222438
+,22233287
+,22222273
+,22336225
+,22222364
+,22222148
+,22222197
+,22233372
+,22222446
+,22222412
+,22222369
+,22222367
+,22212652
+,22222409
+,22212649
+,22233374
+,22222471
+,22222142
+,22222237
+,22222337
+,22233367
+,22222201
+,22222244
+,22222442
+,22212641
+,22222408
+,22222357
+,22222171
+,22233304
+,22222258
+,22222321
+,22233368
+,22222422
+,22222417
+,22222460
+,22222260
+,22233381
+,21441413
+,22233332
+,3324780
+,22222186
+,22212669
+,22222493
+,22222479
+,22222350
+,22222365
+,22233312
+,22233295
+,22222229
+,22222450
+,22233310
+,22222474
+,22212664
+,2564217
+,22233321
+,22233336
+,22233371
+,22222190
+,2556442
+,22212642
+,2558289
+,22222309
+,22233298
+,22222427
+,22233316
+,22222219
+,22222385
+,22222228
+,22222185
+,22222317
+,22222160
+,22212668
+,22222292
+,22233324
+,2558108
+,22222179
+,22233360
+,2554751
+,22222413
+,22212651
+,22222418
+,22222404
+,21441410
+,2565518)
+
+</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>159</xloc>
+      <yloc>306</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Extraction depuis table 2 2</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>ms</connection>
+    <sql>SELECT
+  id
+, card_number
+, code_card
+, client_id
+, account_id
+, valide_from
+, valide_to
+, created_date
+, created_by
+, card_status_id
+, shop_id
+, card_balance
+, card_pending
+FROM VIEW_CARD_AFFECTATION
+</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>159</xloc>
+      <yloc>460</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Extraction depuis table 2 2 2</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>cashplusmaster</connection>
+    <sql> select top 100 * from EShopAccess</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>332</xloc>
+      <yloc>76</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Extraction depuis table 3</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>cashplusmaster</connection>
+    <sql>SELECT
+  nId
+, dInsertion
+, nMentorAccessId
+, sIdType
+, sCIN
+, sCINFile
+, sLastName
+, sFirstName
+, dBirthday
+, sAddress
+, sFidelity
+, sPostCode
+, sSex
+, sOccupation
+, nCustomerStatusId
+, nCorrect
+, bNational
+, nCountryId
+, nCitiesId
+, sScandocToken
+, dEndValidity
+, sPhotoIdType
+, sPhotoIdNumber
+, sPhotoIdState
+, sPhotoIdCountry
+, sEmail
+from customer
+
+
+
+
+
+</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>408</xloc>
+      <yloc>261</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Extraction depuis table 4</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>cashplusmaster</connection>
+    <sql>SELECT
+  nId
+, dInsertion
+, nMentorAccessId
+, sIdType
+, sCIN
+, sCINFile
+, sLastName
+, sFirstName
+, dBirthday
+, sAddress
+, sFidelity
+, sPostCode
+, sSex
+, sOccupation
+, nCustomerStatusId
+, nCorrect
+, bNational
+, nCountryId
+, nCitiesId
+, sScandocToken
+, dEndValidity
+, sPhotoIdType
+, sPhotoIdNumber
+, sPhotoIdState
+, sPhotoIdCountry
+, sEmail
+,update_date
+,updated_by
+from customer
+where nid in (126985,
+183014,
+184550,
+59999,
+328108,
+94261,
+241404,
+120040,
+166966,
+170712,
+288559,
+2562334,
+198277,
+317748,
+49546,
+334830,
+339040,
+325334,
+301974,
+277510,
+282354,
+7048764,
+104668,
+262149,
+71427,
+215657,
+217927,
+333664,
+92434,
+92519,
+341852,
+114911,
+117872,
+6913560,
+169229,
+287219,
+203089,
+204023,
+316480,
+318271,
+102330,
+321294,
+22842,
+179304,
+293135,
+294688,
+266327,
+53694,
+228189,
+231397,
+232033,
+337842,
+338208,
+42098,
+129247,
+107655,
+111467,
+57987,
+115075,
+118126,
+274579,
+20072,
+295839,
+297443,
+297818,
+250104,
+29593,
+208881,
+325694,
+92472,
+62531,
+62881,
+173635,
+8894,
+16671,
+319253,
+334829,
+39124,
+300816,
+259950,
+11773,
+112699,
+125400,
+126203,
+224607,
+224940,
+6884724,
+55340,
+59688,
+212154,
+212571,
+146306,
+178947,
+40181,
+193337,
+232878,
+6930448,
+182821,
+186604,
+1624905,
+140871,
+259097,
+61230,
+149729,
+278290,
+273274,
+273508,
+67280,
+101806,
+289313,
+2429952,
+200069,
+319193,
+33350,
+190748,
+191211,
+247665,
+49687,
+231260,
+232387,
+325379,
+127565,
+105403,
+3072,
+257789,
+240524,
+347616,
+82990,
+86470,
+74370,
+80169,
+251271,
+3710,
+150293,
+264456,
+268298,
+20720,
+176667,
+291647,
+32037,
+325522,
+17180,
+317451,
+189652,
+185024,
+186146,
+303895,
+7073447,
+136853,
+140086,
+117447,
+6891122,
+87499,
+224668,
+289469,
+313605,
+314791,
+315541,
+177390,
+180998,
+325676,
+240605,
+5475,
+147438,
+271396,
+35216,
+36913,
+193634,
+307828,
+41039,
+43236,
+47123,
+242098,
+248139,
+127784,
+128513,
+131621,
+138216,
+142460,
+11457,
+111551,
+158972,
+172876,
+284516,
+293647,
+118260,
+155471,
+392376,
+8499,
+150541,
+324742,
+229800,
+335395,
+337660,
+6943671,
+318190,
+34171,
+189088,
+306451,
+133054,
+186583,
+186584,
+168935,
+56195,
+57245,
+59889,
+212069,
+93063,
+153445,
+274309,
+20778,
+175101,
+178460,
+178796,
+243943,
+321337,
+231876,
+191414,
+310305,
+305094,
+329058,
+161280,
+283316,
+123076,
+244461,
+313431,
+347042,
+70317,
+224319,
+292590,
+114823,
+118182,
+98176,
+102070,
+29255,
+29669,
+211734,
+158661,
+276710,
+69092,
+71071,
+6885915,
+21828,
+296959,
+234605,
+345423,
+77123,
+253053,
+266743,
+151409,
+151766,
+243972,
+229875,
+231068,
+336149,
+314221,
+333149,
+109576,
+276961,
+279767,
+69736,
+124609,
+62382,
+65749,
+18619,
+201623,
+10733,
+143606,
+146278,
+269216,
+21036,
+133703,
+210856,
+325704,
+39754,
+192999,
+311028,
+311121,
+52381,
+336098,
+338063,
+187942,
+299080,
+12828,
+165239,
+278024,
+95247,
+66703,
+67678,
+214673,
+217256,
+115469,
+158028,
+273944,
+75098,
+79135,
+256121,
+170787,
+319502,
+24719,
+26157,
+293464,
+323407,
+40172,
+189737,
+190541,
+193213,
+308240,
+49030,
+263789,
+128449,
+188781,
+163779,
+279980,
+56170,
+332609,
+167338,
+342354,
+347164,
+348555,
+78528,
+9172,
+147818,
+291146,
+315797,
+27441,
+31785,
+312723,
+126746,
+131792,
+183953,
+302694,
+1836,
+140067,
+211910,
+212663,
+217947,
+333995,
+334131,
+65778,
+348001,
+6864508,
+167943,
+283106,
+7085584,
+272644,
+77678,
+256468,
+174542,
+176716,
+295074,
+6954322,
+317551,
+322316,
+45973,
+53627,
+106797,
+140557,
+141947,
+259131,
+129512,
+181720,
+182124,
+11170,
+160799,
+162135,
+222917,
+224622,
+76818,
+145505,
+271032,
+200958,
+94216,
+346907,
+248218,
+275244,
+1384552,
+335394,
+194087,
+6978606,
+44579,
+243673,
+40824,
+144040,
+336873,
+45619)</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>211</xloc>
+      <yloc>32</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insertion dans table</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>ovh</connection>
+    <schema />
+    <table>Customer</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>nId</column_name>
+        <stream_name>nId</stream_name>
+      </field>
+      <field>
+        <column_name>dInsertion</column_name>
+        <stream_name>dInsertion</stream_name>
+      </field>
+      <field>
+        <column_name>nMentorAccessId</column_name>
+        <stream_name>nMentorAccessId</stream_name>
+      </field>
+      <field>
+        <column_name>sIdType</column_name>
+        <stream_name>sIdType</stream_name>
+      </field>
+      <field>
+        <column_name>sCIN</column_name>
+        <stream_name>sCIN</stream_name>
+      </field>
+      <field>
+        <column_name>sCINFile</column_name>
+        <stream_name>sCINFile</stream_name>
+      </field>
+      <field>
+        <column_name>sLastName</column_name>
+        <stream_name>sLastName</stream_name>
+      </field>
+      <field>
+        <column_name>sFirstName</column_name>
+        <stream_name>sFirstName</stream_name>
+      </field>
+      <field>
+        <column_name>dBirthday</column_name>
+        <stream_name>dBirthday</stream_name>
+      </field>
+      <field>
+        <column_name>sAddress</column_name>
+        <stream_name>sAddress</stream_name>
+      </field>
+      <field>
+        <column_name>sFidelity</column_name>
+        <stream_name>sFidelity</stream_name>
+      </field>
+      <field>
+        <column_name>sPostCode</column_name>
+        <stream_name>sPostCode</stream_name>
+      </field>
+      <field>
+        <column_name>sSex</column_name>
+        <stream_name>sSex</stream_name>
+      </field>
+      <field>
+        <column_name>sOccupation</column_name>
+        <stream_name>sOccupation</stream_name>
+      </field>
+      <field>
+        <column_name>nCustomerStatusId</column_name>
+        <stream_name>nCustomerStatusId</stream_name>
+      </field>
+      <field>
+        <column_name>nCorrect</column_name>
+        <stream_name>nCorrect</stream_name>
+      </field>
+      <field>
+        <column_name>bNational</column_name>
+        <stream_name>bNational</stream_name>
+      </field>
+      <field>
+        <column_name>nCountryId</column_name>
+        <stream_name>nCountryId</stream_name>
+      </field>
+      <field>
+        <column_name>nCitiesId</column_name>
+        <stream_name>nCitiesId</stream_name>
+      </field>
+      <field>
+        <column_name>sScandocToken</column_name>
+        <stream_name>sScandocToken</stream_name>
+      </field>
+      <field>
+        <column_name>dEndValidity</column_name>
+        <stream_name>dEndValidity</stream_name>
+      </field>
+      <field>
+        <column_name>sPhotoIdType</column_name>
+        <stream_name>sPhotoIdType</stream_name>
+      </field>
+      <field>
+        <column_name>sPhotoIdNumber</column_name>
+        <stream_name>sPhotoIdNumber</stream_name>
+      </field>
+      <field>
+        <column_name>sPhotoIdState</column_name>
+        <stream_name>sPhotoIdState</stream_name>
+      </field>
+      <field>
+        <column_name>sPhotoIdCountry</column_name>
+        <stream_name>sPhotoIdCountry</stream_name>
+      </field>
+      <field>
+        <column_name>sEmail</column_name>
+        <stream_name>sEmail</stream_name>
+      </field>
+      <field>
+        <column_name>update_date</column_name>
+        <stream_name>update_date</stream_name>
+      </field>
+      <field>
+        <column_name>updated_by</column_name>
+        <stream_name>updated_by</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>432</xloc>
+      <yloc>160</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insertion dans table 2</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>ovh</connection>
+    <schema />
+    <table>customer</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>nId</column_name>
+        <stream_name>nId</stream_name>
+      </field>
+      <field>
+        <column_name>dInsertion</column_name>
+        <stream_name>dInsertion</stream_name>
+      </field>
+      <field>
+        <column_name>nMentorAccessId</column_name>
+        <stream_name>nMentorAccessId</stream_name>
+      </field>
+      <field>
+        <column_name>sIdType</column_name>
+        <stream_name>sIdType</stream_name>
+      </field>
+      <field>
+        <column_name>sCIN</column_name>
+        <stream_name>sCIN</stream_name>
+      </field>
+      <field>
+        <column_name>sCINFile</column_name>
+        <stream_name>sCINFile</stream_name>
+      </field>
+      <field>
+        <column_name>sLastName</column_name>
+        <stream_name>sLastName</stream_name>
+      </field>
+      <field>
+        <column_name>sFirstName</column_name>
+        <stream_name>sFirstName</stream_name>
+      </field>
+      <field>
+        <column_name>dBirthday</column_name>
+        <stream_name>dBirthday</stream_name>
+      </field>
+      <field>
+        <column_name>sAddress</column_name>
+        <stream_name>sAddress</stream_name>
+      </field>
+      <field>
+        <column_name>sFidelity</column_name>
+        <stream_name>sFidelity</stream_name>
+      </field>
+      <field>
+        <column_name>sPostCode</column_name>
+        <stream_name>sPostCode</stream_name>
+      </field>
+      <field>
+        <column_name>sSex</column_name>
+        <stream_name>sSex</stream_name>
+      </field>
+      <field>
+        <column_name>sOccupation</column_name>
+        <stream_name>sOccupation</stream_name>
+      </field>
+      <field>
+        <column_name>nCustomerStatusId</column_name>
+        <stream_name>nCustomerStatusId</stream_name>
+      </field>
+      <field>
+        <column_name>nCorrect</column_name>
+        <stream_name>nCorrect</stream_name>
+      </field>
+      <field>
+        <column_name>bNational</column_name>
+        <stream_name>bNational</stream_name>
+      </field>
+      <field>
+        <column_name>nCountryId</column_name>
+        <stream_name>nCountryId</stream_name>
+      </field>
+      <field>
+        <column_name>nCitiesId</column_name>
+        <stream_name>nCitiesId</stream_name>
+      </field>
+      <field>
+        <column_name>sScandocToken</column_name>
+        <stream_name>sScandocToken</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>464</xloc>
+      <yloc>320</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insertion dans table 2 2</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>ovh</connection>
+    <schema />
+    <table>CARD_AFFECTATION</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>id</column_name>
+        <stream_name>id</stream_name>
+      </field>
+      <field>
+        <column_name>card_number</column_name>
+        <stream_name>card_number</stream_name>
+      </field>
+      <field>
+        <column_name>code_card</column_name>
+        <stream_name>code_card</stream_name>
+      </field>
+      <field>
+        <column_name>client_id</column_name>
+        <stream_name>client_id</stream_name>
+      </field>
+      <field>
+        <column_name>account_id</column_name>
+        <stream_name>account_id</stream_name>
+      </field>
+      <field>
+        <column_name>valide_from</column_name>
+        <stream_name>valide_from</stream_name>
+      </field>
+      <field>
+        <column_name>valide_to</column_name>
+        <stream_name>valide_to</stream_name>
+      </field>
+      <field>
+        <column_name>created_date</column_name>
+        <stream_name>created_date</stream_name>
+      </field>
+      <field>
+        <column_name>created_by</column_name>
+        <stream_name>created_by</stream_name>
+      </field>
+      <field>
+        <column_name>card_status_id</column_name>
+        <stream_name>card_status_id</stream_name>
+      </field>
+      <field>
+        <column_name>shop_id</column_name>
+        <stream_name>shop_id</stream_name>
+      </field>
+      <field>
+        <column_name>card_balance</column_name>
+        <stream_name>card_balance</stream_name>
+      </field>
+      <field>
+        <column_name>card_pending</column_name>
+        <stream_name>card_pending</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>479</xloc>
+      <yloc>476</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insertion dans table 2 2 2</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>ovh</connection>
+    <schema />
+    <table>EShopAccess</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>nId</column_name>
+        <stream_name>nId</stream_name>
+      </field>
+      <field>
+        <column_name>nShopId</column_name>
+        <stream_name>nShopId</stream_name>
+      </field>
+      <field>
+        <column_name>sLogin</column_name>
+        <stream_name>sLogin</stream_name>
+      </field>
+      <field>
+        <column_name>sPwd</column_name>
+        <stream_name>sPwd</stream_name>
+      </field>
+      <field>
+        <column_name>sPin</column_name>
+        <stream_name>sPin</stream_name>
+      </field>
+      <field>
+        <column_name>dPinGenerated</column_name>
+        <stream_name>dPinGenerated</stream_name>
+      </field>
+      <field>
+        <column_name>sIpRequestedPin</column_name>
+        <stream_name>sIpRequestedPin</stream_name>
+      </field>
+      <field>
+        <column_name>bPinControl</column_name>
+        <stream_name>bPinControl</stream_name>
+      </field>
+      <field>
+        <column_name>nCustomerId</column_name>
+        <stream_name>nCustomerId</stream_name>
+      </field>
+      <field>
+        <column_name>bNotify</column_name>
+        <stream_name>bNotify</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>652</xloc>
+      <yloc>92</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insertion dans table 3</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>ovh</connection>
+    <schema />
+    <table>customer</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>nId</column_name>
+        <stream_name>nId</stream_name>
+      </field>
+      <field>
+        <column_name>dInsertion</column_name>
+        <stream_name>dInsertion</stream_name>
+      </field>
+      <field>
+        <column_name>nMentorAccessId</column_name>
+        <stream_name>nMentorAccessId</stream_name>
+      </field>
+      <field>
+        <column_name>sIdType</column_name>
+        <stream_name>sIdType</stream_name>
+      </field>
+      <field>
+        <column_name>sCIN</column_name>
+        <stream_name>sCIN</stream_name>
+      </field>
+      <field>
+        <column_name>sCINFile</column_name>
+        <stream_name>sCINFile</stream_name>
+      </field>
+      <field>
+        <column_name>sLastName</column_name>
+        <stream_name>sLastName</stream_name>
+      </field>
+      <field>
+        <column_name>sFirstName</column_name>
+        <stream_name>sFirstName</stream_name>
+      </field>
+      <field>
+        <column_name>dBirthday</column_name>
+        <stream_name>dBirthday</stream_name>
+      </field>
+      <field>
+        <column_name>sAddress</column_name>
+        <stream_name>sAddress</stream_name>
+      </field>
+      <field>
+        <column_name>sFidelity</column_name>
+        <stream_name>sFidelity</stream_name>
+      </field>
+      <field>
+        <column_name>sPostCode</column_name>
+        <stream_name>sPostCode</stream_name>
+      </field>
+      <field>
+        <column_name>sSex</column_name>
+        <stream_name>sSex</stream_name>
+      </field>
+      <field>
+        <column_name>sOccupation</column_name>
+        <stream_name>sOccupation</stream_name>
+      </field>
+      <field>
+        <column_name>nCustomerStatusId</column_name>
+        <stream_name>nCustomerStatusId</stream_name>
+      </field>
+      <field>
+        <column_name>nCorrect</column_name>
+        <stream_name>nCorrect</stream_name>
+      </field>
+      <field>
+        <column_name>bNational</column_name>
+        <stream_name>bNational</stream_name>
+      </field>
+      <field>
+        <column_name>nCountryId</column_name>
+        <stream_name>nCountryId</stream_name>
+      </field>
+      <field>
+        <column_name>nCitiesId</column_name>
+        <stream_name>nCitiesId</stream_name>
+      </field>
+      <field>
+        <column_name>sScandocToken</column_name>
+        <stream_name>sScandocToken</stream_name>
+      </field>
+      <field>
+        <column_name>dEndValidity</column_name>
+        <stream_name>dEndValidity</stream_name>
+      </field>
+      <field>
+        <column_name>sPhotoIdType</column_name>
+        <stream_name>sPhotoIdType</stream_name>
+      </field>
+      <field>
+        <column_name>sPhotoIdNumber</column_name>
+        <stream_name>sPhotoIdNumber</stream_name>
+      </field>
+      <field>
+        <column_name>sPhotoIdState</column_name>
+        <stream_name>sPhotoIdState</stream_name>
+      </field>
+      <field>
+        <column_name>sPhotoIdCountry</column_name>
+        <stream_name>sPhotoIdCountry</stream_name>
+      </field>
+      <field>
+        <column_name>sEmail</column_name>
+        <stream_name>sEmail</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>728</xloc>
+      <yloc>277</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insertion dans table 4</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>ovh</connection>
+    <schema />
+    <table>customer</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>nId</column_name>
+        <stream_name>nId</stream_name>
+      </field>
+      <field>
+        <column_name>dInsertion</column_name>
+        <stream_name>dInsertion</stream_name>
+      </field>
+      <field>
+        <column_name>nMentorAccessId</column_name>
+        <stream_name>nMentorAccessId</stream_name>
+      </field>
+      <field>
+        <column_name>sIdType</column_name>
+        <stream_name>sIdType</stream_name>
+      </field>
+      <field>
+        <column_name>sCIN</column_name>
+        <stream_name>sCIN</stream_name>
+      </field>
+      <field>
+        <column_name>sCINFile</column_name>
+        <stream_name>sCINFile</stream_name>
+      </field>
+      <field>
+        <column_name>sLastName</column_name>
+        <stream_name>sLastName</stream_name>
+      </field>
+      <field>
+        <column_name>sFirstName</column_name>
+        <stream_name>sFirstName</stream_name>
+      </field>
+      <field>
+        <column_name>dBirthday</column_name>
+        <stream_name>dBirthday</stream_name>
+      </field>
+      <field>
+        <column_name>sAddress</column_name>
+        <stream_name>sAddress</stream_name>
+      </field>
+      <field>
+        <column_name>sFidelity</column_name>
+        <stream_name>sFidelity</stream_name>
+      </field>
+      <field>
+        <column_name>sPostCode</column_name>
+        <stream_name>sPostCode</stream_name>
+      </field>
+      <field>
+        <column_name>sSex</column_name>
+        <stream_name>sSex</stream_name>
+      </field>
+      <field>
+        <column_name>sOccupation</column_name>
+        <stream_name>sOccupation</stream_name>
+      </field>
+      <field>
+        <column_name>nCustomerStatusId</column_name>
+        <stream_name>nCustomerStatusId</stream_name>
+      </field>
+      <field>
+        <column_name>nCorrect</column_name>
+        <stream_name>nCorrect</stream_name>
+      </field>
+      <field>
+        <column_name>bNational</column_name>
+        <stream_name>bNational</stream_name>
+      </field>
+      <field>
+        <column_name>nCountryId</column_name>
+        <stream_name>nCountryId</stream_name>
+      </field>
+      <field>
+        <column_name>nCitiesId</column_name>
+        <stream_name>nCitiesId</stream_name>
+      </field>
+      <field>
+        <column_name>sScandocToken</column_name>
+        <stream_name>sScandocToken</stream_name>
+      </field>
+      <field>
+        <column_name>dEndValidity</column_name>
+        <stream_name>dEndValidity</stream_name>
+      </field>
+      <field>
+        <column_name>sPhotoIdType</column_name>
+        <stream_name>sPhotoIdType</stream_name>
+      </field>
+      <field>
+        <column_name>sPhotoIdNumber</column_name>
+        <stream_name>sPhotoIdNumber</stream_name>
+      </field>
+      <field>
+        <column_name>sPhotoIdState</column_name>
+        <stream_name>sPhotoIdState</stream_name>
+      </field>
+      <field>
+        <column_name>sPhotoIdCountry</column_name>
+        <stream_name>sPhotoIdCountry</stream_name>
+      </field>
+      <field>
+        <column_name>sEmail</column_name>
+        <stream_name>sEmail</stream_name>
+      </field>
+      <field>
+        <column_name>update_date</column_name>
+        <stream_name>update_date</stream_name>
+      </field>
+      <field>
+        <column_name>updated_by</column_name>
+        <stream_name>updated_by</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>531</xloc>
+      <yloc>48</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>ok</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>cashplusmaster</connection>
+    <sql>SELECT
+  nId
+, dInsertion
+, nMentorAccessId
+, sIdType
+, sCIN
+, sCINFile
+, sLastName
+, sFirstName
+, dBirthday
+, sAddress
+, sFidelity
+, sPostCode
+, sSex
+, sOccupation
+, nCustomerStatusId
+, nCorrect
+, bNational
+, nCountryId
+, nCitiesId
+, sScandocToken
+, convert(date, dEndValidity,103) as dEndValidity
+, sPhotoIdType
+, sPhotoIdNumber
+, sPhotoIdState
+, sPhotoIdCountry
+, sEmail
+,update_date
+,updated_by
+from customer
+
+where nId > ${MAX_ID_CUSTOMER}
+order by nId asc
+
+
+</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>112</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>

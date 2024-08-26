@@ -1,0 +1,1338 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>get journal ms</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2019/10/31 11:23:18.263</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2019/10/31 11:23:18.263</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>ovh</name>
+    <server>51.38.62.93</server>
+    <type>MSSQLNATIVE</type>
+    <access>Native</access>
+    <database>bi</database>
+    <port>14332</port>
+    <username>bi</username>
+    <password>Encrypted 2f5c9d9ae53dda6a1ff00af5dd8abf6f4</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQLUseIntegratedSecurity</code>
+        <attribute>false</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>14332</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>Extraction depuis table</from>
+      <to>Insertion dans table</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Extraction depuis table 2</from>
+      <to>Insertion dans table 2</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Extraction depuis table</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>ovh</connection>
+    <sql>SELECT  
+report.tp as Type_Produit,
+report.pr as Produit,
+report.nId,
+report.codeOp as code_Operation,
+report.dInsertion,
+report.dDiaryDate as date_journal,
+report.nShopId,Shop.sShopId, Shop.sName as sShopName,report.nCompanyId,
+ISNULL(Company.sName, 'Cash+') as sCompanyName,
+report.amount,
+report.com, report.comFR, report.comId, report.comment,
+report.var1, report.var2, report.var3, report.var4, report.var5
+ FROM (
+
+	SELECT
+
+  'Transfert' as tp,
+  Product.sName as pr,
+  DR.nTransactionID as nId,
+	CASE WHEN DR.nProductId = 1 THEN '-' ELSE DR.sCodeTransaction END as codeOp,
+  DR.dInsertion,
+  DR.dDiaryDate,
+  DR.nShopId, DR.nCompanyId,
+  DR.nAmountWithComission as amount,
+  DR.nComission as com,
+  DR.nComissionFranchise as comFR,
+  DR.nComissionId as comId,
+  '' as comment,
+  CASE WHEN DR.bAjust=1 AND DR.bAjustementType=0 THEN 'ajustee (ajout)' 
+       WHEN DR.bAjust=1 AND DR.bAjustementType=1 THEN 'ajustee (suppression)' 
+       ELSE 'reguliere' END as var1,
+  '' as var2, '' as var3, '' as var4, '' as var5
+
+FROM Diary_DailyReport DR
+LEFT JOIN Product ON DR.nProductId = Product.nId
+
+UNION
+
+SELECT
+  'ALM' as tp,
+  Comission_ProductId.sName as pr,
+  DALM.nPayExpressAdviceId as nId,
+	DALM.sMicroFilmReference as codeOp,
+  DALM.dInsertion,DALM.dDiaryDate, DALM.nShopId, DALM.nCompanyId,
+  DALM.nAmount, NULL as com, DALM.nComissionFranchise as comFR, DALM.nComissionId as comId,
+  '' as comment,
+  '' as var1, '' as var2, '' as var3, '' as var4, '' as var5
+
+  FROM Diary_DailyALM DALM
+  LEFT JOIN Comission_ProductId ON DALM.sBillerId = Comission_ProductId.sProductCode
+
+UNION
+
+SELECT
+  'Change Devise' as tp,
+   CASE WHEN nTypeOperation = 1 THEN 'Achat'
+			  WHEN nTypeOperation = 2 THEN 'Vente'
+				ELSE 'Cession' END as pr,
+	DChange.nId,
+  DChange.nIdOperation as codeOp,
+  DChange.dInsertion, DChange.dDiaryDate,
+	DChange.nShopId, DChange.nCompanyId,
+	CASE WHEN nTypeOperation = 1
+						AND ISNULL(Diary_ChangeDevise.nContreValeurAmount1, 0) &lt;&gt; 0 THEN DChange.nDeviseMad
+			 WHEN nTypeOperation = 2
+						AND ISNULL(Diary_ChangeDevise.nContreValeurAmount2, 0) &lt;&gt; 0 THEN DChange.nDeviseMad
+			 WHEN nTypeOperation = 3
+						AND ISNULL(Diary_ChangeDevise.nContreValeurAmount3, 0) &lt;&gt; 0 THEN DChange.nDeviseMad
+			 ELSE 0
+	END as nDeviseMad,
+	NULL as com, DChange.nComissionFranchise as comFR, DChange.nComissionId as comId,
+  'var1=initialDeviseAmount' as comment, CONVERT(varchar(10), DChange.nDeviseAmount) as var1, 'commission et commissionFR non Fiables Avant le 1er Novembre' as var2, '' as var3, '' as var4, '' as var5
+  FROM Diary_DailyDevise DChange
+	LEFT JOIN Diary_ChangeDevise
+	ON CONVERT(DATE, DChange.dDiaryDate, 110) = CONVERT(DATE, Diary_ChangeDevise.dDiaryDate, 110)
+		 AND DChange.nShopId = Diary_ChangeDevise.nShopId
+
+UNION
+   SELECT
+    'SpeedBox' as tp, 'SpeedBox' as pr,
+    DSpeed.nSpeedBoxListingId as nId,  '-' as codeOp,
+    DSpeed.dInsertion, DSpeed.dDiaryDate, DSpeed.nShopId, DSpeed.nCompanyId,
+    DSpeed.nAmount, NULL as com, DSpeed.nComissionFranchise as comFR, DSpeed.nComissionId as comId,
+    '' as comment, '' as var1, '' as var2, '' as var3, '' as var4, '' as var5
+    FROM Diary_DailySpeedBox DSpeed
+
+UNION
+SELECT
+  'Correction' as tp, 'Correction' as pr,
+  DCorr.nId as nId,  '-' as codeOp,
+  DCorr.dInsertion, DCorr.dDate as dDiaryDate, DCorr.nShopId, DCorr.nCompanyId,
+  DCorr.nVolumeAmount, DCorr.nComission as com, DCorr.nComissionFranchise as comFR, 0 as comId,
+  DCorr.sComment as comment, '' as var1, '' as var2, '' as var3, '' as var4, '' as var5
+  FROM Diary_ManualCorrection DCorr
+
+UNION
+
+   SELECT
+    'Alimentation company' as tp, 'alimentation company' as pr,
+    DAlim.nAlimentationId as nId,  '-' as codeOp,
+    DAlim.dInsertion, DAlim.dDiaryDate, 0 as nShopId, Dalim.nCompanyId,
+    DAlim.nAmount, NULL as com, NULL as comFR, NULL as comId,
+    '' as comment, '' as var1, '' as var2, '' as var3, '' as var4, '' as var5
+    FROM Diary_Alimentation DAlim
+
+UNION
+
+   SELECT
+    'Versement shop' as tp, 'versement shop' as pr,
+    DV.nVersementId as nId,  '-' as codeOp,
+    DV.dInsertion, DV.dDiaryDate, DV.nShopId as nShopId, Shop.nCompanyId,
+    DV.nMontantVersed as nAmount, NULL as com, NULL as comFR, NULL as comId,
+    '' as comment, Alim_VersementType.sLabel as var1, '' as var2, '' as var3, '' as var4, '' as var5
+    FROM Diary_Versement DV
+		LEFT JOIN Shop ON DV.nShopId=Shop.nId
+		LEFT JOIN Alim_Versement ON DV.nVersementid = Alim_Versement.nId
+		LEFT JOIN Alim_VersementType ON Alim_Versement.nVersementType = Alim_VersementType.nId
+
+UNION
+
+   SELECT
+    'Versement company' as tp, 'versement company' as pr,
+    DV.nVersementId as nId,  '-' as codeOp,
+    DV.dInsertion, DV.dDiaryDate, 0 as nShopId, DV.nCompanyId,
+    DV.nMontantVersed as nAmount, NULL as com, NULL as comFR, NULL as comId,
+    '' as comment, Alim_VersementType.sLabel as var1, '' as var2, '' as var3, '' as var4, '' as var5
+    FROM DiaryCompany_Versement DV
+		LEFT JOIN Alim_Versement ON DV.nVersementid = Alim_Versement.nId
+		LEFT JOIN Alim_VersementType ON Alim_Versement.nVersementType = Alim_VersementType.nId
+
+UNION 
+   SELECT
+    'Recharge' as tp,
+    Comission_ProductId.sName as pr,
+    0 as nId,
+    '' as codeOp,
+    Diary_Recharge.dInsertion,
+    Diary_Recharge.dDiaryDate, Diary_Recharge.nShopId, Diary_Recharge.nCompanyId,
+    Diary_Recharge.nAmountRecharges, 
+    NULL as com, 
+    Diary_Recharge.nComissionFranchise as comFR, 
+    0 as comId,
+    'var1=nombreRecharges' as comment,
+    CONVERT(varchar(10), Diary_Recharge.nRecharges) as var1, '' as var2, '' as var3, '' as var4, '' as var5
+
+    FROM Diary_Recharge
+    LEFT JOIN Comission_ProductId ON Comission_ProductId.nid = 12
+
+UNION
+   SELECT
+    'CTM' as tp,
+    Comission_ProductId.sName as pr,
+    Diary_DailyCTM.nTransactionCTMId as nId,
+    '' as codeOp,
+    Diary_DailyCTM.dInsertion,
+    Diary_DailyCTM.dDiaryDate, Diary_DailyCTM.nShopId, Diary_DailyCTM.nCompanyId,
+    Diary_DailyCTM.nAmount, 
+    NULL as com, 
+    Diary_DailyCTM.nComissionFranchise as comFR, 
+    Diary_DailyCTM.nComissionId as comId,
+    '' as comment,
+    '' as var1, '' as var2, '' as var3, '' as var4, '' as var5
+
+    FROM Diary_DailyCTM
+    LEFT JOIN Comission_ProductId ON Comission_ProductId.nid = 48
+
+UNION
+   SELECT
+    'Detaillant' as tp,
+    '' as pr,
+    0 as nId,
+    '' as codeOp,
+    Diary_Detaillant.dInsertion,
+    Diary_Detaillant.dDiaryDate, Diary_Detaillant.nShopId, Diary_Detaillant.nCompanyId,
+    0 as nAmount, 
+    NULL as com, 
+    Diary_Detaillant.nComissionFranchise as comFR, 
+    0 as comId,
+    'var1=detaillantId&amp;var2=nombreOperations' as comment,
+    CONVERT(varchar(10), Diary_Detaillant.nDetaillantId) as var1, CONVERT(varchar(10), Diary_Detaillant.nOperations) as var2, '' as var3, '' as var4, '' as var5
+
+    FROM Diary_Detaillant
+
+UNION
+  SELECT
+    'Detaillant Cash' as tp,
+    '' as pr,
+    0 as nId,
+    '' as codeOp,
+    Diary_Detaillant_Cash.dInsertion,
+    Diary_Detaillant_Cash.dDiaryDate, Diary_Detaillant_Cash.nShopId, Diary_Detaillant_Cash.nCompanyId,
+    Diary_Detaillant_Cash.nAlimAmount as nAmount, 
+    NULL as com, 
+    0 as comFR, 
+    0 as comId,
+    'var1=detaillantId&amp;var2=operationType' as comment,
+    CONVERT(varchar(10), Diary_Detaillant_Cash.nDetaillantId) as var1, 
+    CONVERT(varchar(10), Diary_Detaillant_Cash.nOperationTypeId) as var2, '' as var3, '' as var4, '' as var5
+
+    FROM Diary_Detaillant_Cash
+
+UNION
+  SELECT
+    'Alimentation Propre' as tp,
+    'MAD' as pr,
+    Diary_MAD.nMADId as nId,
+    '' as codeOp,
+    Diary_MAD.dInsertion,
+    Diary_MAD.dDate as dDiaryDate, Alim_AlimentationPropre.nShopId, 0 as nCompanyId,
+    Diary_MAD.nAmount as nAmount, 
+    NULL as com, 
+    0 as comFR, 
+    0 as comId,
+    'var1=status' as comment,
+    CONVERT(varchar(10), Diary_MAD.nstatus) as var1, '' as var2, '' as var3, '' as var4, '' as var5
+
+    FROM Diary_MAD
+    LEFT JOIN Alim_MAD ON Diary_MAD.nMADId = Alim_Mad.nId
+    LEFT JOIN Alim_AlimentationPropre ON Alim_MAD.nAlimId = Alim_AlimentationPropre.nId
+    WHERE Diary_MAD.nstatus IN (1, 3, 0)
+
+UNION
+  SELECT
+    'Alimentation propre' as tp,
+    'RMP' as pr,
+    Alim_RMP.nid as nId,
+    '' as codeOp,
+    Alim_RMP.dInsertion,
+    Alim_RMP.dDate as dDiaryDate, Alim_AlimentationPropre.nShopId, 0 as nCompanyId,
+    Alim_RMP.nAmount as nAmount, 
+    NULL as com,
+    0 as comFR,
+    0 as comId,
+    '' as comment,
+    '' as var1, '' as var2, '' as var3, '' as var4, '' as var5
+
+    FROM Alim_RMP
+    LEFT JOIN Alim_AlimentationPropre ON Alim_RMP.nAlimId = Alim_AlimentationPropre.nId
+
+UNION
+  SELECT
+    'Interagence' as tp,
+    'Envoi' as pr,
+    Interagence.nid as nId,
+    '' as codeOp,
+    Interagence.dInsertion,
+    Interagence.dReceived as dDiaryDate, Interagence.nSenderShopId as nshopid, sendershop.ncompanyid as nCompanyId,
+    Interagence.nAmount * (-1) as nAmount, 
+    NULL as com,
+    0 as comFR,
+    0 as comId,
+    'var1=receivershopid' as comment,
+    CONVERT(varchar(10), Interagence.nreceivershopid) as var1, '' as var2, '' as var3, '' as var4, '' as var5
+
+    FROM Interagence
+    LEFT JOIN Shop sendershop ON interagence.nsendershopid = sendershop.nid
+
+    WHERE Interagence.bReceived = 1
+
+UNION
+  SELECT
+    'Interagence' as tp,
+    'Reception' as pr,
+    Interagence.nid as nId,
+    '' as codeOp,
+    Interagence.dInsertion,
+    Interagence.dReceived as dDiaryDate, Interagence.nReceiverShopId as nshopid, receivershop.ncompanyid as nCompanyId,
+    Interagence.nAmount as nAmount, 
+    NULL as com,
+    0 as comFR,
+    0 as comId,
+    'var1=sendershopid' as comment,
+    CONVERT(varchar(10), Interagence.nSenderShopId) as var1, '' as var2, '' as var3, '' as var4, '' as var5
+
+    FROM Interagence
+    LEFT JOIN Shop receivershop ON interagence.nreceivershopid = receivershop.nid
+
+    WHERE Interagence.bReceived = 1
+) report
+
+LEFT JOIN Shop ON report.nShopId = Shop.nId
+LEFT JOIN Company ON report.nCompanyId = Company.nId</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>80</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Extraction depuis table 2</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>ovh</connection>
+    <sql>SELECT 
+		FORMAT( cast(DR.dDiaryDate as date), 'd', 'fr-fr' ) as dDate,
+		MIN(Shop.sshopid) as sshopId,
+		'1020' as productId,
+		'Versement virement banque' AS sProductType,
+		alim_versementtype.sLabel as sProduct,
+		ISNULL(DR.nMontantVersed,0) AS nAmount
+FROM DiaryCompany_versement DR
+left join Alim_Versement ON DR.nVersementId = Alim_Versement.nId
+left join alim_versementtype ON Alim_Versement.nVersementType = alim_versementtype.nId
+left join shop on DR.nCompanyId = Shop.nCompanyId
+  WHERE CAST(DR.dDiaryDate AS DATE) = CONVERT(date, GETDATE()-1)
+		AND Alim_Versement.nVersementType IN (1)
+GROUP BY FORMAT ( cast(DR.dDiaryDate as date), 'd', 'fr-fr' ), alim_versementtype.sLabel, DR.nMontantVersed, DR.nId
+
+UNION
+
+SELECT
+		FORMAT( cast(DR.dDiaryDate as date), 'd', 'fr-fr' ) as dDate,
+		Shop.sshopid,
+		'1020' as productId,
+		'Versement virement banque' AS sProductType,
+		alim_versementtype.sLabel as sProduct,
+		ISNULL(DR.nMontantVersed,0) AS nAmount
+
+FROM Diary_versement DR
+left join Alim_Versement ON DR.nVersementId = Alim_Versement.nId
+left join alim_versementtype ON Alim_Versement.nVersementType = alim_versementtype.nId
+left join shop on DR.nShopId = Shop.nid
+ WHERE CAST(DR.dDiaryDate AS DATE) = CONVERT(date, GETDATE()-1)
+		AND Alim_Versement.nVersementType IN (3)
+UNION
+
+
+SELECT
+		FORMAT( cast(DR.dDiaryDate as date), 'd', 'fr-fr' ) as dDate,
+		MIN(Shop.sshopid) as sshopId,
+		'131' as productId,
+		'SHOP Interagence' AS sProductType,
+		alim_versementtype.sLabel as sProduct,
+		ISNULL(DR.nMontantVersed,0) AS nAmount
+FROM DiaryCompany_versement DR
+left join Alim_Versement ON DR.nVersementId = Alim_Versement.nId
+left join alim_versementtype ON Alim_Versement.nVersementType = alim_versementtype.nId
+left join shop on DR.nCompanyId = Shop.nCompanyId
+ WHERE CAST(DR.dDiaryDate AS DATE) = CONVERT(date, GETDATE()-1)
+		AND Alim_Versement.nVersementType IN (2)
+GROUP BY FORMAT ( cast(DR.dDiaryDate as date), 'd', 'fr-fr' ), alim_versementtype.sLabel, DR.nMontantVersed, DR.nId
+
+UNION
+
+SELECT
+		FORMAT( cast(DR.dDiaryDate as date), 'd', 'fr-fr' ) as dDate,
+		Shop.sshopid,
+		'131' as productId,
+		'SHOP Interagence' AS sProductType,
+		alim_versementtype.sLabel as sProduct,
+		ISNULL(DR.nMontantVersed,0) AS nAmount
+
+FROM Diary_versement DR
+left join Alim_Versement ON DR.nVersementId = Alim_Versement.nId
+left join alim_versementtype ON Alim_Versement.nVersementType = alim_versementtype.nId
+left join shop on DR.nShopId = Shop.nid
+ WHERE CAST(DR.dDiaryDate AS DATE) = CONVERT(date, GETDATE()-1)
+		AND Alim_Versement.nVersementType IN (4)
+UNION
+
+SELECT
+    FORMAT( cast(DR.dDiaryDate as date), 'd', 'fr-fr' ) as dDate,
+    Shop.sshopid,
+    CAST(Comission_ProductId.nProductId AS varchar) as productId,
+    'Transactions' AS sProductType,
+    Product.sName as sProduct,
+    SUM(ISNULL(DR.nAmountResult,0)) AS nAmount
+
+FROM Diary_Transaction DR
+left join shop on DR.nShopId = Shop.nid
+LEFT JOIN Product on DR.nProductId = Product.nid
+LEFT JOIN Comission_ProductId ON Comission_ProductId.nProductId = DR.nProductId
+   WHERE CAST(DR.dDiaryDate AS DATE) = CONVERT(date, GETDATE()-1)
+GROUP BY FORMAT ( cast(DR.dDiaryDate as date), 'd', 'fr-fr' ), Product.sName, Shop.sshopid, Comission_ProductId.nProductId
+HAVING SUM(ISNULL(DR.nAmountResult,0)) &lt;&gt; 0
+
+UNION
+
+SELECT
+    FORMAT ( CAST(DA.dDiaryDate as date), 'd', 'fr-fr' ) as dDate,
+    MIN(Shop.sshopid) as sshopid,
+    '556' as productId,
+    'Alimentation company' AS sProductType,
+    null as sProduct,
+    ISNULL(DA.nAmount,0) AS nAmount
+
+FROM Diary_Alimentation DA
+LEFT JOIN Company ON DA.nCompanyId = Company.nId
+left join shop on Company.nId = Shop.nCompanyid and shop.sshopid>0
+  WHERE CAST(DA.dDiaryDate AS DATE) = CONVERT(date, GETDATE()-1)
+GROUP BY FORMAT ( CAST(DA.dDiaryDate as date), 'd', 'fr-fr' ), DA.nAmount
+
+UNION
+
+SELECT
+FORMAT ( cast(D.dDiaryDate as date), 'd', 'fr-fr' ) as dDate, 
+Shop.sshopid,
+CAST(Comission_ProductId.sProductCode AS varchar) as productId,
+'ALM' AS sProductType, Comission_ProductId.sName as sProduct,
+SUM(ISNULL(D.nAmount,0)) AS nAmount
+FROM Diary_ALM D
+LEFT join shop on d.nshopid = shop.nid
+LEFT JOIN Comission_ProductId ON Comission_ProductId.nId = D.nComissionProductId
+ WHERE CAST(D.dDiaryDate AS DATE) = CONVERT(date, GETDATE()-1)
+GROUP BY FORMAT ( cast(D.dDiaryDate as date), 'd', 'fr-fr' ), Comission_ProductId.sName, Shop.sshopid, Comission_ProductId.sProductCode
+HAVING SUM(ISNULL(D.nAmount,0)) &lt;&gt; 0
+
+UNION
+
+SELECT
+    FORMAT ( cast(D.dDiaryDate as date), 'd', 'fr-fr' ) as dDate, Shop.sshopid, '99' as productId,
+    'Recharge Telephonique' AS sProductType, Comission_ProductId.sName as sProduct,
+    SUM(ISNULL(D.nRechargeAmountWithComission,0)) AS nAmount
+FROM Diary_Result D
+LEFT JOIN Diary ON D.nDiaryId = Diary.nId
+LEFT JOIN Shop ON Diary.nShopid = Shop.nid
+LEFT JOIN Comission_ProductId ON Comission_ProductId.nId = 12
+  WHERE CAST(D.dDiaryDate AS DATE) = CONVERT(date, GETDATE()-1)
+
+GROUP BY FORMAT ( cast(D.dDiaryDate as date), 'd', 'fr-fr' ),Comission_ProductId.sName, shop.sshopid
+HAVING SUM(ISNULL(D.nRechargeAmountWithComission,0)) &lt;&gt;0
+
+UNION
+
+
+SELECT
+    FORMAT( cast(D.dDiaryDate as date), 'd', 'fr-fr' ) as dDate, Shop.sshopid, '16' as productId, 
+    'CTM' AS sProductType, Comission_ProductId.sName as sProduct,
+    SUM(ISNULL(D.nCTMAmountResult,0)) AS nAmount
+FROM Diary_Result D
+LEFT JOIN Diary ON D.nDiaryId = Diary.nId
+LEFT JOIN Shop ON Diary.nShopid = Shop.nid
+LEFT JOIN Comission_ProductId ON Comission_ProductId.nId = 48
+ WHERE CAST(D.dDiaryDate AS DATE) = CONVERT(date, GETDATE()-1)
+GROUP BY FORMAT ( cast(D.dDiaryDate as date), 'd', 'fr-fr' ),Comission_ProductId.nId, Comission_ProductId.sName, Shop.sshopId
+HAVING SUM(ISNULL(D.nCTMAmountResult,0)) &lt;&gt; 0
+
+
+UNION
+
+SELECT
+    FORMAT ( cast(D.dDiaryDate as date), 'd', 'fr-fr' ) as dDate, Shop.sshopid, '982' as productId,
+    'Change Devise' AS sProductType, 
+    Comission_ProductId.sName as sProduct,
+    SUM(ISNULL(D.nContreValeurAmount2,0)) AS nAmount
+FROM Diary_ChangeDevise D
+LEFT JOIN Shop ON D.nShopId = Shop.nid
+LEFT JOIN Comission_ProductId ON Comission_ProductId.nId = 14
+ WHERE CAST(D.dDiaryDate AS DATE) = CONVERT(date, GETDATE()-1)
+GROUP BY Comission_ProductId.sName, FORMAT ( cast(D.dDiaryDate as date), 'd', 'fr-fr' ), Shop.ssHopId
+HAVING SUM(ISNULL(D.nContreValeurAmount2,0)) &lt;&gt; 0
+
+UNION
+SELECT
+    FORMAT ( cast(D.dDiaryDate as date), 'd', 'fr-fr' ) as dDate, Shop.sshopid, '983' as productId,
+    'Change Devise' AS sProductType, 
+    Comission_ProductId.sName as sProduct,
+    SUM(ISNULL(D.nContreValeurAmount3,0)) AS nAmount
+FROM Diary_ChangeDevise D
+LEFT JOIN Shop ON D.nShopId = Shop.nid
+LEFT JOIN Comission_ProductId ON Comission_ProductId.nId = 15
+WHERE  CAST(D.dDiaryDate AS DATE) = CONVERT(date, GETDATE()-1)
+GROUP BY Comission_ProductId.sName, FORMAT ( cast(D.dDiaryDate as date), 'd', 'fr-fr' ), Shop.sShopId
+HAVING SUM(ISNULL(D.nContreValeurAmount3,0)) &lt;&gt; 0
+
+
+UNION
+
+SELECT
+    FORMAT ( cast(D.dDiaryDate as date), 'd', 'fr-fr' ) as dDate, Shop.sshopid, '981' as productId,
+    'Change Devise' AS sProductType, 
+    Comission_ProductId.sName as sProduct,
+    SUM(ISNULL(D.nContreValeurAmount1,0)) AS nAmount
+FROM Diary_ChangeDevise D
+LEFT JOIN Shop ON D.nShopId = Shop.nid
+LEFT JOIN Comission_ProductId ON Comission_ProductId.nId = 60
+WHERE CAST(D.dDiaryDate AS DATE) = CONVERT(date, GETDATE()-1)
+GROUP BY Comission_ProductId.sName, FORMAT(cast(D.dDiaryDate as date), 'd', 'fr-fr' ), Shop.sShopId
+HAVING SUM(ISNULL(D.nContreValeurAmount1,0)) &lt;&gt; 0
+
+
+UNION
+
+SELECT
+    FORMAT( cast(D.dDate as date), 'd', 'fr-fr' ) as dDate, Shop.sshopid, '97' as productId,
+    'Correction' AS sProductType, 
+    Comission_ProductId.sName as sProduct,
+    SUM(ISNULL(D.nVolumeAmount,0)) AS nAmount
+FROM Diary_ManualCorrection D
+LEFT JOIN Shop on D.nshopid = Shop.nid
+LEFT JOIN Comission_ProductId ON Comission_ProductId.nId = D.nProductRefId
+ WHERE  CAST(D.dDate AS DATE) = CONVERT(date, GETDATE()-1)
+  AND D.bActive = 1
+GROUP BY Comission_ProductId.nId, FORMAT(cast(D.dDate as date), 'd', 'fr-fr' ), Comission_ProductId.sName, shop.sShopId
+
+UNION
+
+SELECT
+	FORMAT( cast(D.dDiaryDate as date), 'd', 'fr-fr' ) as dDate, Shop.sshopid, '96' as productId,
+	'Detaillant Cash' AS sProductType,  NULL as sProduct,
+	SUM(ISNULL(nDetaillantCashAmount,0)) AS nAmount
+FROM Diary_Result D
+LEFT JOIN Diary ON D.nDiaryId = Diary.nid
+LEFT JOIN Shop ON Diary.nShopId = Shop.nid
+WHERE CAST(D.dDiaryDate AS DATE) = CONVERT(date, GETDATE()-1)
+
+GROUP BY FORMAT(cast(D.dDiaryDate as date), 'd', 'fr-fr' ), shop.sShopId
+HAVING SUM(ISNULL(nDetaillantCashAmount,0)) &lt;&gt; 0
+
+
+UNION
+
+
+SELECT
+	FORMAT(cast(D.dDiaryDate as date), 'd', 'fr-fr' ) as dDate, Shop.sshopid, '14' as productId,
+	'SpeedBox' AS sProductType, 
+	NULL as sProduct,
+	SUM(ISNULL(nSpeedBoxAmountResult,0)) AS nAmount
+FROM Diary_Result D
+LEFT JOIN Diary ON D.nDiaryId = Diary.nid
+LEFT JOIN Shop ON Diary.nShopId = Shop.nid
+where  CAST(D.dDiaryDate AS DATE) = CONVERT(date, GETDATE()-1)
+
+GROUP BY FORMAT(cast(D.dDiaryDate as date), 'd', 'fr-fr' ), shop.sShopId
+HAVING SUM(ISNULL(nSpeedBoxAmountResult,0)) &lt;&gt; 0
+
+UNION
+
+
+SELECT
+	FORMAT(cast(D.dDiaryDate as date), 'd', 'fr-fr' ) as dDate, Shop.sshopid, '556' as productId,
+	'MAD/RMP' AS sProductType, 
+	NULL as sProduct,
+	SUM(ISNULL(nMADRMPsAmount,0)) AS nAmount
+FROM Diary_Result D
+LEFT JOIN Diary ON D.nDiaryId = Diary.nid
+LEFT JOIN Shop ON Diary.nShopId = Shop.nid
+WHERE  CAST(D.dDiaryDate AS DATE) = CONVERT(date, GETDATE()-1)
+GROUP BY FORMAT(cast(D.dDiaryDate as date), 'd', 'fr-fr' ), shop.sShopId
+HAVING SUM(ISNULL(nMADRMPsAmount,0)) &lt;&gt; 0
+
+UNION
+
+SELECT
+	FORMAT(cast(D.dDiaryDate as date), 'd', 'fr-fr' ) as dDate, Shop.sshopid, '130' as productId,
+	'Interagence' AS sProductType, 
+	NULL as sProduct,
+	SUM(ISNULL(nInteragenceAmount,0)) AS nAmount
+FROM Diary_Result D
+LEFT JOIN Diary ON D.nDiaryId = Diary.nid
+LEFT JOIN Shop ON Diary.nShopId = Shop.nid
+WHERE  CAST(D.dDiaryDate AS DATE) = CONVERT(date, GETDATE()-1)
+GROUP BY FORMAT(cast(D.dDiaryDate as date), 'd', 'fr-fr' ), shop.sShopId
+HAVING SUM(ISNULL(nInteragenceAmount,0)) &lt;&gt; 0
+
+UNION
+SELECT
+    FORMAT(cast(D.dDiaryDate as date), 'd', 'fr-fr' ) as dDate, Shop.sshopid, '-' as productId,
+    'Facturier' AS sProductType, 
+    facturier_products.sServiceName as sProduct,
+    SUM(ISNULL(nAmount,0)) AS nAmount
+FROM Diary_DailyFacturiers D
+LEFT JOIN Diary ON D.nDiaryId = Diary.nid
+LEFT JOIN Shop ON Diary.nShopId = Shop.nid
+left join facturier_products on D.sCodeProduit = facturier_products.sbillerid
+WHERE  CAST(D.dDiaryDate AS DATE) = CONVERT(date, GETDATE()-1)
+GROUP BY FORMAT(cast(D.dDiaryDate as date), 'd', 'fr-fr' ), shop.sShopId, facturier_products.sServiceName
+HAVING SUM(ISNULL(nAmount,0)) &lt;&gt; 0
+
+UNION
+    SELECT
+        FORMAT(cast(D.dDiaryDate as date), 'd', 'fr-fr' ) as dDate, Shop.sshopid, '-' as productId,
+        'Transport' AS sProductType, 
+        NULL as sProduct,
+        SUM(ISNULL(nTransportAmountResult,0)) AS nAmount
+    FROM Diary_Result D
+    LEFT JOIN Diary ON D.nDiaryId = Diary.nid
+    LEFT JOIN Shop ON Diary.nShopId = Shop.nid
+	WHERE  CAST(D.dDiaryDate AS DATE) = CONVERT(date, GETDATE()-1)
+    GROUP BY FORMAT(cast(D.dDiaryDate as date), 'd', 'fr-fr' ), shop.sShopId
+    HAVING SUM(ISNULL(nTransportAmountResult,0)) &lt;&gt; 0</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>112</xloc>
+      <yloc>16</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insertion dans table</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>ovh</connection>
+    <schema />
+    <table>journal_ms</table>
+    <commit>2000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>Type_Produit</column_name>
+        <stream_name>Type_Produit</stream_name>
+      </field>
+      <field>
+        <column_name>Produit</column_name>
+        <stream_name>Produit</stream_name>
+      </field>
+      <field>
+        <column_name>nId</column_name>
+        <stream_name>nId</stream_name>
+      </field>
+      <field>
+        <column_name>code_Operation</column_name>
+        <stream_name>code_Operation</stream_name>
+      </field>
+      <field>
+        <column_name>dInsertion</column_name>
+        <stream_name>dInsertion</stream_name>
+      </field>
+      <field>
+        <column_name>date_journal</column_name>
+        <stream_name>date_journal</stream_name>
+      </field>
+      <field>
+        <column_name>nShopId</column_name>
+        <stream_name>nShopId</stream_name>
+      </field>
+      <field>
+        <column_name>sShopId</column_name>
+        <stream_name>sShopId</stream_name>
+      </field>
+      <field>
+        <column_name>sShopName</column_name>
+        <stream_name>sShopName</stream_name>
+      </field>
+      <field>
+        <column_name>nCompanyId</column_name>
+        <stream_name>nCompanyId</stream_name>
+      </field>
+      <field>
+        <column_name>sCompanyName</column_name>
+        <stream_name>sCompanyName</stream_name>
+      </field>
+      <field>
+        <column_name>amount</column_name>
+        <stream_name>amount</stream_name>
+      </field>
+      <field>
+        <column_name>com</column_name>
+        <stream_name>com</stream_name>
+      </field>
+      <field>
+        <column_name>comFR</column_name>
+        <stream_name>comFR</stream_name>
+      </field>
+      <field>
+        <column_name>comId</column_name>
+        <stream_name>comId</stream_name>
+      </field>
+      <field>
+        <column_name>comment</column_name>
+        <stream_name>comment</stream_name>
+      </field>
+      <field>
+        <column_name>var1</column_name>
+        <stream_name>var1</stream_name>
+      </field>
+      <field>
+        <column_name>var2</column_name>
+        <stream_name>var2</stream_name>
+      </field>
+      <field>
+        <column_name>var3</column_name>
+        <stream_name>var3</stream_name>
+      </field>
+      <field>
+        <column_name>var4</column_name>
+        <stream_name>var4</stream_name>
+      </field>
+      <field>
+        <column_name>var5</column_name>
+        <stream_name>var5</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>400</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insertion dans table 2</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>ovh</connection>
+    <schema />
+    <table>journal_ms_global</table>
+    <commit>2000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>dDate</column_name>
+        <stream_name>dDate</stream_name>
+      </field>
+      <field>
+        <column_name>sshopId</column_name>
+        <stream_name>sshopId</stream_name>
+      </field>
+      <field>
+        <column_name>productId</column_name>
+        <stream_name>productId</stream_name>
+      </field>
+      <field>
+        <column_name>sProductType</column_name>
+        <stream_name>sProductType</stream_name>
+      </field>
+      <field>
+        <column_name>sProduct</column_name>
+        <stream_name>sProduct</stream_name>
+      </field>
+      <field>
+        <column_name>nAmount</column_name>
+        <stream_name>nAmount</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>384</xloc>
+      <yloc>16</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>

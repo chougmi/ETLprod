@@ -1,0 +1,1657 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>Transact-IRL</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <trans_status>2</trans_status>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection>log</connection>
+        <schema />
+        <table>log_temps_reel</table>
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>Y</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2018/06/22 16:02:55.704</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2018/06/25 06:50:09.973</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>bi</name>
+    <server>51.38.62.93</server>
+    <type>MSSQLNATIVE</type>
+    <access>Native</access>
+    <database>bi</database>
+    <port>14332</port>
+    <username>bi</username>
+    <password>Encrypted 2f5c9d9ae53dda6a1ff00af5dd8abf6f4</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQLUseIntegratedSecurity</code>
+        <attribute>false</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>14332</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>ms</name>
+    <server>cashplusmaster.cpkuecwscz72.eu-central-1.rds.amazonaws.com</server>
+    <type>MSSQLNATIVE</type>
+    <access>Native</access>
+    <database>cash_plus</database>
+    <port>1433</port>
+    <username>biuser</username>
+    <password>Encrypted 2dbb2ea981795dfd68011e53f9adf91fe</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQLUseIntegratedSecurity</code>
+        <attribute>false</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1433</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>ms prod</name>
+    <server>cashplusmaster.cpkuecwscz72.eu-central-1.rds.amazonaws.com</server>
+    <type>MSSQLNATIVE</type>
+    <access>Native</access>
+    <database>cash_plus</database>
+    <port>1433</port>
+    <username>biuser</username>
+    <password>Encrypted 6794ddffb5588ac0afa352e13493ac8b9a</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQLUseIntegratedSecurity</code>
+        <attribute>false</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1433</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>Table input</from>
+      <to>Microsoft Excel Output</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Table input</from>
+      <to>Insertion dans table</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Extraction depuis table 2</from>
+      <to>Insertion dans table 2</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Extraction depuis fichier MS Excel</from>
+      <to>Insertion dans table 2</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Extraction depuis table 2</from>
+      <to>Microsoft Excel Output</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Altération structure flux</from>
+      <to>Insertion dans table _transactions (BI)</to>
+      <enabled>N</enabled>
+    </hop>
+    <hop>
+      <from>Backup Transactions (CP)</from>
+      <to>Altération structure flux</to>
+      <enabled>N</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Extraction depuis fichier MS Excel</name>
+    <type>ExcelInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <header>Y</header>
+    <noempty>Y</noempty>
+    <stoponempty>N</stoponempty>
+    <filefield />
+    <sheetfield />
+    <sheetrownumfield />
+    <rownumfield />
+    <sheetfield />
+    <filefield />
+    <limit>0</limit>
+    <encoding />
+    <add_to_result_filenames>Y</add_to_result_filenames>
+    <accept_filenames>N</accept_filenames>
+    <accept_field />
+    <accept_stepname />
+    <file>
+      <name>C:\Users\Administrator\Desktop\creanciers_2 (1).xls</name>
+      <filemask />
+      <exclude_filemask />
+      <file_required>N</file_required>
+      <include_subfolders>N</include_subfolders>
+    </file>
+    <fields>
+      <field>
+        <name>code_creancier</name>
+        <type>Integer</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+      </field>
+      <field>
+        <name>nom_creancier</name>
+        <type>String</type>
+        <length>-1</length>
+        <precision>-1</precision>
+        <trim_type>none</trim_type>
+        <repeat>N</repeat>
+        <format />
+        <currency />
+        <decimal />
+        <group />
+      </field>
+    </fields>
+    <sheets>
+      <sheet>
+        <name>Sheet1</name>
+        <startrow>0</startrow>
+        <startcol>0</startcol>
+      </sheet>
+    </sheets>
+    <strict_types>N</strict_types>
+    <error_ignored>N</error_ignored>
+    <error_line_skipped>N</error_line_skipped>
+    <bad_line_files_destination_directory />
+    <bad_line_files_extension>warning</bad_line_files_extension>
+    <error_line_files_destination_directory />
+    <error_line_files_extension>error</error_line_files_extension>
+    <line_number_files_destination_directory />
+    <line_number_files_extension>line</line_number_files_extension>
+    <shortFileFieldName />
+    <pathFieldName />
+    <hiddenFieldName />
+    <lastModificationTimeFieldName />
+    <uriNameFieldName />
+    <rootUriNameFieldName />
+    <extensionFieldName />
+    <sizeFieldName />
+    <spreadsheet_type>POI</spreadsheet_type>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>16</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Extraction depuis table 2</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection />
+    <sql>select * from REPORTING_CARDS c
+ left join REPORTING_TRANSACTIONS t
+on c.account_id = t.account_id
+join shop s
+on t.shop_id = s.nid
+ where operation_type_id = 13</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>190</xloc>
+      <yloc>80</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insertion dans table</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>bi</connection>
+    <schema />
+    <table>cdg_tayssir</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>id</column_name>
+        <stream_name>id</stream_name>
+      </field>
+      <field>
+        <column_name>nomTuteur</column_name>
+        <stream_name>nomTuteur</stream_name>
+      </field>
+      <field>
+        <column_name>prenomTuteur</column_name>
+        <stream_name>prenomTuteur</stream_name>
+      </field>
+      <field>
+        <column_name>cnieTuteur</column_name>
+        <stream_name>cnieTuteur</stream_name>
+      </field>
+      <field>
+        <column_name>dateNaissance</column_name>
+        <stream_name>dateNaissance</stream_name>
+      </field>
+      <field>
+        <column_name>adresse</column_name>
+        <stream_name>adresse</stream_name>
+      </field>
+      <field>
+        <column_name>codeCommune</column_name>
+        <stream_name>codeCommune</stream_name>
+      </field>
+      <field>
+        <column_name>numTel</column_name>
+        <stream_name>numTel</stream_name>
+      </field>
+      <field>
+        <column_name>genre</column_name>
+        <stream_name>genre</stream_name>
+      </field>
+      <field>
+        <column_name>idcs</column_name>
+        <stream_name>idcs</stream_name>
+      </field>
+      <field>
+        <column_name>isRamed</column_name>
+        <stream_name>isRamed</stream_name>
+      </field>
+      <field>
+        <column_name>numRamed</column_name>
+        <stream_name>numRamed</stream_name>
+      </field>
+      <field>
+        <column_name>codeAgencePp</column_name>
+        <stream_name>codeAgencePp</stream_name>
+      </field>
+      <field>
+        <column_name>codePp</column_name>
+        <stream_name>codePp</stream_name>
+      </field>
+      <field>
+        <column_name>accessId</column_name>
+        <stream_name>accessId</stream_name>
+      </field>
+      <field>
+        <column_name>codeVillePp</column_name>
+        <stream_name>codeVillePp</stream_name>
+      </field>
+      <field>
+        <column_name>codeEtablissementPaiement</column_name>
+        <stream_name>codeEtablissementPaiement</stream_name>
+      </field>
+      <field>
+        <column_name>numCompte</column_name>
+        <stream_name>numCompte</stream_name>
+      </field>
+      <field>
+        <column_name>correlationId</column_name>
+        <stream_name>correlationId</stream_name>
+      </field>
+      <field>
+        <column_name>ms_step</column_name>
+        <stream_name>ms_step</stream_name>
+      </field>
+      <field>
+        <column_name>ms_numPreDemande</column_name>
+        <stream_name>ms_numPreDemande</stream_name>
+      </field>
+      <field>
+        <column_name>ms_numDemande</column_name>
+        <stream_name>ms_numDemande</stream_name>
+      </field>
+      <field>
+        <column_name>ms_dateCheckRecevabilite</column_name>
+        <stream_name>ms_dateCheckRecevabilite</stream_name>
+      </field>
+      <field>
+        <column_name>ms_isRecevable</column_name>
+        <stream_name>ms_isRecevable</stream_name>
+      </field>
+      <field>
+        <column_name>ms_dateInscription</column_name>
+        <stream_name>ms_dateInscription</stream_name>
+      </field>
+      <field>
+        <column_name>ms_isEnregistre</column_name>
+        <stream_name>ms_isEnregistre</stream_name>
+      </field>
+      <field>
+        <column_name>ms_motifRejet</column_name>
+        <stream_name>ms_motifRejet</stream_name>
+      </field>
+      <field>
+        <column_name>communeLabel</column_name>
+        <stream_name>communeLabel</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>720</xloc>
+      <yloc>208</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insertion dans table 2</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection />
+    <schema />
+    <table>creanciers</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>code_creancier</column_name>
+        <stream_name>code_creancier</stream_name>
+      </field>
+      <field>
+        <column_name>nom_creancier</column_name>
+        <stream_name>nom_creancier</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>510</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Microsoft Excel Output</name>
+    <type>ExcelOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <header>Y</header>
+    <footer>N</footer>
+    <encoding />
+    <append>N</append>
+    <add_to_result_filenames>Y</add_to_result_filenames>
+    <file>
+      <name>C:\Users\Administrator\Desktop\carte edp V2.xls</name>
+      <extention>xls</extention>
+      <do_not_open_newfile_init>N</do_not_open_newfile_init>
+      <create_parent_folder>N</create_parent_folder>
+      <split>N</split>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format />
+      <sheetname>Sheet1</sheetname>
+      <autosizecolums>N</autosizecolums>
+      <nullisblank>N</nullisblank>
+      <protect_sheet>N</protect_sheet>
+      <password>Encrypted </password>
+      <splitevery>0</splitevery>
+      <usetempfiles>N</usetempfiles>
+      <tempdirectory />
+    </file>
+    <template>
+      <enabled>N</enabled>
+      <append>N</append>
+      <filename>template.xls</filename>
+    </template>
+    <fields>
+      <field>
+        <name>card_id</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>card_status</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>agency</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>rib</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>account_id</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>createddate</name>
+        <type>Timestamp</type>
+        <format />
+      </field>
+      <field>
+        <name>id</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>createddate_1</name>
+        <type>Timestamp</type>
+        <format />
+      </field>
+      <field>
+        <name>credit</name>
+        <type>Number</type>
+        <format>#</format>
+      </field>
+      <field>
+        <name>debit</name>
+        <type>Number</type>
+        <format>#</format>
+      </field>
+      <field>
+        <name>fees</name>
+        <type>Number</type>
+        <format>#</format>
+      </field>
+      <field>
+        <name>amount_net</name>
+        <type>Number</type>
+        <format>#</format>
+      </field>
+      <field>
+        <name>canal</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>type_wallet</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>rib_1</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>shop_id</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>account_id_1</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>operation_type_id</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>nId</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>sShopId</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>sName</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>sAddress</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>nPostCode</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>bFranchise</name>
+        <type>Boolean</type>
+        <format />
+      </field>
+      <field>
+        <name>nLongtitude</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>nLatitude</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>nCompanyId</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>bActive</name>
+        <type>Boolean</type>
+        <format />
+      </field>
+      <field>
+        <name>nShopGroupId</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>sPhone</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>nCityId</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>bActivity</name>
+        <type>Boolean</type>
+        <format />
+      </field>
+      <field>
+        <name>nBalance</name>
+        <type>Number</type>
+        <format>#</format>
+      </field>
+      <field>
+        <name>nShopTypeId</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>nInitialBalance</name>
+        <type>Number</type>
+        <format>#</format>
+      </field>
+      <field>
+        <name>nShopAccessAccountId</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>version</name>
+        <type>Integer</type>
+        <format />
+      </field>
+    </fields>
+    <custom>
+      <header_font_name>arial</header_font_name>
+      <header_font_size>10</header_font_size>
+      <header_font_bold>N</header_font_bold>
+      <header_font_italic>N</header_font_italic>
+      <header_font_underline>no</header_font_underline>
+      <header_font_orientation>horizontal</header_font_orientation>
+      <header_font_color>black</header_font_color>
+      <header_background_color>none</header_background_color>
+      <header_row_height>255</header_row_height>
+      <header_alignment>left</header_alignment>
+      <header_image />
+      <row_font_name>arial</row_font_name>
+      <row_font_size>10</row_font_size>
+      <row_font_color>black</row_font_color>
+      <row_background_color>none</row_background_color>
+    </custom>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>576</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Table input</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>N</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>ms</connection>
+    <sql> select * from [CASH_PLUS].[dbo].[cdg_tayssir]</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>96</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Altération structure flux</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>id</name>
+        <rename />
+      </field>
+      <field>
+        <name>nomTuteur</name>
+        <rename />
+      </field>
+      <field>
+        <name>prenomTuteur</name>
+        <rename />
+      </field>
+      <field>
+        <name>cnieTuteur</name>
+        <rename />
+      </field>
+      <field>
+        <name>dateNaissance</name>
+        <rename />
+      </field>
+      <field>
+        <name>adresse</name>
+        <rename />
+      </field>
+      <field>
+        <name>codeCommune</name>
+        <rename />
+      </field>
+      <field>
+        <name>numTel</name>
+        <rename />
+      </field>
+      <field>
+        <name>genre</name>
+        <rename />
+      </field>
+      <field>
+        <name>idcs</name>
+        <rename />
+      </field>
+      <field>
+        <name>isRamed</name>
+        <rename />
+      </field>
+      <field>
+        <name>numRamed</name>
+        <rename />
+      </field>
+      <field>
+        <name>codeAgencePp</name>
+        <rename />
+      </field>
+      <field>
+        <name>codePp</name>
+        <rename />
+      </field>
+      <field>
+        <name>accessId</name>
+        <rename />
+      </field>
+      <field>
+        <name>codeVillePp</name>
+        <rename />
+      </field>
+      <field>
+        <name>codeEtablissementPaiement</name>
+        <rename />
+      </field>
+      <field>
+        <name>numCompte</name>
+        <rename />
+      </field>
+      <field>
+        <name>correlationId</name>
+        <rename />
+      </field>
+      <field>
+        <name>ms_step</name>
+        <rename />
+      </field>
+      <field>
+        <name>ms_numPreDemande</name>
+        <rename />
+      </field>
+      <field>
+        <name>ms_numDemande</name>
+        <rename />
+      </field>
+      <field>
+        <name>ms_dateCheckRecevabilite</name>
+        <rename />
+      </field>
+      <field>
+        <name>ms_isRecevable</name>
+        <rename />
+      </field>
+      <field>
+        <name>ms_dateInscription</name>
+        <rename />
+      </field>
+      <field>
+        <name>ms_isEnregistre</name>
+        <rename />
+      </field>
+      <field>
+        <name>ms_motifRejet</name>
+        <rename />
+      </field>
+      <field>
+        <name>communeLabel</name>
+        <rename />
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>416</xloc>
+      <yloc>288</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Backup Transactions (CP)</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>ms prod</connection>
+    <sql>
+  select  * from cdg_tayssir
+ where ms_step = 5
+and ms_dateInscription > '${MS_DATEINSCRIPTIONBI}'
+
+
+
+select '${MS_DATEINSCRIPTIONBI}'
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>240</xloc>
+      <yloc>224</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insertion dans table _transactions (BI)</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>bi</connection>
+    <schema />
+    <table>_transactions</table>
+    <commit>2000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>nId</column_name>
+        <stream_name>nId</stream_name>
+      </field>
+      <field>
+        <column_name>dInsertion</column_name>
+        <stream_name>dInsertion</stream_name>
+      </field>
+      <field>
+        <column_name>nProductId</column_name>
+        <stream_name>nProductId</stream_name>
+      </field>
+      <field>
+        <column_name>nTanhubId</column_name>
+        <stream_name>nTanhubId</stream_name>
+      </field>
+      <field>
+        <column_name>nSenderId</column_name>
+        <stream_name>nSenderId</stream_name>
+      </field>
+      <field>
+        <column_name>nReceiverId</column_name>
+        <stream_name>nReceiverId</stream_name>
+      </field>
+      <field>
+        <column_name>nReceiverTypeId</column_name>
+        <stream_name>nReceiverTypeId</stream_name>
+      </field>
+      <field>
+        <column_name>nAccessId</column_name>
+        <stream_name>nAccessId</stream_name>
+      </field>
+      <field>
+        <column_name>nAmount</column_name>
+        <stream_name>nAmount</stream_name>
+      </field>
+      <field>
+        <column_name>nOperationFee</column_name>
+        <stream_name>nOperationFee</stream_name>
+      </field>
+      <field>
+        <column_name>nServiceFee</column_name>
+        <stream_name>nServiceFee</stream_name>
+      </field>
+      <field>
+        <column_name>nComListId</column_name>
+        <stream_name>nComListId</stream_name>
+      </field>
+      <field>
+        <column_name>nPaidById</column_name>
+        <stream_name>nPaidById</stream_name>
+      </field>
+      <field>
+        <column_name>nTransactionStatusId</column_name>
+        <stream_name>nTransactionStatusId</stream_name>
+      </field>
+      <field>
+        <column_name>bOnBehalf</column_name>
+        <stream_name>bOnBehalf</stream_name>
+      </field>
+      <field>
+        <column_name>nShopId</column_name>
+        <stream_name>nShopId</stream_name>
+      </field>
+      <field>
+        <column_name>nCompanyId</column_name>
+        <stream_name>nCompanyId</stream_name>
+      </field>
+      <field>
+        <column_name>nShopKeeperInitialBalance</column_name>
+        <stream_name>nShopKeeperInitialBalance</stream_name>
+      </field>
+      <field>
+        <column_name>nShopKeeperFinalBalance</column_name>
+        <stream_name>nShopKeeperFinalBalance</stream_name>
+      </field>
+      <field>
+        <column_name>nShopInitialBalance</column_name>
+        <stream_name>nShopInitialBalance</stream_name>
+      </field>
+      <field>
+        <column_name>nShopFinalBalance</column_name>
+        <stream_name>nShopFinalBalance</stream_name>
+      </field>
+      <field>
+        <column_name>nCompanyInitialBalance</column_name>
+        <stream_name>nCompanyInitialBalance</stream_name>
+      </field>
+      <field>
+        <column_name>nCompanyFinalBalance</column_name>
+        <stream_name>nCompanyFinalBalance</stream_name>
+      </field>
+      <field>
+        <column_name>nTransactionTypeId</column_name>
+        <stream_name>nTransactionTypeId</stream_name>
+      </field>
+      <field>
+        <column_name>nTransactionSourceTypeId</column_name>
+        <stream_name>nTransactionSourceTypeId</stream_name>
+      </field>
+      <field>
+        <column_name>dLastStatus</column_name>
+        <stream_name>dLastStatus</stream_name>
+      </field>
+      <field>
+        <column_name>sReceiverFirstName</column_name>
+        <stream_name>sReceiverFirstName</stream_name>
+      </field>
+      <field>
+        <column_name>sReceiverLastName</column_name>
+        <stream_name>sReceiverLastName</stream_name>
+      </field>
+      <field>
+        <column_name>sReceiverGsm</column_name>
+        <stream_name>sReceiverGsm</stream_name>
+      </field>
+      <field>
+        <column_name>sReceiverSex</column_name>
+        <stream_name>sReceiverSex</stream_name>
+      </field>
+      <field>
+        <column_name>insertionDate</column_name>
+        <stream_name>insertionDate</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>688</xloc>
+      <yloc>272</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>

@@ -1,0 +1,2504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>TR_Synthese</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2017/04/18 16:48:56.528</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2019/04/26 17:43:44.773</modified_date>
+    <key_for_session_key>H4sIAAAAAAAAAAMAAAAAAAAAAAA=</key_for_session_key>
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>cashplusmaster</name>
+    <server>52.30.112.96</server>
+    <type>MSSQLNATIVE</type>
+    <access>Native</access>
+    <database>cash_plus</database>
+    <port>1433</port>
+    <username>biuser</username>
+    <password>Encrypted 2dbb2ea981795dfd68011e53f9adf91fe</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQLUseIntegratedSecurity</code>
+        <attribute>false</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1433</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>ok</from>
+      <to>Microsoft Excel Output 2</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Microsoft Excel Output 2</name>
+    <type>ExcelOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <header>Y</header>
+    <footer>N</footer>
+    <encoding />
+    <append>N</append>
+    <add_to_result_filenames>Y</add_to_result_filenames>
+    <file>
+      <name>C:\Partage\Operations\Synthese\Cashplus.xls</name>
+      <extention>xls</extention>
+      <do_not_open_newfile_init>N</do_not_open_newfile_init>
+      <create_parent_folder>N</create_parent_folder>
+      <split>N</split>
+      <add_date>Y</add_date>
+      <add_time>Y</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format />
+      <sheetname>Sheet1</sheetname>
+      <autosizecolums>N</autosizecolums>
+      <nullisblank>N</nullisblank>
+      <protect_sheet>N</protect_sheet>
+      <password>Encrypted </password>
+      <splitevery>0</splitevery>
+      <usetempfiles>N</usetempfiles>
+      <tempdirectory />
+    </file>
+    <template>
+      <enabled>N</enabled>
+      <append>N</append>
+      <filename>template.xls</filename>
+    </template>
+    <fields>
+      <field>
+        <name>Company</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Date</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>WU NB</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>WU AMT MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Gain Change</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>TOT dtrs  Dhs</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>WU AMT DEV</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>WU Com Dev</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>WU GDC Dev </name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>Total USD</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Taux Cession</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Swift DHs</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm DHs</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>WU NB_1</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>WU AMT MAd_1</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Gain Change_1</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>TOT dtrs  Dhs_1</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>WU AMT DEV_1</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>WU Com Dev_1</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>WU GDC Dev _1</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>Total USD_1</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Taux Cession_1</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Swift DHs_1</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm DHs_1</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>MG Nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>MG Amt MAD</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Gain de change</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>MG Amt DEV</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>GDC Dev mg</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>MG Com DEV</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Swift Dhs_2</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm Dhs_2</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>MG Nb_1</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>MG Amt MAD_1</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>Gain de change_1</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>MG Amt DEV_1</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>GDC Dev mg_1</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>MG Com DEV_1</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>Swift Dhs_3</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm Dhs_3</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Exchange  Rate MT</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>MT nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>MT AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>MT Dev</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Gain de Change_2</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>MT Comm Dev</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Total Euro Recu</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Cours de cession</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Contre valeur euro recu</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Remboursement principal</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Commission en Dh</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>ME nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>ME AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Total Mad recu</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Remboursement principal_1</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>ME Comm MAd</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Rate Ria</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>RIA nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>RIA AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Mnt Euro</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Gain de Change_3</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Commisson Euro</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>principal Euro</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Cours de cession </name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Total Euro Recu_1</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>MI nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>MI AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Total Euro Recu_2</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Cours de cession _1</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Contre valeur En DHs </name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Commission En Dhs</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>CHA nb CP</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>CHA AMt MAd CP</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Commission Achat et vente </name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>CHA nb EuroSol</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>CHA AMt MAd EuroSol</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Commission Vente banque</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Commission   Vente Client</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>CPIN nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>CPIN AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>CPOUT nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>CPOUT AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Com AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>NBR SMS</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>AMt MAd SMS</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>MEP nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>MEP AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Montant Euro Recu</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Cours de cession _2</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Contre valeur En DHs _1</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>SW nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>SW AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Montant Euro Recu_1</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Cours de cession _3</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Contre valeur En DHs _2</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>WARI nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>WARI AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Montant Euro Recu_2</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Cours de cession_1</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Contre valeur En DHs</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>MONTY nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>MONTY AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Montant Euro Recu_3</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Cours de cession _4</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Contre valeur En DHs _3</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_1</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>BLM nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>BLM AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Montant Euro Recu_4</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Cours de cession _5</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Contre valeur En DHs _4</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_2</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Titanes nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>Titanes AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Montant Euro Recu_5</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Cours de cession _6</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Contre valeur En DHs _5</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_3</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Pintail nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>Pintail AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Montant Euro Recu_6</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Cours de cession _7</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Contre valeur En DHs _6</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_4</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>FE&amp;Ze nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>FE&amp;ZE AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Montant Euro Recu_7</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Cours de cession _8</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Contre valeur En DHs _7</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_5</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>EuroPhil nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>EuroPhil AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Montant Euro Recu_8</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Cours de cession _9</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Contre valeur En DHs _8</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_6</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>RADEEMA nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>RADEEMA Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_7</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>RAMSA nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>RAMSA Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_8</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>pay Express nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>pay Express AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>pay Express COM MAd</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>VIGNETTE nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>VIGNETTE AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_9</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>RT nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>RT AMt MAd</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_10</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>TGR nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>TGR Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_11</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Lydec nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>Lydec Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_12</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Inwi Facture nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>Inwi Facture AMT Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_13</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>AMN Tetouan nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>AMN Tetouan Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_14</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>AMN Tanger nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>AMN Tanger nb_1</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_15</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>REDAL nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>REDAL Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_16</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>DGI nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>DGI Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_17</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>RAK nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>RAK Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_18</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>RADEEF nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>RADEEF Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_19</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>XPR nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>XPR AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Montant Euro Recu_9</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Cours de cession _10</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Contre valeur En DHs _9</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_20</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>VLT nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>VLT AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Montant Euro Recu_10</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Cours de cession _11</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Contre valeur En DHs _10</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_21</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>CTM nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>CTM AMt MAd</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_22</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>ONEE-BE nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>ONEE-BE Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_23</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>i-tr nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>i-tr AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Montant Euro Recu_11</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Cours de cession _12</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Contre valeur En DHs _11</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>Comm_24</name>
+        <type>String</type>
+        <format />
+      </field>
+      <field>
+        <name>RADEETA nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>RADEETA Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>RADEEL nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>RADEEL Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>AIR ARABIA nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>AIR ARABIA Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Orange Facture nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>Orange Facture Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>ANCFCC nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>ANCFCC Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>E-Timbre nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>E-Timbre Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Maroc Télécom  nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>Maroc Télécom Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Worldremit nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>Worldremit AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Xoom nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>Xoom AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Thunes nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>Thunes AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Koronapay nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>Koronapay AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Bytedance nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>Bytedance AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Taptapsend nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>Taptapsend AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>TransFast nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>TransFast AMt MAd</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Autoroutes du Maroc  nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>Autoroutes du Maroc Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>RADEET  nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>RADEET Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>RADEEO  nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>RADEEO Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>OMPIC  nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>OMPIC Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>OFPPT  nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>OFPPT Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>CNSS  nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>CNSS Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>Markoub  nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>Markoub Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+      <field>
+        <name>PORTNET  nb</name>
+        <type>Integer</type>
+        <format />
+      </field>
+      <field>
+        <name>PORTNET Amt Mad</name>
+        <type>BigNumber</type>
+        <format />
+      </field>
+    </fields>
+    <custom>
+      <header_font_name>arial</header_font_name>
+      <header_font_size>10</header_font_size>
+      <header_font_bold>N</header_font_bold>
+      <header_font_italic>N</header_font_italic>
+      <header_font_underline>no</header_font_underline>
+      <header_font_orientation>horizontal</header_font_orientation>
+      <header_font_color>black</header_font_color>
+      <header_background_color>none</header_background_color>
+      <header_row_height>255</header_row_height>
+      <header_alignment>left</header_alignment>
+      <header_image />
+      <row_font_name>arial</row_font_name>
+      <row_font_size>10</row_font_size>
+      <row_font_color>black</row_font_color>
+      <row_background_color>none</row_background_color>
+    </custom>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>576</xloc>
+      <yloc>176</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>ok</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>cashplusmaster</connection>
+    <sql>select 'Cashplus' as 'Company' , day(dateadd(day,datediff(day,1,GETDATE()),0)) as 'Date', 
+
+ (select  sum(nfinished)   
+from diary_transaction t left join shop s on t.nshopid = s.nid where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) 
+and nproductid = 5 and len(sshopid) >4) as 'WU NB' , 
+
+(select   sum(namountfinished) 
+from diary_transaction t left join shop s on t.nshopid = s.nid where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) 
+and nproductid = 5 and len(sshopid) >4)as 'WU AMT MAd'  , 
+'      ' as 'Gain Change' ,
+'      ' as 'TOT dtrs  Dhs' ,
+0 as 'WU AMT DEV' , 
+0                           as 'WU Com Dev' ,
+0  							as 'WU GDC Dev ' , 
+'      ' as 'Total USD' ,
+'      ' as 'Taux Cession' ,
+'      ' as 'Swift DHs',
+'      ' as 'Comm DHs' ,
+(select  sum(nfinished)   
+from diary_transaction t left join shop s on t.nshopid = s.nid where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) 
+and nproductid = 5 and len(sshopid) =4) as 'WU NB' , 
+
+(select   sum(namountfinished) 
+from diary_transaction t left join shop s on t.nshopid = s.nid where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) 
+and nproductid = 5 and len(sshopid) =4)as 'WU AMT MAd' ,
+'      ' as 'Gain Change' ,
+'      ' as 'TOT dtrs  Dhs' ,
+0 as 'WU AMT DEV' , 
+0 as 'WU Com Dev' ,
+0 as 'WU GDC Dev ' , 
+'     ' as 'Total USD' ,
+'     ' as 'Taux Cession' ,
+'     ' as 'Swift DHs',
+'     ' as 'Comm DHs' ,
+
+(select  sum(nfinished)   
+from diary_transaction t left join shop s on t.nshopid = s.nid where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) 
+and nproductid = 6 and len(sshopid) >4) as 'MG Nb',
+
+(select   sum(namountfinished) 
+from diary_transaction t left join shop s on t.nshopid = s.nid where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) 
+and nproductid = 6 and len(sshopid) >4) as 'MG Amt MAD' ,
+'  ' as 'Gain de change' ,
+'  ' as 'MG Amt DEV' ,
+'  ' as 'GDC Dev mg' ,
+'  ' 							as 'MG Com DEV' ,
+'  ' as 'Swift Dhs' ,
+'  ' as 'Comm Dhs' , 
+0 as 'MG Nb',
+0 as 'MG Amt MAD' ,
+'  ' as 'Gain de change' ,
+0 as 'MG Amt DEV' ,
+0 as 'GDC Dev mg' ,
+0 as 'MG Com DEV' ,
+'   ' as 'Swift Dhs' ,
+'   ' as 'Comm Dhs' , 
+'   ' as 'Exchange  Rate MT' ,
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 25) as 'MT nb',
+
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 25) as 'MT AMt MAd' , 
+'    ' as 'MT Dev' ,
+'    ' as 'Gain de Change' ,
+'    ' 							as 'MT Comm Dev' ,
+
+'     ' as 'Total Euro Recu' ,
+'     ' as 'Cours de cession' ,
+'     ' as 'Contre valeur euro recu' ,
+'     ' as 'Remboursement principal' ,
+'     ' as 'Commission en Dh',
+
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 60)  as 'ME nb',
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 60) as 'ME AMt MAd' ,
+'     ' as 'Total Mad recu',
+'     ' as 'Remboursement principal' ,
+'     ' as 'ME Comm MAd' ,
+
+'     ' as 'Rate Ria' ,
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 22)  as 'RIA nb',
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 22) as 'RIA AMt MAd' , 
+'     ' as 'Mnt Euro' ,
+'     ' as 'Gain de Change' ,
+'     ' as 'Commisson Euro' ,
+'     ' as 'principal Euro' ,
+'     ' as 'Cours de cession ' ,
+'     ' as 'Total Euro Recu' ,
+
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 54)  as 'MI nb',
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 54)as 'MI AMt MAd' , 
+'     ' as 'Total Euro Recu' ,
+'     ' as 'Cours de cession ' ,
+'     ' as 'Contre valeur En DHs ' ,
+'     ' as 'Commission En Dhs' ,
+
+(select sum(nNumber1) from diary_ChangeDevise left join shop on shop.nid = diary_ChangeDevise.nShopId where
+ cast(dDiaryDate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and len(sshopid) > 4) as 'CHA nb CP',
+(select sum(nContreValeurAmount1) from diary_ChangeDevise left join shop on shop.nid = diary_ChangeDevise.nShopId where
+ cast(dDiaryDate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and len(sshopid) > 4) as 'CHA AMt MAd CP'  ,
+'     ' as 'Commission Achat et vente ' ,
+(select sum(nNumber1) from diary_ChangeDevise left join shop on shop.nid = diary_ChangeDevise.nShopId where
+ cast(dDiaryDate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and len(sshopid) = 4)  as 'CHA nb EuroSol',
+(select sum(nContreValeurAmount1) from diary_ChangeDevise left join shop on shop.nid = diary_ChangeDevise.nShopId where
+ cast(dDiaryDate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and len(sshopid) = 4)  as 'CHA AMt MAd EuroSol' ,
+'     ' as 'Commission Vente banque' , 
+'     ' as 'Commission   Vente Client' ,
+(select count(*) from transactions  where cast(dinsertion as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 1 
+and nTransactionStatusId in ( 8 , 26) ) as 'CPIN nb',
+(select sum(namount) from transactions  where cast(dinsertion as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 1 
+and nTransactionStatusId in ( 8 , 26) ) as  'CPIN AMt MAd' , 
+
+
+
+
+(select count(*) from transactions  where cast(dinsertion as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 19
+ and nTransactionStatusId = 8 ) as 'CPOUT nb',
+
+(select sum(namount) from transactions  where cast(dinsertion as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 19
+and nTransactionStatusId = 8 )as  'CPOUT AMt MAd' , 
+(select sum(nOperationFee) from transactions t left join shop s on t.nshopid = s.nid where cast(t.dinsertion as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 1 
+and len(sshopid) >=4 and len(sshopid) &lt;=6 and t.nTransactionStatusId in ( 8 , 26) )as  'Com AMt MAd'  ,
+
+(select count(*) from transactions t left join shop s on t.nshopid = s.nid where cast(t.dinsertion as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 1 
+and len(sshopid) >=4 and len(sshopid) &lt;=6 and t.nTransactionStatusId in ( 8 , 26) and nServiceFee = 3)as  'NBR SMS' ,
+
+(select sum(nServiceFee) from transactions t left join shop s on t.nshopid = s.nid where cast(t.dinsertion as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 1 
+and len(sshopid) >=4 and len(sshopid) &lt;=6 and t.nTransactionStatusId in ( 8 , 26))as  'AMt MAd SMS' ,
+
+
+
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 28) as 'MEP nb',
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 28) as 'MEP AMt MAd' , 
+'     ' as 'Montant Euro Recu' ,
+'     ' as 'Cours de cession ' ,
+'     ' as 'Contre valeur En DHs '  ,
+
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 4064) as 'SW nb',
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 4064)as 'SW AMt MAd' ,
+
+'     ' as 'Montant Euro Recu' ,
+'     ' as 'Cours de cession ' ,
+'     ' as 'Contre valeur En DHs '  ,
+'     ' as 'Comm' ,
+
+
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 29) as 'WARI nb',
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 29)as 'WARI AMt MAd'  ,
+'     ' as 'Montant Euro Recu' ,
+'     ' as 'Cours de cession' ,
+'     ' as 'Contre valeur En DHs' ,
+
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 57)  as 'MONTY nb',
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 57) as 'MONTY AMt MAd' ,
+'     ' as 'Montant Euro Recu' ,
+'     ' as 'Cours de cession ' ,
+'     ' as 'Contre valeur En DHs '  ,
+'     ' as 'Comm' ,
+
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 39)  as 'BLM nb',
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 39)as 'BLM AMt MAd' ,
+
+'     ' as 'Montant Euro Recu' ,
+'     ' as 'Cours de cession ' ,
+'     ' as 'Contre valeur En DHs '  ,
+'     ' as 'Comm' ,
+
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 44)  as 'Titanes nb',
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 44) as 'Titanes AMt MAd' ,
+
+'     ' as 'Montant Euro Recu' ,
+'     ' as 'Cours de cession ' ,
+'     ' as 'Contre valeur En DHs '  ,
+'     ' as 'Comm' ,
+
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 50)  as 'Pintail nb',
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 50) as 'Pintail AMt MAd' ,
+
+'     ' as 'Montant Euro Recu' ,
+'     ' as 'Cours de cession ' ,
+'     ' as 'Contre valeur En DHs '  ,
+'     ' as 'Comm' ,
+
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 47)  as 'FE&amp;Ze nb',
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 47) as 'FE&amp;ZE AMt MAd' ,
+'     ' as 'Montant Euro Recu' ,
+'     ' as 'Cours de cession ' ,
+'     ' as 'Contre valeur En DHs '  ,
+'     ' as 'Comm' ,
+
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 42)  as 'EuroPhil nb',
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 42) as 'EuroPhil AMt MAd' , 
+
+'     ' as 'Montant Euro Recu' ,
+'     ' as 'Cours de cession ' ,
+'     ' as 'Contre valeur En DHs '  ,
+'     ' as 'Comm' ,
+----------------------------------------------------------------------------------------------------
+
+
+
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1010 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)) as 'RADEEMA nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1010 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)) as 'RADEEMA Amt Mad'
+,'     ' as 'Comm',
+---------
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1015 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0) )as 'RAMSA nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1015 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)) as 'RAMSA Amt Mad'
+, '     ' as 'Comm',
+----------------
+(select  sum(nOperations) from diary_ALM where nComissionProductId = 37
+and cast(dDiaryDate as date) = dateadd(day,datediff(day,1,GETDATE()),0) ) as 'pay Express nb',
+(select  sum(nAmount) from diary_ALM where nComissionProductId = 37
+and cast(dDiaryDate as date) = dateadd(day,datediff(day,1,GETDATE()),0)) as 'pay Express AMt MAd' ,
+'     ' as 'pay Express COM MAd'  ,
+
+
+------------
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1022 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0) )as 'VIGNETTE nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1022 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)) as 'VIGNETTE AMt MAd'
+, '     ' as 'Comm',
+------------------
+(select  count(*) from recharge where 
+cast(dRecharge as date) = dateadd(day,datediff(day,1,GETDATE()),0) ) as 'RT nb',
+(select  sum(namount) from recharge where 
+cast(dRecharge as date) = dateadd(day,datediff(day,1,GETDATE()),0) ) as 'RT AMt MAd' ,
+'     ' as 'Comm' ,
+
+------------------
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1006 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)  )as 'TGR nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1006 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)  )  as 'TGR Amt Mad'
+, '     ' as 'Comm',
+
+
+--------------------
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1005 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0))as 'Lydec nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1005 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0))  as 'Lydec Amt Mad'
+, '     ' as 'Comm',
+-------------------
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1018 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)) as 'Inwi Facture nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1018 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0) )  as 'Inwi Facture AMT Mad'
+, '     ' as 'Comm',
+
+
+
+--------------------------
+
+
+ (select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1009 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0) )as 'AMN Tetouan nb' ,
+
+
+ (select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1009 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0))  as 'AMN Tetouan Amt Mad'
+, '     ' as 'Comm',
+---------------------
+
+
+
+---------------------
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1008 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)  )as 'AMN Tanger nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1008 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)) as 'AMN Tanger nb'
+, '     ' as 'Comm',
+
+
+-------------------------
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1007 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0))as 'REDAL nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1007 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)  )  as 'REDAL Amt Mad'
+, '     ' as 'Comm',
+
+
+-------------------
+
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1025 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0) )as 'DGI nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1025 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)  )  as 'DGI Amt Mad'
+, '     ' as 'Comm',
+
+
+------------
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1016 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)  )as 'RAK nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1016 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)) as 'RAK Amt Mad'
+, '     ' as 'Comm',
+
+-------------
+
+
+
+ (select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1014 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)  )as 'RADEEF nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1014 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0))  as 'RADEEF Amt Mad'
+, '     ' as 'Comm',
+-------------`
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 48) as 'XPR nb',
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 48) as 'XPR AMt MAd' ,
+
+'     ' as 'Montant Euro Recu' ,
+'     ' as 'Cours de cession ' ,
+'     ' as 'Contre valeur En DHs '  ,
+'     ' as 'Comm' ,
+
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 40) as 'VLT nb',
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 40) as 'VLT AMt MAd' ,
+
+'     ' as 'Montant Euro Recu' ,
+'     ' as 'Cours de cession ' ,
+'     ' as 'Contre valeur En DHs '  ,
+'     ' as 'Comm' ,
+(select  count(*) from CTM_transactions where 
+cast(dinsertion as date) = dateadd(day,datediff(day,1,GETDATE()),0) ) as 'CTM nb',
+(select  sum(nTotalPaid) from CTM_transactions where 
+cast(dinsertion as date) = dateadd(day,datediff(day,1,GETDATE()),0) ) as 'CTM AMt MAd' ,
+'     ' as 'Comm' ,
+-------------
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1039 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)) as 'ONEE-BE nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1039 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0))  as 'ONEE-BE Amt Mad'
+, '     ' as 'Comm',
+-------------
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 51)  as 'i-tr nb',
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 51) as 'i-tr AMt MAd' ,
+
+'     ' as 'Montant Euro Recu' ,
+'     ' as 'Cours de cession ' ,
+'     ' as 'Contre valeur En DHs '  ,
+'     ' as 'Comm'  , 
+
+
+------------
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1043 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0))as 'RADEETA nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1043 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0))  as 'RADEETA Amt Mad'
+,
+-------------
+
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1040 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)) as 'RADEEL nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1040 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)) as 'RADEEL Amt Mad'
+,
+-------------
+
+
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1023 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)  )as 'AIR ARABIA nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1023 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0))  as 'AIR ARABIA Amt Mad'
+,
+-------------
+
+
+
+
+-------------
+
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1004 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0) )as 'Orange Facture nb' ,
+
+
+ (select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1004 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)) as 'Orange Facture Amt Mad'
+,
+-------------
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1030 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0) )as 'ANCFCC nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1030 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0))  as 'ANCFCC Amt Mad'
+,
+-------------
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1056 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)  )as 'E-Timbre nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1056 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0))  as 'E-Timbre Amt Mad'
+,
+-------------
+-------------
+
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1002 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0) )as 'Maroc Télécom  nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1002 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)) as 'Maroc Télécom Amt Mad'
+,
+-------------
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = 
+dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 59)  as 'Worldremit nb',
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = 
+dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 59) as 'Worldremit AMt MAd' ,
+
+
+----------------------
+
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = 
+dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 55)  as 'Xoom nb',
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = 
+dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 55) as 'Xoom AMt MAd' ,
+
+-------------
+
+
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = 
+dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 5058)  as 'Thunes nb',
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = 
+dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 5058) as 'Thunes AMt MAd' ,
+
+
+-------------------
+
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = 
+dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 5056)  as 'Koronapay nb',
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = 
+dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 5056) as 'Koronapay AMt MAd' ,
+
+
+-----------
+
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = 
+dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 61)  as 'Bytedance nb',
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = 
+dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 61) as 'Bytedance AMt MAd' ,
+
+
+--------------------
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = 
+dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 5059)  as 'Taptapsend nb',
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = 
+dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 5059) as 'Taptapsend AMt MAd' ,
+
+
+--------------------
+(select sum(nfinished) from diary_transaction t where cast(t.ddiarydate as date) = 
+dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 4063)  as 'TransFast nb',
+(select sum(namountfinished) from diary_transaction t where cast(t.ddiarydate as date) = 
+dateadd(day,datediff(day,1,GETDATE()),0) and nproductid = 4063) as 'TransFast AMt MAd' ,
+
+
+
+-------------
+
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1024 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0) )as 'Autoroutes du Maroc  nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1024 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)) as 'Autoroutes du Maroc Amt Mad'
+,
+--------------------
+
+
+
+
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1041 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0) )as 'RADEET  nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1041 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)) as 'RADEET Amt Mad'
+,
+--------------------
+
+
+
+
+
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1044 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0) )as 'RADEEO  nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1044 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)) as 'RADEEO Amt Mad'
+,
+--------------------
+
+
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1050 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0) )as 'OMPIC  nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1050 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)) as 'OMPIC Amt Mad'
+,
+--------------------
+
+
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1086 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0) )as 'OFPPT  nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1086 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)) as 'OFPPT Amt Mad'
+,
+--------------------
+
+
+
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId in (1036,1037,1038) and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0) )as 'CNSS  nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId in (1036,1037,1038) and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)) as 'CNSS Amt Mad'
+,
+
+
+--------------------
+
+
+
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1084 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0) )as 'Markoub  nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1084 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)) as 'Markoub Amt Mad'
+,
+
+-----------------------
+(select count(*) FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1089 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0) )as 'PORTNET  nb' ,
+
+
+(select sum(nAmount)  FROM Facturiers_Transactions
+where is_transaction_cmi = 1 and sBillerId = 1089 and status = 'PAID'
+and convert(date,dInsertion,103) = dateadd(day,datediff(day,1,GETDATE()),0)) as 'PORTNET Amt Mad'
+</sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>Y</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>288</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>

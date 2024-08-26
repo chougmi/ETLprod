@@ -1,0 +1,1254 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<transformation>
+  <info>
+    <name>ria_temporaire</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2019/09/11 16:10:46.036</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2019/09/11 16:10:46.036</modified_date>
+    <key_for_session_key />
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>ria </name>
+    <server>51.38.62.93</server>
+    <type>MSSQLNATIVE</type>
+    <access>Native</access>
+    <database>bi</database>
+    <port>14332</port>
+    <username>bi</username>
+    <password>Encrypted 2f5c9d9ae53dda6a1ff00af5dd8abf6f4</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQLUseIntegratedSecurity</code>
+        <attribute>false</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>14332</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>Altération structure flux</from>
+      <to>Insertion dans table</to>
+      <enabled>N</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Insertion dans table 2 2</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection />
+    <schema />
+    <table>mt_temporaire</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>Operation_Date</column_name>
+        <stream_name>Operation_Date</stream_name>
+      </field>
+      <field>
+        <column_name>Value_Date</column_name>
+        <stream_name>Value_Date</stream_name>
+      </field>
+      <field>
+        <column_name>Payment_Date</column_name>
+        <stream_name>Payment_Date</stream_name>
+      </field>
+      <field>
+        <column_name>Type</column_name>
+        <stream_name>Type</stream_name>
+      </field>
+      <field>
+        <column_name>Transaction_Code</column_name>
+        <stream_name>Transaction_Code</stream_name>
+      </field>
+      <field>
+        <column_name>URN</column_name>
+        <stream_name>URN</stream_name>
+      </field>
+      <field>
+        <column_name>Sender</column_name>
+        <stream_name>Sender</stream_name>
+      </field>
+      <field>
+        <column_name>Sen_ID_Document_Nr</column_name>
+        <stream_name>Sen_ID_Document_Nr</stream_name>
+      </field>
+      <field>
+        <column_name>Sen_ID_Doc_Type</column_name>
+        <stream_name>Sen_ID_Doc_Type</stream_name>
+      </field>
+      <field>
+        <column_name>Receiver</column_name>
+        <stream_name>Receiver</stream_name>
+      </field>
+      <field>
+        <column_name>Rec_ID_Document_Nr</column_name>
+        <stream_name>Rec_ID_Document_Nr</stream_name>
+      </field>
+      <field>
+        <column_name>Rec_ID_Doc_Type</column_name>
+        <stream_name>Rec_ID_Doc_Type</stream_name>
+      </field>
+      <field>
+        <column_name>Office_Source</column_name>
+        <stream_name>Office_Source</stream_name>
+      </field>
+      <field>
+        <column_name>Office_Code_Source</column_name>
+        <stream_name>Office_Code_Source</stream_name>
+      </field>
+      <field>
+        <column_name>Payment_Branch</column_name>
+        <stream_name>Payment_Branch</stream_name>
+      </field>
+      <field>
+        <column_name>Payment_Branch_Code</column_name>
+        <stream_name>Payment_Branch_Code</stream_name>
+      </field>
+      <field>
+        <column_name>Source_Country_Code</column_name>
+        <stream_name>Source_Country_Code</stream_name>
+      </field>
+      <field>
+        <column_name>Source_Country</column_name>
+        <stream_name>Source_Country</stream_name>
+      </field>
+      <field>
+        <column_name>Destination_Country</column_name>
+        <stream_name>Destination_Country</stream_name>
+      </field>
+      <field>
+        <column_name>Commiss_Value</column_name>
+        <stream_name>Commiss_Value</stream_name>
+      </field>
+      <field>
+        <column_name>Total_Value</column_name>
+        <stream_name>Total_Value</stream_name>
+      </field>
+      <field>
+        <column_name>Balance</column_name>
+        <stream_name>Balance</stream_name>
+      </field>
+      <field>
+        <column_name>Rate</column_name>
+        <stream_name>Rate</stream_name>
+      </field>
+      <field>
+        <column_name>Transfer_Value</column_name>
+        <stream_name>Transfer_Value</stream_name>
+      </field>
+      <field>
+        <column_name>Currency</column_name>
+        <stream_name>Currency</stream_name>
+      </field>
+      <field>
+        <column_name>Cashier_Name</column_name>
+        <stream_name>Cashier_Name</stream_name>
+      </field>
+      <field>
+        <column_name>Cashier_Code</column_name>
+        <stream_name>Cashier_Code</stream_name>
+      </field>
+      <field>
+        <column_name>filename</column_name>
+        <stream_name>filename</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>1383</xloc>
+      <yloc>82</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Insertion dans table</name>
+    <type>TableOutput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>ria </connection>
+    <schema />
+    <table>Ria_temporaire</table>
+    <commit>1000</commit>
+    <truncate>Y</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>Y</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field />
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field />
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field />
+    <fields>
+      <field>
+        <column_name>Order_No</column_name>
+        <stream_name>Order_No</stream_name>
+      </field>
+      <field>
+        <column_name>TX_Date</column_name>
+        <stream_name>TX_Date</stream_name>
+      </field>
+      <field>
+        <column_name>Paid time</column_name>
+        <stream_name>Paid time</stream_name>
+      </field>
+      <field>
+        <column_name>PIN</column_name>
+        <stream_name>PIN</stream_name>
+      </field>
+      <field>
+        <column_name>Amount</column_name>
+        <stream_name>Amount</stream_name>
+      </field>
+      <field>
+        <column_name>Currency</column_name>
+        <stream_name>Currency</stream_name>
+      </field>
+      <field>
+        <column_name>Amount_Sent</column_name>
+        <stream_name>Amount_Sent</stream_name>
+      </field>
+      <field>
+        <column_name>Customer_Fee</column_name>
+        <stream_name>Customer_Fee</stream_name>
+      </field>
+      <field>
+        <column_name>Amount_Sent_Currency</column_name>
+        <stream_name>Amount_Sent_Currency</stream_name>
+      </field>
+      <field>
+        <column_name>Pay_Agent_No</column_name>
+        <stream_name>Pay_Agent_No</stream_name>
+      </field>
+      <field>
+        <column_name>Branch_No</column_name>
+        <stream_name>Branch_No</stream_name>
+      </field>
+      <field>
+        <column_name>Pay_Agent</column_name>
+        <stream_name>Pay_Agent</stream_name>
+      </field>
+      <field>
+        <column_name>Branch</column_name>
+        <stream_name>Branch</stream_name>
+      </field>
+      <field>
+        <column_name>Pay_Location_State_Name</column_name>
+        <stream_name>Pay_Location_State_Name</stream_name>
+      </field>
+      <field>
+        <column_name>Pay_Location_City</column_name>
+        <stream_name>Pay_Location_City</stream_name>
+      </field>
+      <field>
+        <column_name>Pay_Location_ZIP</column_name>
+        <stream_name>Pay_Location_ZIP</stream_name>
+      </field>
+      <field>
+        <column_name>Pay_Location_Address</column_name>
+        <stream_name>Pay_Location_Address</stream_name>
+      </field>
+      <field>
+        <column_name>Pay_Location_Address_2</column_name>
+        <stream_name>Pay_Location_Address_2</stream_name>
+      </field>
+      <field>
+        <column_name>PA_Comission_Foreign_Curr</column_name>
+        <stream_name>PA_Comission_Foreign_Curr</stream_name>
+      </field>
+      <field>
+        <column_name>CommPA_Foreign_Currency</column_name>
+        <stream_name>CommPA_Foreign_Currency</stream_name>
+      </field>
+      <field>
+        <column_name>Paid_By</column_name>
+        <stream_name>Paid_By</stream_name>
+      </field>
+      <field>
+        <column_name>Transfer_Reason</column_name>
+        <stream_name>Transfer_Reason</stream_name>
+      </field>
+      <field>
+        <column_name>Customer_ID_Number_Unique_number</column_name>
+        <stream_name>Customer_ID_Number_Unique_number</stream_name>
+      </field>
+      <field>
+        <column_name>Cust_Id_No</column_name>
+        <stream_name>Cust_Id_No</stream_name>
+      </field>
+      <field>
+        <column_name>Cust_Id_Type</column_name>
+        <stream_name>Cust_Id_Type</stream_name>
+      </field>
+      <field>
+        <column_name>Cust_IDIssued_By_Country</column_name>
+        <stream_name>Cust_IDIssued_By_Country</stream_name>
+      </field>
+      <field>
+        <column_name>Cust_IDIssued_By_State</column_name>
+        <stream_name>Cust_IDIssued_By_State</stream_name>
+      </field>
+      <field>
+        <column_name>Customer_Name_First</column_name>
+        <stream_name>Customer_Name_First</stream_name>
+      </field>
+      <field>
+        <column_name>Customer_Name_Last_1</column_name>
+        <stream_name>Customer_Name_Last_1</stream_name>
+      </field>
+      <field>
+        <column_name>Customer_Name_Last_2</column_name>
+        <stream_name>Customer_Name_Last_2</stream_name>
+      </field>
+      <field>
+        <column_name>Customer_DOB</column_name>
+        <stream_name>Customer_DOB</stream_name>
+      </field>
+      <field>
+        <column_name>Cust_Country</column_name>
+        <stream_name>Cust_Country</stream_name>
+      </field>
+      <field>
+        <column_name>Cust_State</column_name>
+        <stream_name>Cust_State</stream_name>
+      </field>
+      <field>
+        <column_name>Cust_City</column_name>
+        <stream_name>Cust_City</stream_name>
+      </field>
+      <field>
+        <column_name>Cust_ZIP</column_name>
+        <stream_name>Cust_ZIP</stream_name>
+      </field>
+      <field>
+        <column_name>Cust_Address</column_name>
+        <stream_name>Cust_Address</stream_name>
+      </field>
+      <field>
+        <column_name>Customer_Tel_No</column_name>
+        <stream_name>Customer_Tel_No</stream_name>
+      </field>
+      <field>
+        <column_name>Rec_Agent_Branch_No</column_name>
+        <stream_name>Rec_Agent_Branch_No</stream_name>
+      </field>
+      <field>
+        <column_name>Rec_Agent_Branch_Name</column_name>
+        <stream_name>Rec_Agent_Branch_Name</stream_name>
+      </field>
+      <field>
+        <column_name>Rec_Agent_Address</column_name>
+        <stream_name>Rec_Agent_Address</stream_name>
+      </field>
+      <field>
+        <column_name>Rec_Agent_Zip</column_name>
+        <stream_name>Rec_Agent_Zip</stream_name>
+      </field>
+      <field>
+        <column_name>Rec_Agent_City</column_name>
+        <stream_name>Rec_Agent_City</stream_name>
+      </field>
+      <field>
+        <column_name>Rec_Agent_State</column_name>
+        <stream_name>Rec_Agent_State</stream_name>
+      </field>
+      <field>
+        <column_name>Ben_First_Name</column_name>
+        <stream_name>Ben_First_Name</stream_name>
+      </field>
+      <field>
+        <column_name>Ben_Last_Name_1</column_name>
+        <stream_name>Ben_Last_Name_1</stream_name>
+      </field>
+      <field>
+        <column_name>Ben_Last_Name_2</column_name>
+        <stream_name>Ben_Last_Name_2</stream_name>
+      </field>
+      <field>
+        <column_name>Ben_Id_No</column_name>
+        <stream_name>Ben_Id_No</stream_name>
+      </field>
+      <field>
+        <column_name>Ben_Id_Type</column_name>
+        <stream_name>Ben_Id_Type</stream_name>
+      </field>
+      <field>
+        <column_name>Ben_IDIssued_By_Country</column_name>
+        <stream_name>Ben_IDIssued_By_Country</stream_name>
+      </field>
+      <field>
+        <column_name>Ben_IDIssued_By_State</column_name>
+        <stream_name>Ben_IDIssued_By_State</stream_name>
+      </field>
+      <field>
+        <column_name>Ben_IDIssued_Date</column_name>
+        <stream_name>Ben_IDIssued_Date</stream_name>
+      </field>
+      <field>
+        <column_name>Ben_Id_Expiry_Date</column_name>
+        <stream_name>Ben_Id_Expiry_Date</stream_name>
+      </field>
+      <field>
+        <column_name>Ben_Country</column_name>
+        <stream_name>Ben_Country</stream_name>
+      </field>
+      <field>
+        <column_name>Ben_State</column_name>
+        <stream_name>Ben_State</stream_name>
+      </field>
+      <field>
+        <column_name>Ben_City</column_name>
+        <stream_name>Ben_City</stream_name>
+      </field>
+      <field>
+        <column_name>Ben_Postal_Code</column_name>
+        <stream_name>Ben_Postal_Code</stream_name>
+      </field>
+      <field>
+        <column_name>Ben_Address</column_name>
+        <stream_name>Ben_Address</stream_name>
+      </field>
+      <field>
+        <column_name>Ben_Tel_No</column_name>
+        <stream_name>Ben_Tel_No</stream_name>
+      </field>
+      <field>
+        <column_name>Ben_DOB</column_name>
+        <stream_name>Ben_DOB</stream_name>
+      </field>
+      <field>
+        <column_name>Ben_Country_Of_Birth</column_name>
+        <stream_name>Ben_Country_Of_Birth</stream_name>
+      </field>
+      <field>
+        <column_name>Ben_State_Of_Birth</column_name>
+        <stream_name>Ben_State_Of_Birth</stream_name>
+      </field>
+      <field>
+        <column_name>Ben_City_Of_Birth</column_name>
+        <stream_name>Ben_City_Of_Birth</stream_name>
+      </field>
+      <field>
+        <column_name>Ben_Sex</column_name>
+        <stream_name>Ben_Sex</stream_name>
+      </field>
+      <field>
+        <column_name>Ben_Tax_ID</column_name>
+        <stream_name>Ben_Tax_ID</stream_name>
+      </field>
+      <field>
+        <column_name>filename</column_name>
+        <stream_name>filename</stream_name>
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>528</xloc>
+      <yloc>144</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Altération structure flux</name>
+    <type>SelectValues</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <fields>
+      <field>
+        <name>Order No</name>
+        <rename>Order_No</rename>
+      </field>
+      <field>
+        <name>TX Date</name>
+        <rename>TX_Date</rename>
+      </field>
+      <field>
+        <name>Paid time</name>
+        <rename />
+      </field>
+      <field>
+        <name>PIN</name>
+        <rename />
+      </field>
+      <field>
+        <name>Amount</name>
+        <rename />
+      </field>
+      <field>
+        <name>Currency</name>
+        <rename />
+      </field>
+      <field>
+        <name>Amount Sent</name>
+        <rename>Amount_Sent</rename>
+      </field>
+      <field>
+        <name>Customer Fee</name>
+        <rename>Customer_Fee</rename>
+      </field>
+      <field>
+        <name>Amount Sent Currency</name>
+        <rename>Amount_Sent_Currency</rename>
+      </field>
+      <field>
+        <name>Pay Agent No</name>
+        <rename>Pay_Agent_No</rename>
+      </field>
+      <field>
+        <name>Branch No</name>
+        <rename>Branch_No</rename>
+      </field>
+      <field>
+        <name>Pay Agent</name>
+        <rename>Pay_Agent</rename>
+      </field>
+      <field>
+        <name>Branch</name>
+        <rename />
+      </field>
+      <field>
+        <name>Pay Location State Name</name>
+        <rename>Pay_Location_State_Name</rename>
+      </field>
+      <field>
+        <name>Pay Location City</name>
+        <rename>Pay_Location_City</rename>
+      </field>
+      <field>
+        <name>Pay Location ZIP</name>
+        <rename>Pay_Location_ZIP</rename>
+      </field>
+      <field>
+        <name>Pay Location Address</name>
+        <rename>Pay_Location_Address</rename>
+      </field>
+      <field>
+        <name>Pay Location Address 2</name>
+        <rename>Pay_Location_Address_2</rename>
+      </field>
+      <field>
+        <name>PA Comission Foreign Curr</name>
+        <rename>PA_Comission_Foreign_Curr</rename>
+      </field>
+      <field>
+        <name>Comm PA Foreign Currency</name>
+        <rename>CommPA_Foreign_Currency</rename>
+      </field>
+      <field>
+        <name>Paid By</name>
+        <rename>Paid_By</rename>
+      </field>
+      <field>
+        <name>Transfer Reason</name>
+        <rename>Transfer_Reason</rename>
+      </field>
+      <field>
+        <name>Customer ID Number/Unique number</name>
+        <rename>Customer_ID_Number_Unique_number</rename>
+      </field>
+      <field>
+        <name>Cust Id No</name>
+        <rename>Cust_Id_No</rename>
+      </field>
+      <field>
+        <name>Cust Id Type</name>
+        <rename>Cust_Id_Type</rename>
+      </field>
+      <field>
+        <name>Cust IDIssued By Country</name>
+        <rename>Cust_IDIssued_By_Country</rename>
+      </field>
+      <field>
+        <name>Cust IDIssued By State</name>
+        <rename>Cust_IDIssued_By_State</rename>
+      </field>
+      <field>
+        <name>Customer Name First</name>
+        <rename>Customer_Name_First</rename>
+      </field>
+      <field>
+        <name>Customer Name Last 1</name>
+        <rename>Customer_Name_Last_1</rename>
+      </field>
+      <field>
+        <name>Customer Name Last 2</name>
+        <rename>Customer_Name_Last_2</rename>
+      </field>
+      <field>
+        <name>Customer DOB</name>
+        <rename>Customer_DOB</rename>
+      </field>
+      <field>
+        <name>Cust Country</name>
+        <rename>Cust_Country</rename>
+      </field>
+      <field>
+        <name>Cust State</name>
+        <rename>Cust_State</rename>
+      </field>
+      <field>
+        <name>Cust City</name>
+        <rename>Cust_City</rename>
+      </field>
+      <field>
+        <name>Cust ZIP</name>
+        <rename>Cust_ZIP</rename>
+      </field>
+      <field>
+        <name>Cust Address</name>
+        <rename>Cust_Address</rename>
+      </field>
+      <field>
+        <name>Customer Tel No</name>
+        <rename>Customer_Tel_No</rename>
+      </field>
+      <field>
+        <name>Rec Agent Branch No</name>
+        <rename>Rec_Agent_Branch_No</rename>
+      </field>
+      <field>
+        <name>Rec Agent Branch Name</name>
+        <rename>Rec_Agent_Branch_Name</rename>
+      </field>
+      <field>
+        <name>Rec Agent Address</name>
+        <rename>Rec_Agent_Address</rename>
+      </field>
+      <field>
+        <name>Rec Agent Zip</name>
+        <rename>Rec_Agent_Zip</rename>
+      </field>
+      <field>
+        <name>Rec Agent City</name>
+        <rename>Rec_Agent_City</rename>
+      </field>
+      <field>
+        <name>Rec Agent State</name>
+        <rename>Rec_Agent_State</rename>
+      </field>
+      <field>
+        <name>Ben First Name</name>
+        <rename>Ben_First_Name</rename>
+      </field>
+      <field>
+        <name>Ben Last Name 1</name>
+        <rename>Ben_Last_Name_1</rename>
+      </field>
+      <field>
+        <name>Ben Last Name 2</name>
+        <rename>Ben_Last_Name_2</rename>
+      </field>
+      <field>
+        <name>Ben Id No</name>
+        <rename>Ben_Id_No</rename>
+      </field>
+      <field>
+        <name>Ben Id Type</name>
+        <rename>Ben_Id_Type</rename>
+      </field>
+      <field>
+        <name>Ben IDIssued By Country</name>
+        <rename>Ben_IDIssued_By_Country</rename>
+      </field>
+      <field>
+        <name>Ben IDIssued By State</name>
+        <rename>Ben_IDIssued_By_State</rename>
+      </field>
+      <field>
+        <name>Ben IDIssued Date</name>
+        <rename>Ben_IDIssued_Date</rename>
+      </field>
+      <field>
+        <name>Ben Id Expiry Date</name>
+        <rename>Ben_Id_Expiry_Date</rename>
+      </field>
+      <field>
+        <name>Ben Country</name>
+        <rename>Ben_Country</rename>
+      </field>
+      <field>
+        <name>Ben State</name>
+        <rename>Ben_State</rename>
+      </field>
+      <field>
+        <name>Ben City</name>
+        <rename>Ben_City</rename>
+      </field>
+      <field>
+        <name>Ben Postal Code</name>
+        <rename>Ben_Postal_Code</rename>
+      </field>
+      <field>
+        <name>Ben Address</name>
+        <rename>Ben_Address</rename>
+      </field>
+      <field>
+        <name>Ben Tel No</name>
+        <rename>Ben_Tel_No</rename>
+      </field>
+      <field>
+        <name>Ben DOB</name>
+        <rename>Ben_DOB</rename>
+      </field>
+      <field>
+        <name>Ben Country Of Birth</name>
+        <rename>Ben_Country_Of_Birth</rename>
+      </field>
+      <field>
+        <name>Ben State Of Birth</name>
+        <rename>Ben_State_Of_Birth</rename>
+      </field>
+      <field>
+        <name>Ben City Of Birth</name>
+        <rename>Ben_City_Of_Birth</rename>
+      </field>
+      <field>
+        <name>Ben Sex</name>
+        <rename>Ben_Sex</rename>
+      </field>
+      <field>
+        <name>Ben Tax ID</name>
+        <rename>Ben_Tax_ID</rename>
+      </field>
+      <field>
+        <name>filename</name>
+        <rename />
+      </field>
+      <select_unspecified>N</select_unspecified>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>336</xloc>
+      <yloc>112</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>

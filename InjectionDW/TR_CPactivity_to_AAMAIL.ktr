@@ -1,0 +1,1133 @@
+<transformation>
+  <info>
+    <name>TR_CPactivity_to_AAMAIL</name>
+    <description/>
+    <extended_description/>
+    <trans_version/>
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>&#x2f;</directory>
+    <parameters>
+        <parameter>
+            <name>dateParam</name>
+            <default_value/>
+            <description/>
+        </parameter>
+    </parameters>
+    <log>
+<trans-log-table><connection/>
+<schema/>
+<table/>
+<size_limit_lines/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STATUS</id><enabled>Y</enabled><name>STATUS</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name><subject/></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name><subject/></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name><subject/></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name><subject/></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name><subject/></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name><subject/></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>STARTDATE</id><enabled>Y</enabled><name>STARTDATE</name></field><field><id>ENDDATE</id><enabled>Y</enabled><name>ENDDATE</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>DEPDATE</id><enabled>Y</enabled><name>DEPDATE</name></field><field><id>REPLAYDATE</id><enabled>Y</enabled><name>REPLAYDATE</name></field><field><id>LOG_FIELD</id><enabled>Y</enabled><name>LOG_FIELD</name></field><field><id>EXECUTING_SERVER</id><enabled>N</enabled><name>EXECUTING_SERVER</name></field><field><id>EXECUTING_USER</id><enabled>N</enabled><name>EXECUTING_USER</name></field><field><id>CLIENT</id><enabled>N</enabled><name>CLIENT</name></field></trans-log-table>
+<perf-log-table><connection/>
+<schema/>
+<table/>
+<interval/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>SEQ_NR</id><enabled>Y</enabled><name>SEQ_NR</name></field><field><id>LOGDATE</id><enabled>Y</enabled><name>LOGDATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>INPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>INPUT_BUFFER_ROWS</name></field><field><id>OUTPUT_BUFFER_ROWS</id><enabled>Y</enabled><name>OUTPUT_BUFFER_ROWS</name></field></perf-log-table>
+<channel-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>LOGGING_OBJECT_TYPE</id><enabled>Y</enabled><name>LOGGING_OBJECT_TYPE</name></field><field><id>OBJECT_NAME</id><enabled>Y</enabled><name>OBJECT_NAME</name></field><field><id>OBJECT_COPY</id><enabled>Y</enabled><name>OBJECT_COPY</name></field><field><id>REPOSITORY_DIRECTORY</id><enabled>Y</enabled><name>REPOSITORY_DIRECTORY</name></field><field><id>FILENAME</id><enabled>Y</enabled><name>FILENAME</name></field><field><id>OBJECT_ID</id><enabled>Y</enabled><name>OBJECT_ID</name></field><field><id>OBJECT_REVISION</id><enabled>Y</enabled><name>OBJECT_REVISION</name></field><field><id>PARENT_CHANNEL_ID</id><enabled>Y</enabled><name>PARENT_CHANNEL_ID</name></field><field><id>ROOT_CHANNEL_ID</id><enabled>Y</enabled><name>ROOT_CHANNEL_ID</name></field></channel-log-table>
+<step-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>TRANSNAME</id><enabled>Y</enabled><name>TRANSNAME</name></field><field><id>STEPNAME</id><enabled>Y</enabled><name>STEPNAME</name></field><field><id>STEP_COPY</id><enabled>Y</enabled><name>STEP_COPY</name></field><field><id>LINES_READ</id><enabled>Y</enabled><name>LINES_READ</name></field><field><id>LINES_WRITTEN</id><enabled>Y</enabled><name>LINES_WRITTEN</name></field><field><id>LINES_UPDATED</id><enabled>Y</enabled><name>LINES_UPDATED</name></field><field><id>LINES_INPUT</id><enabled>Y</enabled><name>LINES_INPUT</name></field><field><id>LINES_OUTPUT</id><enabled>Y</enabled><name>LINES_OUTPUT</name></field><field><id>LINES_REJECTED</id><enabled>Y</enabled><name>LINES_REJECTED</name></field><field><id>ERRORS</id><enabled>Y</enabled><name>ERRORS</name></field><field><id>LOG_FIELD</id><enabled>N</enabled><name>LOG_FIELD</name></field></step-log-table>
+<metrics-log-table><connection/>
+<schema/>
+<table/>
+<timeout_days/>
+<field><id>ID_BATCH</id><enabled>Y</enabled><name>ID_BATCH</name></field><field><id>CHANNEL_ID</id><enabled>Y</enabled><name>CHANNEL_ID</name></field><field><id>LOG_DATE</id><enabled>Y</enabled><name>LOG_DATE</name></field><field><id>METRICS_DATE</id><enabled>Y</enabled><name>METRICS_DATE</name></field><field><id>METRICS_CODE</id><enabled>Y</enabled><name>METRICS_CODE</name></field><field><id>METRICS_DESCRIPTION</id><enabled>Y</enabled><name>METRICS_DESCRIPTION</name></field><field><id>METRICS_SUBJECT</id><enabled>Y</enabled><name>METRICS_SUBJECT</name></field><field><id>METRICS_TYPE</id><enabled>Y</enabled><name>METRICS_TYPE</name></field><field><id>METRICS_VALUE</id><enabled>Y</enabled><name>METRICS_VALUE</name></field></metrics-log-table>
+    </log>
+    <maxdate>
+      <connection/>
+      <table/>
+      <field/>
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file/>
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+  <created_user/>
+  <created_date>2017&#x2f;05&#x2f;15 10&#x3a;21&#x3a;23.715</created_date>
+  <modified_user>-</modified_user>
+  <modified_date>2015&#x2f;12&#x2f;09 17&#x3a;27&#x3a;56.036</modified_date>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>170</name>
+    <server>192.168.0.170</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>cashplus</database>
+    <port>3306</port>
+    <username>pentaho</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb09ab7eca93a7d5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Amazone</name>
+    <server>52.30.189.145</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>cashplus</database>
+    <port>3306</port>
+    <username>ETL</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb18a371c49da1df</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>cashplus</name>
+    <server>localhost</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>cashplus</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce71da9fa6d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Cashplus DB</name>
+    <server>localhost</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>injection</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce71da9fa6d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>N</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>cnx_dev</name>
+    <server>devdbmas.c84i7lqhu5wk.eu-west-1.rds.amazonaws.com</server>
+    <type>MSSQLNATIVE</type>
+    <access>Native</access>
+    <database>CASH_PLUS</database>
+    <port>1433</port>
+    <username>rootdb</username>
+    <password>Encrypted 2be98afc86aa7f2e4fa21ab46e6bc978d</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MSSQL.instance</code><attribute>devdbmas.c84i7lqhu5wk.eu-west-1.rds.amazonaws.com</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQLUseIntegratedSecurity</code><attribute>false</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>injection</name>
+    <server>localhost</server>
+    <type>MYSQL</type>
+    <access>Native</access>
+    <database>injection</database>
+    <port>3306</port>
+    <username>root</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce71da9fa6d4</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MYSQL.defaultFetchSize</code><attribute>500</attribute></attribute>
+      <attribute><code>EXTRA_OPTION_MYSQL.useCursorFetch</code><attribute>true</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>3306</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>STREAM_RESULTS</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>local_cash_plus</name>
+    <server>datawarehouse.c84i7lqhu5wk.eu-west-1.rds.amazonaws.com</server>
+    <type>MSSQLNATIVE</type>
+    <access>Native</access>
+    <database>CASH_PLUS_DW</database>
+    <port>1433</port>
+    <username>BIro0t</username>
+    <password>Encrypted 2be98afc86aa7f2a58e3f9a228d9a9ff5</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MSSQL.instance</code><attribute>datawarehouse.c84i7lqhu5wk.eu-west-1.rds.amazonaws.com</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQLUseIntegratedSecurity</code><attribute>false</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>Y</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Prod</name>
+    <server>cashplusmaster.cpkuecwscz72.eu-central-1.rds.amazonaws.com</server>
+    <type>MSSQLNATIVE</type>
+    <access>Native</access>
+    <database>CASH_PLUS</database>
+    <port>1433</port>
+    <username>dwroot</username>
+    <password>Encrypted 2be98afc86aa7a285ac3fa922fea9bffe</password>
+    <servername/>
+    <data_tablespace/>
+    <index_tablespace/>
+    <attributes>
+      <attribute><code>EXTRA_OPTION_MSSQL.instance</code><attribute>cashplusmaster</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_LOWERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>FORCE_IDENTIFIERS_TO_UPPERCASE</code><attribute>N</attribute></attribute>
+      <attribute><code>IS_CLUSTERED</code><attribute>N</attribute></attribute>
+      <attribute><code>MSSQLUseIntegratedSecurity</code><attribute>false</attribute></attribute>
+      <attribute><code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code><attribute>N</attribute></attribute>
+      <attribute><code>PORT_NUMBER</code><attribute>1433</attribute></attribute>
+      <attribute><code>PRESERVE_RESERVED_WORD_CASE</code><attribute>N</attribute></attribute>
+      <attribute><code>QUOTE_ALL_FIELDS</code><attribute>N</attribute></attribute>
+      <attribute><code>SUPPORTS_BOOLEAN_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>SUPPORTS_TIMESTAMP_DATA_TYPE</code><attribute>Y</attribute></attribute>
+      <attribute><code>USE_POOLING</code><attribute>N</attribute></attribute>
+    </attributes>
+  </connection>
+  <order>
+  <hop> <from>Set Variables</from><to>WU INPUT</to><enabled>Y</enabled> </hop>
+  <hop> <from>Set Variables</from><to>MG INPUT</to><enabled>Y</enabled> </hop>
+  <hop> <from>Set Variables</from><to>MT INPUT</to><enabled>Y</enabled> </hop>
+  <hop> <from>Set Variables</from><to>ME INPUT</to><enabled>Y</enabled> </hop>
+  <hop> <from>Set Variables</from><to>RIA INPUT</to><enabled>Y</enabled> </hop>
+  <hop> <from>Set Variables</from><to>CHA Input</to><enabled>Y</enabled> </hop>
+  <hop> <from>Set Variables</from><to>CHV INPUT</to><enabled>Y</enabled> </hop>
+  <hop> <from>Set Variables</from><to>MI INPUT</to><enabled>Y</enabled> </hop>
+  <hop> <from>Set Variables</from><to>Table input Out</to><enabled>Y</enabled> </hop>
+  <hop> <from>Set Variables</from><to>Table input In</to><enabled>Y</enabled> </hop>
+  <hop> <from>Set Variables</from><to>VPS INPUT</to><enabled>Y</enabled> </hop>
+  <hop> <from>Generate Rows</from><to>Format Date</to><enabled>Y</enabled> </hop>
+  <hop> <from>Format Date</from><to>Set Variables</to><enabled>Y</enabled> </hop>
+  <hop> <from>VPS INPUT</from><to>Table output 10</to><enabled>Y</enabled> </hop>
+  <hop> <from>Table input In</from><to>Table output 9</to><enabled>Y</enabled> </hop>
+  <hop> <from>Table input Out</from><to>Table output 8</to><enabled>Y</enabled> </hop>
+  <hop> <from>MI INPUT</from><to>Table output 11</to><enabled>Y</enabled> </hop>
+  <hop> <from>CHV INPUT</from><to>Table output 4</to><enabled>Y</enabled> </hop>
+  <hop> <from>CHA Input</from><to>Table output 5</to><enabled>Y</enabled> </hop>
+  <hop> <from>RIA INPUT</from><to>Table output 3</to><enabled>Y</enabled> </hop>
+  <hop> <from>ME INPUT</from><to>Table output 6</to><enabled>Y</enabled> </hop>
+  <hop> <from>MT INPUT</from><to>Table output 2</to><enabled>Y</enabled> </hop>
+  <hop> <from>MG INPUT</from><to>Table output 7</to><enabled>Y</enabled> </hop>
+  <hop> <from>WU INPUT</from><to>Table output</to><enabled>Y</enabled> </hop>
+  </order>
+  <step>
+    <name>CHA Input</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Cashplus DB</connection>
+    <sql>select distinct&#xd;&#xa;&#x22;CHA&#x22; as fournisseur ,&#xd;&#xa;year&#x28;date&#x29; as annee ,&#xd;&#xa;month&#x28;date&#x29; as mois ,&#xd;&#xa;week&#x28;date&#x29; as semaine ,&#xd;&#xa;dayofweek&#x28;date&#x29; as jour_semaine, &#xd;&#xa;0 as canal,&#xd;&#xa;time&#x28;date&#x29; as HEURE,&#xd;&#xa;DATE_FORMAT&#x28;date,&#x22;&#x25;Y-&#x25;m-&#x25;d&#x22;&#x29; as date,&#xd;&#xa;id_op  as transaction_code ,&#xd;&#xa;&#x22;MAR&#x22; as origine, &#xd;&#xa;dev as devise,  &#xd;&#xa;Null as sender, &#xd;&#xa;Null as receiver, &#xd;&#xa;agencies.name as office_name, &#xd;&#xa;shop_id as office_code,&#xd;&#xa;CONVERT&#x28;dev_price_purchase, DECIMAL&#x28;10,8&#x29;&#x29; as rate_calcul, &#xd;&#xa;CONVERT&#x28;dev_price_sale, DECIMAL&#x28;10,8&#x29;&#x29; as rate_valide, &#xd;&#xa;dev_amount as amount_value_dev,&#xd;&#xa;dev_comm as commiss_value_dev,  &#xd;&#xa;CONVERT&#x28;dev_mad, DECIMAL&#x28;10,2&#x29;&#x29;  as amount_value_mad, &#xd;&#xa;0 as commiss_value_mad, &#xd;&#xa;shop_id as cashier, &#xd;&#xa;agencies.ANALYTIQUE as analytique&#xd;&#xa;FROM&#xd;&#xa;change_daily_activity&#xd;&#xa;INNER JOIN agencies ON change_daily_activity.shop_id&#x3d;agencies.CODE&#xd;&#xa;where DATE_FORMAT&#x28;date,&#x22;&#x25;Y-&#x25;m-&#x25;d&#x22;&#x29;&#x3d; &#x27;&#x24;&#x7b;DAILYDATE&#x7d;&#x27;&#xd;&#xa;and shop_id not in &#x28;&#x22;81601&#x22;&#x29;&#x3b;</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>390</xloc>
+      <yloc>395</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>CHV INPUT</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Cashplus DB</connection>
+    <sql>select distinct&#xd;&#xa;&#x22;CHV&#x22; as FOURNISSEUR ,&#xd;&#xa;year&#x28;STR_TO_DATE&#x28;Date, &#x27;&#x25;Y-&#x25;m-&#x25;d&#x27;&#x29;&#x29; as ANNEE ,&#xd;&#xa;month&#x28;STR_TO_DATE&#x28;Date, &#x27;&#x25;Y-&#x25;m-&#x25;d&#x27;&#x29;&#x29; as MOIS ,&#xd;&#xa;week&#x28;STR_TO_DATE&#x28;Date, &#x27;&#x25;Y-&#x25;m-&#x25;d&#x27;&#x29;&#x29; as SEMAINE ,&#xd;&#xa;dayofweek&#x28;STR_TO_DATE&#x28;Date, &#x27;&#x25;Y-&#x25;m-&#x25;d&#x27;&#x29;&#x29; as JOUR_SEMAINE, &#xd;&#xa;2 as CANAL, &#xd;&#xa;HEURE,&#xd;&#xa;STR_TO_DATE&#x28;Date, &#x27;&#x25;Y-&#x25;m-&#x25;d&#x27;&#x29; as date, &#xd;&#xa;Id  as transaction_code ,&#xd;&#xa;&#x22;MAR&#x22; as origine, &#xd;&#xa;Devise as devise,  &#xd;&#xa;null as sender, &#xd;&#xa;null as receiver, &#xd;&#xa;agencies.NAME as office_name, &#xd;&#xa;agencies.CODE as office_code, &#xd;&#xa;CONVERT&#x28;Contre_Valeur , DECIMAL&#x28;10,2&#x29;&#x29;  as rate_calcul, &#xd;&#xa;CONVERT&#x28;Contre_Valeur  , DECIMAL&#x28;10,2&#x29;&#x29; as rate_valide, &#xd;&#xa;Montant_Dev as amount_value_dev,&#xd;&#xa;0 as commiss_value_dev,  &#xd;&#xa;Montant_Mad   as amount_value_mad,&#xd;&#xa;Commission_Mad   as commiss_value_mad,  &#xd;&#xa;null as cashier, &#xd;&#xa;agencies.ANALYTIQUE as analytique&#xd;&#xa;FROM&#xd;&#xa;	vente_daily_activity&#xd;&#xa;INNER JOIN agencies ON vente_daily_activity.Code&#x3d;agencies.CODE&#xd;&#xa;WHERE &#xd;&#xa;	STR_TO_DATE&#x28;Date, &#x27;&#x25;Y-&#x25;m-&#x25;d&#x27;&#x29; &#x3d; &#x27;&#x24;&#x7b;DAILYDATE&#x7d;&#x27;&#xd;&#xa;and agencies.CODE not in &#x28;&#x22;81601&#x22;&#x29;&#x3b;</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>388</xloc>
+      <yloc>480</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Format Date</name>
+    <type>SelectValues</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>        <select_unspecified>N</select_unspecified>
+      <meta>        <name>dailyDate</name>
+        <rename>dailyDate</rename>
+        <type>Date</type>
+        <length>-2</length>
+        <precision>-2</precision>
+        <conversion_mask>yyyy-MM-dd</conversion_mask>
+        <date_format_lenient>false</date_format_lenient>
+        <date_format_locale/>
+        <date_format_timezone/>
+        <lenient_string_to_number>false</lenient_string_to_number>
+        <encoding/>
+        <decimal_symbol/>
+        <grouping_symbol/>
+        <currency_symbol/>
+        <storage_type/>
+      </meta>    </fields>     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>153</xloc>
+      <yloc>328</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Generate Rows</name>
+    <type>RowGenerator</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <name>dailyDate</name>
+        <type>Date</type>
+        <format>yyyy-MM-dd</format>
+        <currency/>
+        <decimal/>
+        <group/>
+        <nullif>2015-12-08</nullif>
+        <length>-1</length>
+        <precision>-1</precision>
+        <set_empty_string>N</set_empty_string>
+      </field>
+    </fields>
+    <limit>1</limit>
+    <never_ending>N</never_ending>
+    <interval_in_ms>5000</interval_in_ms>
+    <row_time_field>now</row_time_field>
+    <last_time_field>FiveSecondsAgo</last_time_field>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>47</xloc>
+      <yloc>327</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>ME INPUT</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Cashplus DB</connection>
+    <sql>SELECT distinct&#xd;&#xa;&#x22;ME&#x22; as FOURNISSEUR ,&#xd;&#xa;year&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as ANNEE ,&#xd;&#xa;month&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as MOIS ,&#xd;&#xa;week&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as SEMAINE ,&#xd;&#xa;dayofweek&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as JOUR_SEMAINE, &#xd;&#xa;1 as CANAL, &#xd;&#xa;DATE_FORMAT&#x28;STR_TO_DATE&#x28;Date_Time,&#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y &#x25;H&#x3a;&#x25;i&#x3a;&#x25;s&#x27;&#x29;,&#x27;&#x25;H&#x3a;&#x25;i&#x3a;&#x25;s&#x27;&#x29; as HEURE,&#xd;&#xa;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29; as date, &#xd;&#xa;Transaction_Id  as transaction_code ,&#xd;&#xa;null  as origine, &#xd;&#xa;null  as devise,  &#xd;&#xa;sender, &#xd;&#xa;receiver,&#xd;&#xa;agencies.NAME as office_name, &#xd;&#xa;agencies.CODE as office_code, &#xd;&#xa;0 as rate_calcul, &#xd;&#xa;0 as rate_valide, &#xd;&#xa;0 as amount_value_dev,&#xd;&#xa;0 as commiss_value_dev,  &#xd;&#xa;CONVERT&#x28;Transaction_Amount, DECIMAL&#x28;10,2&#x29;&#x29;  as amount_value_mad, &#xd;&#xa;CONVERT&#x28;Operation_Fee, DECIMAL&#x28;10,2&#x29;&#x29;  as commiss_value_mad, &#xd;&#xa;Shop_Keeper_Info as  cashier,&#xd;&#xa;agencies.ANALYTIQUE as analytique&#xd;&#xa;FROM &#xd;&#xa;	cp_daily_activity&#xd;&#xa;INNER JOIN agencies ON cp_daily_activity.Shop_Code&#x3d;agencies.CODE&#xd;&#xa;WHERE &#xd;&#xa;	Product_ID&#x3d;23&#xd;&#xa;AND &#xd;&#xa;	STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29; &#x3d; &#x27;&#x24;&#x7b;DAILYDATE&#x7d;&#x27;&#x3b;&#xd;&#xa;</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>393</xloc>
+      <yloc>242</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>MG INPUT</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Cashplus DB</connection>
+    <sql>SELECT distinct&#xd;&#xa;&#x22;MG&#x22; as FOURNISSEUR ,&#xd;&#xa;year&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as ANNEE ,&#xd;&#xa;month&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as MOIS ,&#xd;&#xa;week&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as SEMAINE ,&#xd;&#xa;dayofweek&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as JOUR_SEMAINE, &#xd;&#xa;1 as CANAL, &#xd;&#xa;DATE_FORMAT&#x28;STR_TO_DATE&#x28;Date_Time,&#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y &#x25;H&#x3a;&#x25;i&#x3a;&#x25;s&#x27;&#x29;,&#x27;&#x25;H&#x3a;&#x25;i&#x3a;&#x25;s&#x27;&#x29; as HEURE,&#xd;&#xa;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29; as date, &#xd;&#xa;Transaction_Id  as transaction_code ,&#xd;&#xa;null  as origine, &#xd;&#xa;null  as devise,  &#xd;&#xa;sender, &#xd;&#xa;receiver,&#xd;&#xa;agencies.NAME as office_name, &#xd;&#xa;agencies.CODE as office_code, &#xd;&#xa;0 as rate_calcul, &#xd;&#xa;0 as rate_valide, &#xd;&#xa;0 as amount_value_dev,&#xd;&#xa;0 as commiss_value_dev,  &#xd;&#xa;CONVERT&#x28;Transaction_Amount, DECIMAL&#x28;10,2&#x29;&#x29;  as amount_value_mad, &#xd;&#xa;CONVERT&#x28;Operation_Fee, DECIMAL&#x28;10,2&#x29;&#x29;  as commiss_value_mad, &#xd;&#xa;Shop_Keeper_Info as  cashier,&#xd;&#xa;agencies.ANALYTIQUE as analytique&#xd;&#xa;FROM &#xd;&#xa;	cp_daily_activity&#xd;&#xa;INNER JOIN agencies ON cp_daily_activity.Shop_Code&#x3d;agencies.CODE&#xd;&#xa;WHERE &#xd;&#xa;	Product_ID&#x3d;6&#xd;&#xa;AND &#xd;&#xa;	STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29; &#x3d; &#x27;&#x24;&#x7b;DAILYDATE&#x7d;&#x27;&#x3b;&#xd;&#xa;</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>394</xloc>
+      <yloc>96</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>MI INPUT</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Cashplus DB</connection>
+    <sql>SELECT distinct&#xd;&#xa;&#x22;MI&#x22; as FOURNISSEUR ,&#xd;&#xa;year&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as ANNEE ,&#xd;&#xa;month&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as MOIS ,&#xd;&#xa;week&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as SEMAINE ,&#xd;&#xa;dayofweek&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as JOUR_SEMAINE, &#xd;&#xa;1 as CANAL, &#xd;&#xa;DATE_FORMAT&#x28;STR_TO_DATE&#x28;Date_Time,&#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y &#x25;H&#x3a;&#x25;i&#x3a;&#x25;s&#x27;&#x29;,&#x27;&#x25;H&#x3a;&#x25;i&#x3a;&#x25;s&#x27;&#x29; as HEURE,&#xd;&#xa;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29; as date, &#xd;&#xa;Transaction_Id  as transaction_code ,&#xd;&#xa;null  as origine, &#xd;&#xa;null  as devise,  &#xd;&#xa;sender, &#xd;&#xa;receiver,&#xd;&#xa;agencies.NAME as office_name, &#xd;&#xa;agencies.CODE as office_code, &#xd;&#xa;0 as rate_calcul, &#xd;&#xa;0 as rate_valide, &#xd;&#xa;0 as amount_value_dev,&#xd;&#xa;0 as commiss_value_dev,  &#xd;&#xa;CONVERT&#x28;Transaction_Amount, DECIMAL&#x28;10,2&#x29;&#x29;  as amount_value_mad, &#xd;&#xa;CONVERT&#x28;Operation_Fee, DECIMAL&#x28;10,2&#x29;&#x29;  as commiss_value_mad, &#xd;&#xa;Shop_Keeper_Info as  cashier,&#xd;&#xa;agencies.ANALYTIQUE as analytique&#xd;&#xa;FROM &#xd;&#xa;	cp_daily_activity&#xd;&#xa;INNER JOIN agencies ON cp_daily_activity.Shop_Code&#x3d;agencies.CODE&#xd;&#xa;WHERE &#xd;&#xa;	Product_ID&#x3d;26&#xd;&#xa;AND &#xd;&#xa;	STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29; &#x3d; &#x27;&#x24;&#x7b;DAILYDATE&#x7d;&#x27;&#x3b;&#xd;&#xa;</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>384</xloc>
+      <yloc>552</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>MT INPUT</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Cashplus DB</connection>
+    <sql>SELECT distinct&#xd;&#xa;&#x22;MT&#x22; as FOURNISSEUR ,&#xd;&#xa;year&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as ANNEE ,&#xd;&#xa;month&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as MOIS ,&#xd;&#xa;week&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as SEMAINE ,&#xd;&#xa;dayofweek&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as JOUR_SEMAINE, &#xd;&#xa;1 as CANAL, &#xd;&#xa;DATE_FORMAT&#x28;STR_TO_DATE&#x28;Date_Time,&#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y &#x25;H&#x3a;&#x25;i&#x3a;&#x25;s&#x27;&#x29;,&#x27;&#x25;H&#x3a;&#x25;i&#x3a;&#x25;s&#x27;&#x29; as HEURE,&#xd;&#xa;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29; as date, &#xd;&#xa;Transaction_Id  as transaction_code ,&#xd;&#xa;null  as origine, &#xd;&#xa;null  as devise,  &#xd;&#xa;sender, &#xd;&#xa;receiver,&#xd;&#xa;agencies.NAME as office_name, &#xd;&#xa;agencies.CODE as office_code, &#xd;&#xa;0 as rate_calcul, &#xd;&#xa;0 as rate_valide, &#xd;&#xa;0 as amount_value_dev,&#xd;&#xa;0 as commiss_value_dev,  &#xd;&#xa;CONVERT&#x28;Transaction_Amount, DECIMAL&#x28;10,2&#x29;&#x29;  as amount_value_mad, &#xd;&#xa;CONVERT&#x28;Operation_Fee, DECIMAL&#x28;10,2&#x29;&#x29;  as commiss_value_mad, &#xd;&#xa;Shop_Keeper_Info as  cashier,&#xd;&#xa;agencies.ANALYTIQUE as analytique&#xd;&#xa;FROM &#xd;&#xa;	cp_daily_activity&#xd;&#xa;INNER JOIN agencies ON cp_daily_activity.Shop_Code&#x3d;agencies.CODE&#xd;&#xa;WHERE &#xd;&#xa;	Product_ID&#x3d;25&#xd;&#xa;AND &#xd;&#xa;	STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29; &#x3d; &#x27;&#x24;&#x7b;DAILYDATE&#x7d;&#x27;&#x3b;&#xd;&#xa;</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>394</xloc>
+      <yloc>168</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>RIA INPUT</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Cashplus DB</connection>
+    <sql>SELECT distinct&#xd;&#xa;&#x22;RIA&#x22; as FOURNISSEUR ,&#xd;&#xa;year&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as ANNEE ,&#xd;&#xa;month&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as MOIS ,&#xd;&#xa;week&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as SEMAINE ,&#xd;&#xa;dayofweek&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as JOUR_SEMAINE, &#xd;&#xa;1 as CANAL, &#xd;&#xa;DATE_FORMAT&#x28;STR_TO_DATE&#x28;Date_Time,&#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y &#x25;H&#x3a;&#x25;i&#x3a;&#x25;s&#x27;&#x29;,&#x27;&#x25;H&#x3a;&#x25;i&#x3a;&#x25;s&#x27;&#x29; as HEURE,&#xd;&#xa;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29; as date, &#xd;&#xa;Transaction_Id  as transaction_code ,&#xd;&#xa;null  as origine, &#xd;&#xa;null  as devise,  &#xd;&#xa;sender, &#xd;&#xa;receiver,&#xd;&#xa;agencies.NAME as office_name, &#xd;&#xa;agencies.CODE as office_code, &#xd;&#xa;0 as rate_calcul, &#xd;&#xa;0 as rate_valide, &#xd;&#xa;0 as amount_value_dev,&#xd;&#xa;0 as commiss_value_dev,  &#xd;&#xa;CONVERT&#x28;Transaction_Amount, DECIMAL&#x28;10,2&#x29;&#x29;  as amount_value_mad, &#xd;&#xa;CONVERT&#x28;Operation_Fee, DECIMAL&#x28;10,2&#x29;&#x29;  as commiss_value_mad, &#xd;&#xa;Shop_Keeper_Info as  cashier,&#xd;&#xa;agencies.ANALYTIQUE as analytique&#xd;&#xa;FROM &#xd;&#xa;	cp_daily_activity&#xd;&#xa;INNER JOIN agencies ON cp_daily_activity.Shop_Code&#x3d;agencies.CODE&#xd;&#xa;WHERE &#xd;&#xa;	Product_ID&#x3d;22&#xd;&#xa;AND &#xd;&#xa;	STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29; &#x3d; &#x27;&#x24;&#x7b;DAILYDATE&#x7d;&#x27;&#x3b;&#xd;&#xa;</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>390</xloc>
+      <yloc>318</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Set Variables</name>
+    <type>SetVariable</type>
+    <description/>
+    <distribute>N</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <fields>
+      <field>
+        <field_name>dailyDate</field_name>
+        <variable_name>DAILYDATE</variable_name>
+        <variable_type>JVM</variable_type>
+        <default_value/>
+        </field>
+      </fields>
+    <use_formatting>Y</use_formatting>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>230</xloc>
+      <yloc>327</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table input In</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Cashplus DB</connection>
+    <sql>select distinct&#xa;&#x22;CPIN&#x22; as FOURNISSEUR ,&#xa;year&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as ANNEE ,&#xa;month&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as MOIS ,&#xa;week&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as SEMAINE ,&#xa;dayofweek&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as JOUR_SEMAINE, &#xa;0 as CANAL, &#xa;DATE_FORMAT&#x28;STR_TO_DATE&#x28;Date_Time,&#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y &#x25;H&#x3a;&#x25;i&#x3a;&#x25;s&#x27;&#x29;,&#x27;&#x25;H&#x3a;&#x25;i&#x3a;&#x25;s&#x27;&#x29; as HEURE,&#xa;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29; as date, &#xa;Transaction_Id  as transaction_code ,&#xa;&#x22;MAR&#x22; as origine, &#xa;&#x22;MAD&#x22; as devise,  &#xa;sender, &#xa;receiver, &#xa;agencies.NAME as office_name, &#xa;agencies.CODE as office_code, &#xa;0 as rate_calcul, &#xa;0 as rate_valide, &#xa;0 as amount_value_dev,&#xa;CONVERT&#x28;Extra_Service_Fee, DECIMAL&#x28;10,2&#x29;&#x29;  as commiss_value_dev,  &#xa;CONVERT&#x28;Transaction_Amount, DECIMAL&#x28;10,2&#x29;&#x29;  as amount_value_mad, &#xa;CONVERT&#x28;Operation_Fee, DECIMAL&#x28;10,2&#x29;&#x29;  as commiss_value_mad, &#xa;Shop_Keeper_Info as cashier, &#xa;agencies.ANALYTIQUE as analytique&#xa;FROM&#xa;	cp_daily_activity&#xa;INNER JOIN agencies ON cp_daily_activity.Shop_Code&#x3d;agencies.CODE&#xa;WHERE &#xa;	Product_ID&#x3d;1 AND &#x28;Transaction_Status_Code&#x3d;8 or Transaction_Status_Code&#x3d;26&#x29;&#xa;AND &#xa;	STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29; &#x3d; &#x27;&#x24;&#x7b;DAILYDATE&#x7d;&#x27;&#x3b;</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>379</xloc>
+      <yloc>684</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table input Out</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Cashplus DB</connection>
+    <sql>SELECT distinct&#xa;&#x22;CPOUT&#x22; as fournisseur ,&#xa;year&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as annee ,&#xa;month&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as mois ,&#xa;week&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as semaine ,&#xa;dayofweek&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as jour_semaine, &#xa;0 as CANAL, &#xa;DATE_FORMAT&#x28;STR_TO_DATE&#x28;Date_Time,&#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y &#x25;H&#x3a;&#x25;i&#x3a;&#x25;s&#x27;&#x29;,&#x27;&#x25;H&#x3a;&#x25;i&#x3a;&#x25;s&#x27;&#x29; as heure,&#xa;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29; as date, &#xa;Transaction_Code  as transaction_code ,&#xa;&#x22;MAR&#x22; as origine, &#xa;&#x22;MAD&#x22; as devise,  &#xa;sender, &#xa;receiver,&#xa;agencies.NAME as office_name, &#xa;agencies.CODE as office_code, &#xa;0 as rate_calcul, &#xa;0 as rate_valide, &#xa;0 as amount_value_dev,&#xa;0 as commiss_value_dev,  &#xa;CONVERT&#x28;Transaction_Amount, DECIMAL&#x28;10,2&#x29;&#x29;  as amount_value_mad,&#xa;CASE &#xa;      WHEN CONVERT&#x28;Transaction_Amount, DECIMAL&#x28;10,2&#x29;&#x29; &#x3c;&#x3d; 500   THEN ABS&#x28;CONVERT&#x28;28, DECIMAL&#x28;10,2&#x29;&#x29;&#x29;&#xa;      WHEN CONVERT&#x28;Transaction_Amount, DECIMAL&#x28;10,2&#x29;&#x29; &#x3e; 500   and CONVERT&#x28;Transaction_Amount, DECIMAL&#x28;10,2&#x29;&#x29; &#x3c;&#x3d; 1000  THEN ABS&#x28;CONVERT&#x28;37, DECIMAL&#x28;10,2&#x29;&#x29;&#x29;&#xa;      WHEN CONVERT&#x28;Transaction_Amount, DECIMAL&#x28;10,2&#x29;&#x29; &#x3e; 1000  and CONVERT&#x28;Transaction_Amount, DECIMAL&#x28;10,2&#x29;&#x29; &#x3c;&#x3d; 3000  THEN ABS&#x28;CONVERT&#x28;47, DECIMAL&#x28;10,2&#x29;&#x29;&#x29;&#xa;      WHEN CONVERT&#x28;Transaction_Amount, DECIMAL&#x28;10,2&#x29;&#x29; &#x3e; 3000  and CONVERT&#x28;Transaction_Amount, DECIMAL&#x28;10,2&#x29;&#x29; &#x3c;&#x3d; 5000  THEN ABS&#x28;CONVERT&#x28;57, DECIMAL&#x28;10,2&#x29;&#x29;&#x29;&#xa;      WHEN CONVERT&#x28;Transaction_Amount, DECIMAL&#x28;10,2&#x29;&#x29; &#x3e; 5000  and CONVERT&#x28;Transaction_Amount, DECIMAL&#x28;10,2&#x29;&#x29; &#x3c;&#x3d; 10000 THEN ABS&#x28;CONVERT&#x28;67, DECIMAL&#x28;10,2&#x29;&#x29;&#x29;&#xa;      WHEN CONVERT&#x28;Transaction_Amount, DECIMAL&#x28;10,2&#x29;&#x29; &#x3e; 10000 THEN ABS&#x28;CONVERT&#x28;CONVERT&#x28;Transaction_Amount, DECIMAL&#x28;10,2&#x29;&#x29;&#x2a;&#x28;0.0067&#x29;, DECIMAL&#x28;10,2&#x29;&#x29;&#x29;&#xa;END as commiss_value_mad,&#xa;Shop_Keeper_Info as cashier,&#xa;agencies.ANALYTIQUE as analytique&#xa;FROM &#xa;	cp_daily_activity&#xa;INNER JOIN agencies ON cp_daily_activity.Shop_Code&#x3d;agencies.CODE&#xa;WHERE &#xa;	Product_ID&#x3d;19&#xa;AND &#xa;	STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29; &#x3d; &#x27;&#x24;&#x7b;DAILYDATE&#x7d;&#x27;&#x3b;</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>384</xloc>
+      <yloc>615</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table output</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Cashplus DB</connection>
+    <schema/>
+    <table>aamail_base_statistiques_copy</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>614</xloc>
+      <yloc>23</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table output 10</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Cashplus DB</connection>
+    <schema/>
+    <table>aamail_base_statistiques_copy</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>621</xloc>
+      <yloc>738</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table output 11</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Cashplus DB</connection>
+    <schema/>
+    <table>aamail_base_statistiques_copy</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>622</xloc>
+      <yloc>553</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table output 2</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Cashplus DB</connection>
+    <schema/>
+    <table>aamail_base_statistiques_copy</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>616</xloc>
+      <yloc>156</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table output 3</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Cashplus DB</connection>
+    <schema/>
+    <table>aamail_base_statistiques_copy</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>616</xloc>
+      <yloc>311</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table output 4</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Cashplus DB</connection>
+    <schema/>
+    <table>aamail_base_statistiques_copy</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>618</xloc>
+      <yloc>466</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table output 5</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Cashplus DB</connection>
+    <schema/>
+    <table>aamail_base_statistiques_copy</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>620</xloc>
+      <yloc>390</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table output 6</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Cashplus DB</connection>
+    <schema/>
+    <table>aamail_base_statistiques_copy</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>618</xloc>
+      <yloc>223</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table output 7</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Cashplus DB</connection>
+    <schema/>
+    <table>aamail_base_statistiques_copy</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>617</xloc>
+      <yloc>86</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table output 8</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Cashplus DB</connection>
+    <schema/>
+    <table>aamail_base_statistiques_copy</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>623</xloc>
+      <yloc>599</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>Table output 9</name>
+    <type>TableOutput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Cashplus DB</connection>
+    <schema/>
+    <table>aamail_base_statistiques_copy</table>
+    <commit>1000</commit>
+    <truncate>N</truncate>
+    <ignore_errors>N</ignore_errors>
+    <use_batch>Y</use_batch>
+    <specify_fields>N</specify_fields>
+    <partitioning_enabled>N</partitioning_enabled>
+    <partitioning_field/>
+    <partitioning_daily>N</partitioning_daily>
+    <partitioning_monthly>Y</partitioning_monthly>
+    <tablename_in_field>N</tablename_in_field>
+    <tablename_field/>
+    <tablename_in_table>Y</tablename_in_table>
+    <return_keys>N</return_keys>
+    <return_field/>
+    <fields>
+    </fields>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>622</xloc>
+      <yloc>669</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>VPS INPUT</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Cashplus DB</connection>
+    <sql>select distinct&#xd;&#xa;&#x22;VPS&#x22; as fournisseur ,&#xd;&#xa;year&#x28;Date&#x29; as annee ,&#xd;&#xa;month&#x28;Date&#x29; as mois ,&#xd;&#xa;week&#x28;Date&#x29; as semaine ,&#xd;&#xa;dayofweek&#x28;Date&#x29; as jour_semaine, &#xd;&#xa;0 as canal,&#xd;&#xa;0 as HEURE,&#xd;&#xa;DATE_FORMAT&#x28;Date,&#x22;&#x25;Y-&#x25;m-&#x25;d&#x22;&#x29; as date,&#xd;&#xa;Jeton  as transaction_code ,&#xd;&#xa;&#x22;MAR&#x22; as origine, &#xd;&#xa;Devise as devise,  &#xd;&#xa;Null as sender, &#xd;&#xa;Null as receiver, &#xd;&#xa;agencies.name as office_name, &#xd;&#xa;Code_agence as office_code,&#xd;&#xa;0 as rate_calcul, &#xd;&#xa;0 as rate_valide, &#xd;&#xa;0 as amount_value_dev,&#xd;&#xa;0 as commiss_value_dev,  &#xd;&#xa;CONVERT&#x28;Montant, DECIMAL&#x28;10,2&#x29;&#x29;  as amount_value_mad, &#xd;&#xa;Commission as commiss_value_mad, &#xd;&#xa;Code_Operateur as cashier, &#xd;&#xa;agencies.ANALYTIQUE as analytique&#xd;&#xa;FROM&#xd;&#xa;vps_daily_activity&#xd;&#xa;INNER JOIN agencies ON vps_daily_activity.Code_agence&#x3d;agencies.CODE&#xd;&#xa;WHERE&#xd;&#xa;DATE_FORMAT&#x28;Date,&#x22;&#x25;Y-&#x25;m-&#x25;d&#x22;&#x29; &#x3d; &#x27;&#x24;&#x7b;DAILYDATE&#x7d;&#x27;&#x3b;&#xd;&#xa;</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>379</xloc>
+      <yloc>752</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step>
+    <name>WU INPUT</name>
+    <type>TableInput</type>
+    <description/>
+    <distribute>Y</distribute>
+    <custom_distribution/>
+    <copies>1</copies>
+         <partitioning>
+           <method>none</method>
+           <schema_name/>
+           </partitioning>
+    <connection>Cashplus DB</connection>
+    <sql>&#xd;&#xa;select distinct&#xd;&#xa;&#x22;WU&#x22; as FOURNISSEUR ,&#xd;&#xa;year&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as ANNEE ,&#xd;&#xa;month&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as MOIS ,&#xd;&#xa;week&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as SEMAINE ,&#xd;&#xa;dayofweek&#x28;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29;&#x29; as JOUR_SEMAINE, &#xd;&#xa;1 as CANAL, &#xd;&#xa;DATE_FORMAT&#x28;STR_TO_DATE&#x28;Date_Time,&#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y &#x25;H&#x3a;&#x25;i&#x3a;&#x25;s&#x27;&#x29;,&#x27;&#x25;H&#x3a;&#x25;i&#x3a;&#x25;s&#x27;&#x29; as HEURE,&#xd;&#xa;STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29; as date, &#xd;&#xa;Transaction_Id  as transaction_code ,&#xd;&#xa;null as origine, &#xd;&#xa;null as devise,  &#xd;&#xa;sender, &#xd;&#xa;receiver, &#xd;&#xa;agencies.NAME as office_name, &#xd;&#xa;agencies.CODE as office_code, &#xd;&#xa;0 as rate_calcul, &#xd;&#xa;0 as rate_valide, &#xd;&#xa;0 as amount_value_dev,&#xd;&#xa;0 as commiss_value_dev,  &#xd;&#xa;CONVERT&#x28;Transaction_Amount, DECIMAL&#x28;10,2&#x29;&#x29;  as amount_value_mad, &#xd;&#xa;CONVERT&#x28;Operation_Fee, DECIMAL&#x28;10,2&#x29;&#x29;  as commiss_value_mad, &#xd;&#xa;Shop_Keeper_Info as cashier, &#xd;&#xa;agencies.ANALYTIQUE as analytique&#xd;&#xa;FROM&#xd;&#xa;	cp_daily_activity&#xd;&#xa;INNER JOIN agencies ON cp_daily_activity.Shop_Code&#x3d;agencies.CODE&#xd;&#xa;WHERE &#xd;&#xa;	Product_ID&#x3d;5 AND &#x28;Transaction_Status_Code&#x3d;8 or Transaction_Status_Code&#x3d;26&#x29;&#xd;&#xa;AND &#xd;&#xa;	STR_TO_DATE&#x28;Date_Time, &#x27;&#x25;d&#x2f;&#x25;m&#x2f;&#x25;Y&#x27;&#x29; &#x3d; &#x27;&#x24;&#x7b;DAILYDATE&#x7d;&#x27;&#x3b;&#xd;&#xa;</sql>
+    <limit>0</limit>
+    <lookup/>
+    <execute_each_row>N</execute_each_row>
+    <variables_active>Y</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+     <cluster_schema/>
+ <remotesteps>   <input>   </input>   <output>   </output> </remotesteps>    <GUI>
+      <xloc>396</xloc>
+      <yloc>16</yloc>
+      <draw>Y</draw>
+      </GUI>
+    </step>
+
+  <step_error_handling>
+  </step_error_handling>
+   <slave-step-copy-partition-distribution>
+</slave-step-copy-partition-distribution>
+   <slave_transformation>N</slave_transformation>
+
+</transformation>

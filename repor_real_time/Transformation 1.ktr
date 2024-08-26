@@ -1,0 +1,2744 @@
+<transformation>
+  <info>
+    <name>Transformation 1</name>
+    <description />
+    <extended_description />
+    <trans_version />
+    <trans_type>Normal</trans_type>
+    <trans_status>0</trans_status>
+    <directory>/</directory>
+    <parameters>
+    </parameters>
+    <log>
+      <trans-log-table>
+        <connection />
+        <schema />
+        <table />
+        <size_limit_lines />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STATUS</id>
+          <enabled>Y</enabled>
+          <name>STATUS</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+          <subject />
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+          <subject />
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>STARTDATE</id>
+          <enabled>Y</enabled>
+          <name>STARTDATE</name>
+        </field>
+        <field>
+          <id>ENDDATE</id>
+          <enabled>Y</enabled>
+          <name>ENDDATE</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>DEPDATE</id>
+          <enabled>Y</enabled>
+          <name>DEPDATE</name>
+        </field>
+        <field>
+          <id>REPLAYDATE</id>
+          <enabled>Y</enabled>
+          <name>REPLAYDATE</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>Y</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+        <field>
+          <id>EXECUTING_SERVER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_SERVER</name>
+        </field>
+        <field>
+          <id>EXECUTING_USER</id>
+          <enabled>N</enabled>
+          <name>EXECUTING_USER</name>
+        </field>
+        <field>
+          <id>CLIENT</id>
+          <enabled>N</enabled>
+          <name>CLIENT</name>
+        </field>
+      </trans-log-table>
+      <perf-log-table>
+        <connection />
+        <schema />
+        <table />
+        <interval />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>SEQ_NR</id>
+          <enabled>Y</enabled>
+          <name>SEQ_NR</name>
+        </field>
+        <field>
+          <id>LOGDATE</id>
+          <enabled>Y</enabled>
+          <name>LOGDATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>INPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>INPUT_BUFFER_ROWS</name>
+        </field>
+        <field>
+          <id>OUTPUT_BUFFER_ROWS</id>
+          <enabled>Y</enabled>
+          <name>OUTPUT_BUFFER_ROWS</name>
+        </field>
+      </perf-log-table>
+      <channel-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>LOGGING_OBJECT_TYPE</id>
+          <enabled>Y</enabled>
+          <name>LOGGING_OBJECT_TYPE</name>
+        </field>
+        <field>
+          <id>OBJECT_NAME</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_NAME</name>
+        </field>
+        <field>
+          <id>OBJECT_COPY</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_COPY</name>
+        </field>
+        <field>
+          <id>REPOSITORY_DIRECTORY</id>
+          <enabled>Y</enabled>
+          <name>REPOSITORY_DIRECTORY</name>
+        </field>
+        <field>
+          <id>FILENAME</id>
+          <enabled>Y</enabled>
+          <name>FILENAME</name>
+        </field>
+        <field>
+          <id>OBJECT_ID</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_ID</name>
+        </field>
+        <field>
+          <id>OBJECT_REVISION</id>
+          <enabled>Y</enabled>
+          <name>OBJECT_REVISION</name>
+        </field>
+        <field>
+          <id>PARENT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>PARENT_CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>ROOT_CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>ROOT_CHANNEL_ID</name>
+        </field>
+      </channel-log-table>
+      <step-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>TRANSNAME</id>
+          <enabled>Y</enabled>
+          <name>TRANSNAME</name>
+        </field>
+        <field>
+          <id>STEPNAME</id>
+          <enabled>Y</enabled>
+          <name>STEPNAME</name>
+        </field>
+        <field>
+          <id>STEP_COPY</id>
+          <enabled>Y</enabled>
+          <name>STEP_COPY</name>
+        </field>
+        <field>
+          <id>LINES_READ</id>
+          <enabled>Y</enabled>
+          <name>LINES_READ</name>
+        </field>
+        <field>
+          <id>LINES_WRITTEN</id>
+          <enabled>Y</enabled>
+          <name>LINES_WRITTEN</name>
+        </field>
+        <field>
+          <id>LINES_UPDATED</id>
+          <enabled>Y</enabled>
+          <name>LINES_UPDATED</name>
+        </field>
+        <field>
+          <id>LINES_INPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_INPUT</name>
+        </field>
+        <field>
+          <id>LINES_OUTPUT</id>
+          <enabled>Y</enabled>
+          <name>LINES_OUTPUT</name>
+        </field>
+        <field>
+          <id>LINES_REJECTED</id>
+          <enabled>Y</enabled>
+          <name>LINES_REJECTED</name>
+        </field>
+        <field>
+          <id>ERRORS</id>
+          <enabled>Y</enabled>
+          <name>ERRORS</name>
+        </field>
+        <field>
+          <id>LOG_FIELD</id>
+          <enabled>N</enabled>
+          <name>LOG_FIELD</name>
+        </field>
+      </step-log-table>
+      <metrics-log-table>
+        <connection />
+        <schema />
+        <table />
+        <timeout_days />
+        <field>
+          <id>ID_BATCH</id>
+          <enabled>Y</enabled>
+          <name>ID_BATCH</name>
+        </field>
+        <field>
+          <id>CHANNEL_ID</id>
+          <enabled>Y</enabled>
+          <name>CHANNEL_ID</name>
+        </field>
+        <field>
+          <id>LOG_DATE</id>
+          <enabled>Y</enabled>
+          <name>LOG_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_DATE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DATE</name>
+        </field>
+        <field>
+          <id>METRICS_CODE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_CODE</name>
+        </field>
+        <field>
+          <id>METRICS_DESCRIPTION</id>
+          <enabled>Y</enabled>
+          <name>METRICS_DESCRIPTION</name>
+        </field>
+        <field>
+          <id>METRICS_SUBJECT</id>
+          <enabled>Y</enabled>
+          <name>METRICS_SUBJECT</name>
+        </field>
+        <field>
+          <id>METRICS_TYPE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_TYPE</name>
+        </field>
+        <field>
+          <id>METRICS_VALUE</id>
+          <enabled>Y</enabled>
+          <name>METRICS_VALUE</name>
+        </field>
+      </metrics-log-table>
+    </log>
+    <maxdate>
+      <connection />
+      <table />
+      <field />
+      <offset>0.0</offset>
+      <maxdiff>0.0</maxdiff>
+    </maxdate>
+    <size_rowset>10000</size_rowset>
+    <sleep_time_empty>50</sleep_time_empty>
+    <sleep_time_full>50</sleep_time_full>
+    <unique_connections>N</unique_connections>
+    <feedback_shown>Y</feedback_shown>
+    <feedback_size>50000</feedback_size>
+    <using_thread_priorities>Y</using_thread_priorities>
+    <shared_objects_file />
+    <capture_step_performance>N</capture_step_performance>
+    <step_performance_capturing_delay>1000</step_performance_capturing_delay>
+    <step_performance_capturing_size_limit>100</step_performance_capturing_size_limit>
+    <dependencies>
+    </dependencies>
+    <partitionschemas>
+    </partitionschemas>
+    <slaveservers>
+    </slaveservers>
+    <clusterschemas>
+    </clusterschemas>
+    <created_user>-</created_user>
+    <created_date>2018/05/25 12:01:43.452</created_date>
+    <modified_user>-</modified_user>
+    <modified_date>2018/05/25 15:46:01.196</modified_date>
+    <key_for_session_key />
+    <is_key_private>N</is_key_private>
+  </info>
+  <notepads>
+  </notepads>
+  <connection>
+    <name>Cnx fatine </name>
+    <server>192.168.33.10</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>cp_prod_sept_2017</database>
+    <port>5432</port>
+    <username>vagrant</username>
+    <password>Encrypted 2be98afc86aa7f2e4cb79ce71da9fa6d4</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>5432</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Cnx Odoo</name>
+    <server>52.30.189.145</server>
+    <type>POSTGRESQL</type>
+    <access>Native</access>
+    <database>cp_prod</database>
+    <port>5432</port>
+    <username>etl</username>
+    <password>Encrypted 2be98afc86aa7f2e4842b9c44f1b695e0</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>5432</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Cnxxx</name>
+    <server>WIN-A1G3GCETJ5/CASHPLUS</server>
+    <type>MSSQL</type>
+    <access>Native</access>
+    <database>CASHPLUS</database>
+    <port>1433</port>
+    <username>sage</username>
+    <password>Encrypted 2be98afc829c6818cbb15bb638cc2fe8f</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1433</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>CP_CORE</name>
+    <server>cashplusmaster.cpkuecwscz72.eu-central-1.rds.amazonaws.com</server>
+    <type>MSSQLNATIVE</type>
+    <access>Native</access>
+    <database>CP_CORE</database>
+    <port>1433</port>
+    <username>dwroot2</username>
+    <password>Encrypted 2be98afc86adab98581178824ee8aa9e7</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQLUseIntegratedSecurity</code>
+        <attribute>false</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1433</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>local_cash_plus</name>
+    <server>datawarehouse.c84i7lqhu5wk.eu-west-1.rds.amazonaws.com</server>
+    <type>MSSQLNATIVE</type>
+    <access>Native</access>
+    <database>CASH_PLUS_DW</database>
+    <port>1433</port>
+    <username>BIro0t</username>
+    <password>Encrypted 2be98afc86aa7f2a58e3f9a228d9a9ff5</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQLUseIntegratedSecurity</code>
+        <attribute>false</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1433</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <connection>
+    <name>Prod</name>
+    <server>cashplusmaster.cpkuecwscz72.eu-central-1.rds.amazonaws.com</server>
+    <type>MSSQLNATIVE</type>
+    <access>Native</access>
+    <database>CASH_PLUS</database>
+    <port>1433</port>
+    <username>dwroot</username>
+    <password>Encrypted 2be98afc86aa7a285ac3fa922fea9bffe</password>
+    <servername />
+    <data_tablespace />
+    <index_tablespace />
+    <attributes>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_LOWERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>FORCE_IDENTIFIERS_TO_UPPERCASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>IS_CLUSTERED</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQLUseIntegratedSecurity</code>
+        <attribute>false</attribute>
+      </attribute>
+      <attribute>
+        <code>MSSQL_DOUBLE_DECIMAL_SEPARATOR</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>PORT_NUMBER</code>
+        <attribute>1433</attribute>
+      </attribute>
+      <attribute>
+        <code>PRESERVE_RESERVED_WORD_CASE</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>QUOTE_ALL_FIELDS</code>
+        <attribute>N</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_BOOLEAN_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>SUPPORTS_TIMESTAMP_DATA_TYPE</code>
+        <attribute>Y</attribute>
+      </attribute>
+      <attribute>
+        <code>USE_POOLING</code>
+        <attribute>N</attribute>
+      </attribute>
+    </attributes>
+  </connection>
+  <order>
+    <hop>
+      <from>Table input</from>
+      <to>Microsoft Excel Writer</to>
+      <enabled>Y</enabled>
+    </hop>
+  </order>
+  <step>
+    <name>Table input</name>
+    <type>TableInput</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <connection>Prod</connection>
+    <sql> 
+ select  'National' as 'Type' ,month(cast(tr.dinsertion as date))  as 'mois' , sshopid ,  count(*) as 'nbr'  ,  sum(namount) as 'mnt'
+from transactions tr left join shop  on  nshopid = shop.nid   where  
+    cast(tr.dinsertion as date) between '2017-11-01' and '2018-01-31'
+ and tr.nproductid in (1 , 19)  and  tr.nTransactionStatusId in (8,26 , 25)  and sshopid in ('81801',
+'153601',
+'57801',
+'91701',
+'1745',
+'28524',
+'75501',
+'154301',
+'1016',
+'71401',
+'83801',
+'1078',
+'39980',
+'155201',
+'97901',
+'147001',
+'69401',
+'86303',
+'56901',
+'22828',
+'94601',
+'36688',
+'2332',
+'76901',
+'56001',
+'2350',
+'67301',
+'42601',
+'1035',
+'36507',
+'64401',
+'46001',
+'46301',
+'24372',
+'36522',
+'1053',
+'42801',
+'87301',
+'1178',
+'28852',
+'1510',
+'81901',
+'54901',
+'153401',
+'148201',
+'70701',
+'87501',
+'1966',
+'35531',
+'144001',
+'1520',
+'1032',
+'1215',
+'35660',
+'83503',
+'59101',
+'65001',
+'2335',
+'61201',
+'39670',
+'95402',
+'69202',
+'1582',
+'22220',
+'23416',
+'22711',
+'65701',
+'2213',
+'2185',
+'24838',
+'84801',
+'83701',
+'97706',
+'134001',
+'1171',
+'41601',
+'147901',
+'108002',
+'56801',
+'41101',
+'98601',
+'97101',
+'45501',
+'1187',
+'143001',
+'61401',
+'95201',
+'1191',
+'151701',
+'44602',
+'1620',
+'1049',
+'42901',
+'1202',
+'1109',
+'42201',
+'22714',
+'60801',
+'2240',
+'92301',
+'1900',
+'110021',
+'63301',
+'92702',
+'81701',
+'46901',
+'22657',
+'39373',
+'22897',
+'23442',
+'90601',
+'47601',
+'92701',
+'72901',
+'155601',
+'28837',
+'1006',
+'152001',
+'67701',
+'90001',
+'86701',
+'23491',
+'36695',
+'56701',
+'88501',
+'64301',
+'23391',
+'51801',
+'47102',
+'95501',
+'94901',
+'42303',
+'78901',
+'72401',
+'98701',
+'46601',
+'22730',
+'2234',
+'109001',
+'1083',
+'45201',
+'96301',
+'63901',
+'22582',
+'36255',
+'1004',
+'154001',
+'39353',
+'96701',
+'41301',
+'1044',
+'113001',
+'88401',
+'71402',
+'81601',
+'68801',
+'36615',
+'1625',
+'2374',
+'35640',
+'2288',
+'97703',
+'2329',
+'92801',
+'40801',
+'127001',
+'151201',
+'2385',
+'35210',
+'60201',
+'1770',
+'1194',
+'2269',
+'1217',
+'2272',
+'84701',
+'71501',
+'137001',
+'43201',
+'1985',
+'98401',
+'36364',
+'56702',
+'156701',
+'22210',
+'36508',
+'1208',
+'63902',
+'2130',
+'1405',
+'2381',
+'40201',
+'75001',
+'2140',
+'92201',
+'95601',
+'22975',
+'151401',
+'45101',
+'1115',
+'1465',
+'59901',
+'2364',
+'149501',
+'65801',
+'2315',
+'51701',
+'68502',
+'35586',
+'99901',
+'90602',
+'35553',
+'1137',
+'154401',
+'35500',
+'24317',
+'1560',
+'99601',
+'90201',
+'36351',
+'66502',
+'162901',
+'60101',
+'69901',
+'83102',
+'154801',
+'43401',
+'79701',
+'2354',
+'99101',
+'72403',
+'67001',
+'151001',
+'86001',
+'1141',
+'23417',
+'49801',
+'1635',
+'23480',
+'24629',
+'28528',
+'1168',
+'44001',
+'1002',
+'23520',
+'59401',
+'63201',
+'47103',
+'155701',
+'1107',
+'1087',
+'1967',
+'63601',
+'1935',
+'36694',
+'1026',
+'23343',
+'67201',
+'99801',
+'2040',
+'88502',
+'62601',
+'1760',
+'156601',
+'1021',
+'44601',
+'57301',
+'58501',
+'94301',
+'1192',
+'48901',
+'1114',
+'148801',
+'2287',
+'35651',
+'83901',
+'54401',
+'2394',
+'68701',
+'40601',
+'45001',
+'1154',
+'155001',
+'39310',
+'35284',
+'22715',
+'44901',
+'1415',
+'65302',
+'2313',
+'161801',
+'1011',
+'22890',
+'39677',
+'78102',
+'23721',
+'54001',
+'37591',
+'23347',
+'39911',
+'42501',
+'140001',
+'37821',
+'148901',
+'69201',
+'79001',
+'147501',
+'77101',
+'90901',
+'23441',
+'129001',
+'36743',
+'1093',
+'41302',
+'2303',
+'106001',
+'37504',
+'2273',
+'37368',
+'89001',
+'47301',
+'44401',
+'155801',
+'84401',
+'91401',
+'95101',
+'94701',
+'1014',
+'1063',
+'43901',
+'2225',
+'147201',
+'2383',
+'28270',
+'44801',
+'83301',
+'22534',
+'69701',
+'152801',
+'46401',
+'89901',
+'37438',
+'1467',
+'43501',
+'28765',
+'1895',
+'95001',
+'153301',
+'91101',
+'2264',
+'1205',
+'61402',
+'2281',
+'40901',
+'22856',
+'2323',
+'58801',
+'157401',
+'1481',
+'1023',
+'2145',
+'77301',
+'97704',
+'2295',
+'2378',
+'28551',
+'60202',
+'148101',
+'95401',
+'37622',
+'1301',
+'1495',
+'22836',
+'58401',
+'2356',
+'29029',
+'70401',
+'161501',
+'96201',
+'85401',
+'1875',
+'105001',
+'48001',
+'1995',
+'147401',
+'110041',
+'47401',
+'37866',
+'135001',
+'22578',
+'149201',
+'39932',
+'37721',
+'42302',
+'75701',
+'22914',
+'114001',
+'28838',
+'25849',
+'2105',
+'2210',
+'99102',
+'2293',
+'1650',
+'72101',
+'2200',
+'23492',
+'75601',
+'2334',
+'46602',
+'117001',
+'2221',
+'84601',
+'110031',
+'157201',
+'2061',
+'97501',
+'23390',
+'43601',
+'152601',
+'99201',
+'37364',
+'45303',
+'1580',
+'89301',
+'151101',
+'58301',
+'2268',
+'48401',
+'75401',
+'151801',
+'155401',
+'37366',
+'41201',
+'36512',
+'70101',
+'1101',
+'157701',
+'86301',
+'149901',
+'35642',
+'65501',
+'1667',
+'65805',
+'28292',
+'2256',
+'39417',
+'37392',
+'98801',
+'81703',
+'82001',
+'2218',
+'153201',
+'1565',
+'49301',
+'2395',
+'150001',
+'73401',
+'2249',
+'62102',
+'22839',
+'2217',
+'1169',
+'2275',
+'157501',
+'155901',
+'40502',
+'2298',
+'65703',
+'62801',
+'78101',
+'37691',
+'64601',
+'66201',
+'2230',
+'1730',
+'37876',
+'58201',
+'80701',
+'36501',
+'122001',
+'2384',
+'61901',
+'36601',
+'35730',
+'40701',
+'48801',
+'37380',
+'72402',
+'157301',
+'49001',
+'1365',
+'65201',
+'22622',
+'37558',
+'22707',
+'64103',
+'93101',
+'1905',
+'80601',
+'1121',
+'93001',
+'96501',
+'2000',
+'37700',
+'1950',
+'151901',
+'54101',
+'74102',
+'84501',
+'110061',
+'42701',
+'37855',
+'91201',
+'81001',
+'72601',
+'78201',
+'45801',
+'1139',
+'37356',
+'76201',
+'103001',
+'1080',
+'69801',
+'36681',
+'2355',
+'2279',
+'1915',
+'1715',
+'1159',
+'47501',
+'63801',
+'2290',
+'23720',
+'154701',
+'35121',
+'94502',
+'66601',
+'2342',
+'45301',
+'90603',
+'1162',
+'86402',
+'28213',
+'118001',
+'1120',
+'2055',
+'125001',
+'61702',
+'2060',
+'49901',
+'2371',
+'64901',
+'72701',
+'1390',
+'1126',
+'130001',
+'151301',
+'62901',
+'95301',
+'43101',
+'46201',
+'24474',
+'82401',
+'96101',
+'1204',
+'153701',
+'88701',
+'44603',
+'74701',
+'46101',
+'2325',
+'112001',
+'1060',
+'1098',
+'85101',
+'63602',
+'58101',
+'1012',
+'84201',
+'2314',
+'44201',
+'74702',
+'152501',
+'22507',
+'72301',
+'93401',
+'61701',
+'28290',
+'47801',
+'79901',
+'1466',
+'148701',
+'23493',
+'151601',
+'2236',
+'88801',
+'36506',
+'65803',
+'35750',
+'1179',
+'54201',
+'83902',
+'120001',
+'2305',
+'59801',
+'1081',
+'49601',
+'1725',
+'93801',
+'61902',
+'22765',
+'82501',
+'48701',
+'23430',
+'121001',
+'62701',
+'155002',
+'157801',
+'97001',
+'152201',
+'73702',
+'51501',
+'1071',
+'2393',
+'71801',
+'22514',
+'41901',
+'92501',
+'23494',
+'36627',
+'98902',
+'68601',
+'2242',
+'2372',
+'29094',
+'110011',
+'23410',
+'28872',
+'22234',
+'36635',
+'98001',
+'99701',
+'1190',
+'97801',
+'1646',
+'49501',
+'1530',
+'24429',
+'22385',
+'2180',
+'1206',
+'1855',
+'1515',
+'36606',
+'22709',
+'77601',
+'87901',
+'83401',
+'1550',
+'138001',
+'85102',
+'98901',
+'96401',
+'67901',
+'80702',
+'147701',
+'22938',
+'39972',
+'22201',
+'65802',
+'36628',
+'37264',
+'154201',
+'88402',
+'95901',
+'44701',
+'89701',
+'90101',
+'22603',
+'35603',
+'41001',
+'66401',
+'2328',
+'1167',
+'39664',
+'2095',
+'57701',
+'148601',
+'2386',
+'98301',
+'35548',
+'95102',
+'156901',
+'2191',
+'2250',
+'2204',
+'148301',
+'64801',
+'63103',
+'146001',
+'45602',
+'1340',
+'2382',
+'1135',
+'36692',
+'1785',
+'1005',
+'1835',
+'1079',
+'36230',
+'157601',
+'92001',
+'2360',
+'28269',
+'94001',
+'2150',
+'1616',
+'1100',
+'37861',
+'99501',
+'36600',
+'1066',
+'37353',
+'75301',
+'2377',
+'22708',
+'2312',
+'156201',
+'73701',
+'2280',
+'94501',
+'1124',
+'37466',
+'62101',
+'93201',
+'141001',
+'89202',
+'79301',
+'1219',
+'82201',
+'73801',
+'79101',
+'86403',
+'57501',
+'22865',
+'65901',
+'147101',
+'51904',
+'45401',
+'77001',
+'1511',
+'133001',
+'65806',
+'165001',
+'36520',
+'2324',
+'88601',
+'142001',
+'1432',
+'23414',
+'35571',
+'22281',
+'2265',
+'1965',
+'83101',
+'2170',
+'39983',
+'2343',
+'157001',
+'90501',
+'97102',
+'24412',
+'76301',
+'46501',
+'93701',
+'40301',
+'1058',
+'85001',
+'36820',
+'2296',
+'59601',
+'97201',
+'1480',
+'2278',
+'24231',
+'2376',
+'57201',
+'96901',
+'28239',
+'54301',
+'97401',
+'42301',
+'1031',
+'61501',
+'1800',
+'60601',
+'62902',
+'156401',
+'2267',
+'108001',
+'60501',
+'66501',
+'155301',
+'60401',
+'97701',
+'22725',
+'155501',
+'97702',
+'149401',
+'22758',
+'68402',
+'153101',
+'96601',
+'83201',
+'68501',
+'76802',
+'156001',
+'81002',
+'2388',
+'56601',
+'65702',
+'23348',
+'156101',
+'2396',
+'1380',
+'1535',
+'45601',
+'1490',
+'152701',
+'24055',
+'66101',
+'2326',
+'91001',
+'145001',
+'1029',
+'24630',
+'24475',
+'1805',
+'2397',
+'153901',
+'96001',
+'2338',
+'1064',
+'48101',
+'36651',
+'2253',
+'40501',
+'28538',
+'1007',
+'73101',
+'1177',
+'72702',
+'65301',
+'60302',
+'107001',
+'54701',
+'54801',
+'96801',
+'1666',
+'44101',
+'1203',
+'56201',
+'77501',
+'131001',
+'63101',
+'23411',
+'79401',
+'2251',
+'86401',
+'74901',
+'99401',
+'59501',
+'39984',
+'2195',
+'2353',
+'1431',
+'65401',
+'82801',
+'45901',
+'56602',
+'1127',
+'1164',
+'47101',
+'93102',
+'59001',
+'1700',
+'2337',
+'68001',
+'128001',
+'148001',
+'37902',
+'126001',
+'85501',
+'37875',
+'62001')
+group by  month(cast(tr.dinsertion as date))   ,  sshopid  
+
+union 
+
+  
+ select  'InterNational' as 'Type' ,month(cast(tr.dinsertion as date))  as 'mois' , sshopid ,  count(*) as 'nbr'  ,  sum(namount) as 'mnt'
+from transactions tr left join shop  on  nshopid = shop.nid   where  
+    cast(tr.dinsertion as date) between '2017-11-01' and '2018-01-31'
+ and tr.nproductid not in (1 , 19)  and  tr.nTransactionStatusId in (8)  and sshopid in ('81801',
+'153601',
+'57801',
+'91701',
+'1745',
+'28524',
+'75501',
+'154301',
+'1016',
+'71401',
+'83801',
+'1078',
+'39980',
+'155201',
+'97901',
+'147001',
+'69401',
+'86303',
+'56901',
+'22828',
+'94601',
+'36688',
+'2332',
+'76901',
+'56001',
+'2350',
+'67301',
+'42601',
+'1035',
+'36507',
+'64401',
+'46001',
+'46301',
+'24372',
+'36522',
+'1053',
+'42801',
+'87301',
+'1178',
+'28852',
+'1510',
+'81901',
+'54901',
+'153401',
+'148201',
+'70701',
+'87501',
+'1966',
+'35531',
+'144001',
+'1520',
+'1032',
+'1215',
+'35660',
+'83503',
+'59101',
+'65001',
+'2335',
+'61201',
+'39670',
+'95402',
+'69202',
+'1582',
+'22220',
+'23416',
+'22711',
+'65701',
+'2213',
+'2185',
+'24838',
+'84801',
+'83701',
+'97706',
+'134001',
+'1171',
+'41601',
+'147901',
+'108002',
+'56801',
+'41101',
+'98601',
+'97101',
+'45501',
+'1187',
+'143001',
+'61401',
+'95201',
+'1191',
+'151701',
+'44602',
+'1620',
+'1049',
+'42901',
+'1202',
+'1109',
+'42201',
+'22714',
+'60801',
+'2240',
+'92301',
+'1900',
+'110021',
+'63301',
+'92702',
+'81701',
+'46901',
+'22657',
+'39373',
+'22897',
+'23442',
+'90601',
+'47601',
+'92701',
+'72901',
+'155601',
+'28837',
+'1006',
+'152001',
+'67701',
+'90001',
+'86701',
+'23491',
+'36695',
+'56701',
+'88501',
+'64301',
+'23391',
+'51801',
+'47102',
+'95501',
+'94901',
+'42303',
+'78901',
+'72401',
+'98701',
+'46601',
+'22730',
+'2234',
+'109001',
+'1083',
+'45201',
+'96301',
+'63901',
+'22582',
+'36255',
+'1004',
+'154001',
+'39353',
+'96701',
+'41301',
+'1044',
+'113001',
+'88401',
+'71402',
+'81601',
+'68801',
+'36615',
+'1625',
+'2374',
+'35640',
+'2288',
+'97703',
+'2329',
+'92801',
+'40801',
+'127001',
+'151201',
+'2385',
+'35210',
+'60201',
+'1770',
+'1194',
+'2269',
+'1217',
+'2272',
+'84701',
+'71501',
+'137001',
+'43201',
+'1985',
+'98401',
+'36364',
+'56702',
+'156701',
+'22210',
+'36508',
+'1208',
+'63902',
+'2130',
+'1405',
+'2381',
+'40201',
+'75001',
+'2140',
+'92201',
+'95601',
+'22975',
+'151401',
+'45101',
+'1115',
+'1465',
+'59901',
+'2364',
+'149501',
+'65801',
+'2315',
+'51701',
+'68502',
+'35586',
+'99901',
+'90602',
+'35553',
+'1137',
+'154401',
+'35500',
+'24317',
+'1560',
+'99601',
+'90201',
+'36351',
+'66502',
+'162901',
+'60101',
+'69901',
+'83102',
+'154801',
+'43401',
+'79701',
+'2354',
+'99101',
+'72403',
+'67001',
+'151001',
+'86001',
+'1141',
+'23417',
+'49801',
+'1635',
+'23480',
+'24629',
+'28528',
+'1168',
+'44001',
+'1002',
+'23520',
+'59401',
+'63201',
+'47103',
+'155701',
+'1107',
+'1087',
+'1967',
+'63601',
+'1935',
+'36694',
+'1026',
+'23343',
+'67201',
+'99801',
+'2040',
+'88502',
+'62601',
+'1760',
+'156601',
+'1021',
+'44601',
+'57301',
+'58501',
+'94301',
+'1192',
+'48901',
+'1114',
+'148801',
+'2287',
+'35651',
+'83901',
+'54401',
+'2394',
+'68701',
+'40601',
+'45001',
+'1154',
+'155001',
+'39310',
+'35284',
+'22715',
+'44901',
+'1415',
+'65302',
+'2313',
+'161801',
+'1011',
+'22890',
+'39677',
+'78102',
+'23721',
+'54001',
+'37591',
+'23347',
+'39911',
+'42501',
+'140001',
+'37821',
+'148901',
+'69201',
+'79001',
+'147501',
+'77101',
+'90901',
+'23441',
+'129001',
+'36743',
+'1093',
+'41302',
+'2303',
+'106001',
+'37504',
+'2273',
+'37368',
+'89001',
+'47301',
+'44401',
+'155801',
+'84401',
+'91401',
+'95101',
+'94701',
+'1014',
+'1063',
+'43901',
+'2225',
+'147201',
+'2383',
+'28270',
+'44801',
+'83301',
+'22534',
+'69701',
+'152801',
+'46401',
+'89901',
+'37438',
+'1467',
+'43501',
+'28765',
+'1895',
+'95001',
+'153301',
+'91101',
+'2264',
+'1205',
+'61402',
+'2281',
+'40901',
+'22856',
+'2323',
+'58801',
+'157401',
+'1481',
+'1023',
+'2145',
+'77301',
+'97704',
+'2295',
+'2378',
+'28551',
+'60202',
+'148101',
+'95401',
+'37622',
+'1301',
+'1495',
+'22836',
+'58401',
+'2356',
+'29029',
+'70401',
+'161501',
+'96201',
+'85401',
+'1875',
+'105001',
+'48001',
+'1995',
+'147401',
+'110041',
+'47401',
+'37866',
+'135001',
+'22578',
+'149201',
+'39932',
+'37721',
+'42302',
+'75701',
+'22914',
+'114001',
+'28838',
+'25849',
+'2105',
+'2210',
+'99102',
+'2293',
+'1650',
+'72101',
+'2200',
+'23492',
+'75601',
+'2334',
+'46602',
+'117001',
+'2221',
+'84601',
+'110031',
+'157201',
+'2061',
+'97501',
+'23390',
+'43601',
+'152601',
+'99201',
+'37364',
+'45303',
+'1580',
+'89301',
+'151101',
+'58301',
+'2268',
+'48401',
+'75401',
+'151801',
+'155401',
+'37366',
+'41201',
+'36512',
+'70101',
+'1101',
+'157701',
+'86301',
+'149901',
+'35642',
+'65501',
+'1667',
+'65805',
+'28292',
+'2256',
+'39417',
+'37392',
+'98801',
+'81703',
+'82001',
+'2218',
+'153201',
+'1565',
+'49301',
+'2395',
+'150001',
+'73401',
+'2249',
+'62102',
+'22839',
+'2217',
+'1169',
+'2275',
+'157501',
+'155901',
+'40502',
+'2298',
+'65703',
+'62801',
+'78101',
+'37691',
+'64601',
+'66201',
+'2230',
+'1730',
+'37876',
+'58201',
+'80701',
+'36501',
+'122001',
+'2384',
+'61901',
+'36601',
+'35730',
+'40701',
+'48801',
+'37380',
+'72402',
+'157301',
+'49001',
+'1365',
+'65201',
+'22622',
+'37558',
+'22707',
+'64103',
+'93101',
+'1905',
+'80601',
+'1121',
+'93001',
+'96501',
+'2000',
+'37700',
+'1950',
+'151901',
+'54101',
+'74102',
+'84501',
+'110061',
+'42701',
+'37855',
+'91201',
+'81001',
+'72601',
+'78201',
+'45801',
+'1139',
+'37356',
+'76201',
+'103001',
+'1080',
+'69801',
+'36681',
+'2355',
+'2279',
+'1915',
+'1715',
+'1159',
+'47501',
+'63801',
+'2290',
+'23720',
+'154701',
+'35121',
+'94502',
+'66601',
+'2342',
+'45301',
+'90603',
+'1162',
+'86402',
+'28213',
+'118001',
+'1120',
+'2055',
+'125001',
+'61702',
+'2060',
+'49901',
+'2371',
+'64901',
+'72701',
+'1390',
+'1126',
+'130001',
+'151301',
+'62901',
+'95301',
+'43101',
+'46201',
+'24474',
+'82401',
+'96101',
+'1204',
+'153701',
+'88701',
+'44603',
+'74701',
+'46101',
+'2325',
+'112001',
+'1060',
+'1098',
+'85101',
+'63602',
+'58101',
+'1012',
+'84201',
+'2314',
+'44201',
+'74702',
+'152501',
+'22507',
+'72301',
+'93401',
+'61701',
+'28290',
+'47801',
+'79901',
+'1466',
+'148701',
+'23493',
+'151601',
+'2236',
+'88801',
+'36506',
+'65803',
+'35750',
+'1179',
+'54201',
+'83902',
+'120001',
+'2305',
+'59801',
+'1081',
+'49601',
+'1725',
+'93801',
+'61902',
+'22765',
+'82501',
+'48701',
+'23430',
+'121001',
+'62701',
+'155002',
+'157801',
+'97001',
+'152201',
+'73702',
+'51501',
+'1071',
+'2393',
+'71801',
+'22514',
+'41901',
+'92501',
+'23494',
+'36627',
+'98902',
+'68601',
+'2242',
+'2372',
+'29094',
+'110011',
+'23410',
+'28872',
+'22234',
+'36635',
+'98001',
+'99701',
+'1190',
+'97801',
+'1646',
+'49501',
+'1530',
+'24429',
+'22385',
+'2180',
+'1206',
+'1855',
+'1515',
+'36606',
+'22709',
+'77601',
+'87901',
+'83401',
+'1550',
+'138001',
+'85102',
+'98901',
+'96401',
+'67901',
+'80702',
+'147701',
+'22938',
+'39972',
+'22201',
+'65802',
+'36628',
+'37264',
+'154201',
+'88402',
+'95901',
+'44701',
+'89701',
+'90101',
+'22603',
+'35603',
+'41001',
+'66401',
+'2328',
+'1167',
+'39664',
+'2095',
+'57701',
+'148601',
+'2386',
+'98301',
+'35548',
+'95102',
+'156901',
+'2191',
+'2250',
+'2204',
+'148301',
+'64801',
+'63103',
+'146001',
+'45602',
+'1340',
+'2382',
+'1135',
+'36692',
+'1785',
+'1005',
+'1835',
+'1079',
+'36230',
+'157601',
+'92001',
+'2360',
+'28269',
+'94001',
+'2150',
+'1616',
+'1100',
+'37861',
+'99501',
+'36600',
+'1066',
+'37353',
+'75301',
+'2377',
+'22708',
+'2312',
+'156201',
+'73701',
+'2280',
+'94501',
+'1124',
+'37466',
+'62101',
+'93201',
+'141001',
+'89202',
+'79301',
+'1219',
+'82201',
+'73801',
+'79101',
+'86403',
+'57501',
+'22865',
+'65901',
+'147101',
+'51904',
+'45401',
+'77001',
+'1511',
+'133001',
+'65806',
+'165001',
+'36520',
+'2324',
+'88601',
+'142001',
+'1432',
+'23414',
+'35571',
+'22281',
+'2265',
+'1965',
+'83101',
+'2170',
+'39983',
+'2343',
+'157001',
+'90501',
+'97102',
+'24412',
+'76301',
+'46501',
+'93701',
+'40301',
+'1058',
+'85001',
+'36820',
+'2296',
+'59601',
+'97201',
+'1480',
+'2278',
+'24231',
+'2376',
+'57201',
+'96901',
+'28239',
+'54301',
+'97401',
+'42301',
+'1031',
+'61501',
+'1800',
+'60601',
+'62902',
+'156401',
+'2267',
+'108001',
+'60501',
+'66501',
+'155301',
+'60401',
+'97701',
+'22725',
+'155501',
+'97702',
+'149401',
+'22758',
+'68402',
+'153101',
+'96601',
+'83201',
+'68501',
+'76802',
+'156001',
+'81002',
+'2388',
+'56601',
+'65702',
+'23348',
+'156101',
+'2396',
+'1380',
+'1535',
+'45601',
+'1490',
+'152701',
+'24055',
+'66101',
+'2326',
+'91001',
+'145001',
+'1029',
+'24630',
+'24475',
+'1805',
+'2397',
+'153901',
+'96001',
+'2338',
+'1064',
+'48101',
+'36651',
+'2253',
+'40501',
+'28538',
+'1007',
+'73101',
+'1177',
+'72702',
+'65301',
+'60302',
+'107001',
+'54701',
+'54801',
+'96801',
+'1666',
+'44101',
+'1203',
+'56201',
+'77501',
+'131001',
+'63101',
+'23411',
+'79401',
+'2251',
+'86401',
+'74901',
+'99401',
+'59501',
+'39984',
+'2195',
+'2353',
+'1431',
+'65401',
+'82801',
+'45901',
+'56602',
+'1127',
+'1164',
+'47101',
+'93102',
+'59001',
+'1700',
+'2337',
+'68001',
+'128001',
+'148001',
+'37902',
+'126001',
+'85501',
+'37875',
+'62001')
+group by  month(cast(tr.dinsertion as date))   ,  sshopid  </sql>
+    <limit>0</limit>
+    <lookup />
+    <execute_each_row>N</execute_each_row>
+    <variables_active>N</variables_active>
+    <lazy_conversion_active>N</lazy_conversion_active>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>128</xloc>
+      <yloc>85</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step>
+    <name>Microsoft Excel Writer</name>
+    <type>TypeExitExcelWriterStep</type>
+    <description />
+    <distribute>Y</distribute>
+    <custom_distribution />
+    <copies>1</copies>
+    <partitioning>
+      <method>none</method>
+      <schema_name />
+    </partitioning>
+    <header>Y</header>
+    <footer>N</footer>
+    <makeSheetActive>Y</makeSheetActive>
+    <rowWritingMethod>overwrite</rowWritingMethod>
+    <startingCell>A1</startingCell>
+    <appendOmitHeader>N</appendOmitHeader>
+    <appendOffset>0</appendOffset>
+    <appendEmpty>0</appendEmpty>
+    <rowWritingMethod>overwrite</rowWritingMethod>
+    <forceFormulaRecalculation>N</forceFormulaRecalculation>
+    <leaveExistingStylesUnchanged>N</leaveExistingStylesUnchanged>
+    <appendLines>N</appendLines>
+    <add_to_result_filenames>Y</add_to_result_filenames>
+    <file>
+      <name>C:\Users\Administrator\Desktop\extract\nov_janv 2018</name>
+      <extention>xlsx</extention>
+      <do_not_open_newfile_init>N</do_not_open_newfile_init>
+      <split>N</split>
+      <add_date>N</add_date>
+      <add_time>N</add_time>
+      <SpecifyFormat>N</SpecifyFormat>
+      <date_time_format />
+      <sheetname>Sheet1</sheetname>
+      <autosizecolums>N</autosizecolums>
+      <stream_data>Y</stream_data>
+      <protect_sheet>N</protect_sheet>
+      <password>Encrypted </password>
+      <protected_by />
+      <splitevery>0</splitevery>
+      <if_file_exists>new</if_file_exists>
+      <if_sheet_exists>new</if_sheet_exists>
+    </file>
+    <template>
+      <enabled>N</enabled>
+      <sheet_enabled>N</sheet_enabled>
+      <filename>template.xls</filename>
+      <sheetname />
+      <hidden>N</hidden>
+    </template>
+    <fields>
+      <field>
+        <name>Type</name>
+        <type>String</type>
+        <format />
+        <title>Type</title>
+        <titleStyleCell />
+        <styleCell />
+        <commentField />
+        <commentAuthorField />
+        <formula>N</formula>
+        <hyperlinkField />
+      </field>
+      <field>
+        <name>mois</name>
+        <type>Integer</type>
+        <format />
+        <title>mois</title>
+        <titleStyleCell />
+        <styleCell />
+        <commentField />
+        <commentAuthorField />
+        <formula>N</formula>
+        <hyperlinkField />
+      </field>
+      <field>
+        <name>sshopid</name>
+        <type>String</type>
+        <format />
+        <title>sshopid</title>
+        <titleStyleCell />
+        <styleCell />
+        <commentField />
+        <commentAuthorField />
+        <formula>N</formula>
+        <hyperlinkField />
+      </field>
+      <field>
+        <name>nbr</name>
+        <type>Integer</type>
+        <format />
+        <title>nbr</title>
+        <titleStyleCell />
+        <styleCell />
+        <commentField />
+        <commentAuthorField />
+        <formula>N</formula>
+        <hyperlinkField />
+      </field>
+      <field>
+        <name>mnt</name>
+        <type>BigNumber</type>
+        <format />
+        <title>mnt</title>
+        <titleStyleCell />
+        <styleCell />
+        <commentField />
+        <commentAuthorField />
+        <formula>N</formula>
+        <hyperlinkField />
+      </field>
+    </fields>
+    <cluster_schema />
+    <remotesteps>
+      <input>
+      </input>
+      <output>
+      </output>
+    </remotesteps>
+    <GUI>
+      <xloc>328</xloc>
+      <yloc>185</yloc>
+      <draw>Y</draw>
+    </GUI>
+  </step>
+  <step_error_handling>
+  </step_error_handling>
+  <slave-step-copy-partition-distribution>
+  </slave-step-copy-partition-distribution>
+  <slave_transformation>N</slave_transformation>
+</transformation>
